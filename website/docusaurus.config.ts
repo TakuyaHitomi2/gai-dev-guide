@@ -108,12 +108,7 @@ ChatGPTやGitHub Copilotなどの導入方法、基本的な操作、効果的�
         {
           // TODO: コンテンツができたら置き換える
           title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/intro',
-            },
-          ],
+          items: [],
         },
         {
           title: 'Related Work',
@@ -128,10 +123,7 @@ ChatGPTやGitHub Copilotなどの導入方法、基本的な操作、効果的�
       copyright: `<div class="no-content">
 <div class="copyright">
   ドキュメントは、<a rel="license" href="https://fintan.jp/?page_id=201" target="_blank">Fintan コンテンツ 使用許諾条項</a
-  >の下に提供されており、コードサンプルは<a rel="license" href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0 License</a
-  >の下に提供されています。
-</div>
-</div>`,
+  >の下に提供されています。</div></div>`,
 
 /*
 TODO: コンテンツができたら置き換える
