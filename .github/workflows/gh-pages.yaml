@@ -1,0 +1,51 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+    paths:
+      - website/**
+      - '!website/nginx/**'
+      - '!website/.gitignore'
+      - .editorconfig
+      - .github/workflows/gh-pages.yaml
+      - .github/workflows/gh-pages-deploy.yaml
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  build:
+    name: ${{ github.workflow }} Lints
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: './website/package-lock.json'
+
+      - name: Install dependencies
+        run: npm --prefix website install
+
+      - name: Build documents
+        run: |
+          npm run build --prefix website
+
+      - name: Save artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          path: ./website/build
+          if-no-files-found: error
+          retention-days: 30

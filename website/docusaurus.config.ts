@@ -29,6 +29,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
           showLastUpdateTime: true,
+          breadcrumbs: true,
         },
         blog: false,
         theme: {
@@ -43,6 +44,13 @@ const config: Config = {
       defaultMode: 'light',
       disableSwitch: true,
       respectPrefersColorScheme: false,
+    },
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+        hideable: true,
+      }
+
     },
     metadata: [
       // TODO: 正式なURLに変更する
