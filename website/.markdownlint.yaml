@@ -1,0 +1,10 @@
+default: true
+line-length: false
+single-title: false
+no-inline-html:
+  allowed_elements:
+  - a
+  - details
+  - summary
+  - Highlight
+blanks-around-lists: false

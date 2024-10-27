@@ -1,4 +1,4 @@
-name: GitHub Pages
+name: Lints
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -47,7 +47,12 @@ jobs:
       # So, use cd instead of --prefix to move the current directory.
       - name: Lint (textlint)
         run: |
-          cd website && npm run -s lint:text -- -f checkstyle | reviewdog -tee -fail-on-error -reporter=github-check -filter-mode=nofilter -f=checkstyle -name="textlint (GitHub Pages)"
+          cd website && npm run -s lint:text -- -f checkstyle | reviewdog -tee -fail-level=any -reporter=github-check -filter-mode=nofilter -f=checkstyle -name="textlint (GitHub Pages)"
+
+      - name: Lint (markdownlint)
+        if: always()
+        run: |
+          cd website && npm run -s lint:md 2>&1 | sed -e 's/^/e:/' | reviewdog -tee -fail-on-error -reporter=github-check -filter-mode=nofilter -efm="%t:%f:%l:%c %m" -efm="%t:%f:%l %m" -name="markdownlint (GitHub Pages)"
 
       - name: Build documents
         run: npm --prefix website run build            

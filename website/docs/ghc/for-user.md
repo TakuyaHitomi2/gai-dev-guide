@@ -2,8 +2,9 @@
 title: 利用者向け
 sidebar_position: 1
 ---
-
+<!-- markdownlint-disable MD025 -->
 # 利用者向け
+<!-- markdownlint-enable MD025 -->
 
 GitHub Copilotを利用開始する上での必須情報を集約します。  
 Copilotの基礎情報や、各種使い方などをまとめます。
@@ -39,12 +40,15 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
 ### GitHub Copilotがアカウントに紐づいていることの確認
 
 1. GitHubアカウントの[Copilotの設定ページ](https://github.com/settings/copilot)を開いてください。
+
 <details>
   <summary>画面右上のプロファイル画像をクリック ⇒ 「Your Copilot」を選択することで開くこともできます。</summary>
 
 1. 画面右上のプロファイル画像（赤枠箇所）をクリック
   ![プロファイルをクリック](imgs/click-profile.avif)
 2. 「Your Copilot」を選択
+
 </details>
-2. organizationに参加してCopilotを利用している場合、以下の赤枠が表示されていればOKです。
+
+1. organizationに参加してCopilotを利用している場合、以下の赤枠が表示されていればOKです。
   ![赤枠](imgs/copilot-red.png)
