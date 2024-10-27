@@ -3,21 +3,10 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - '*'
-  pull_request:
-    branches:
-      - '*'
+      - main
     paths:
       - website/**
-      - '!website/nginx/**'
-      - '!website/.gitignore'
-      - .editorconfig
-      - .github/workflows/gh-pages.yaml
       - .github/workflows/gh-pages-deploy.yaml
-    types:
-      - opened
-      - synchronize
-      - reopened
 
 jobs:
   build:
@@ -46,7 +35,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build/
+          path: website/build/
           retention-days: 30
 
   deploy:
