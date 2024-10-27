@@ -11,7 +11,7 @@ Copilotの基礎情報や、各種使い方などをまとめます。
 
 ## 1. 参画PJでの利用可否の判断を行う
 
-参画しているPJにてGitHub Copilot の利用可否をご判断ください。
+参画しているPJにてGitHub Copilotの利用可否をご判断ください。
 
 ## 2. GitHubアカウントを作成する
 
@@ -22,7 +22,7 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
 
 ## 3. 社内申請を行う
 
-各社において必要な申請を行ってください。
+各社において社内に申請してください。
 
 ## 4. GitHub CopilotをIDEで使用する
 
@@ -44,11 +44,11 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
 <details>
   <summary>画面右上のプロファイル画像をクリック ⇒ 「Your Copilot」を選択することで開くこともできます。</summary>
 
-1. 画面右上のプロファイル画像（赤枠箇所）をクリック
+1. 画面右上のプロファイル画像（赤枠箇所）をクリック。
   ![プロファイルをクリック](imgs/click-profile.avif)
-2. 「Your Copilot」を選択
+2. "Your Copilot"を選択。
 
 </details>
 
-1. organizationに参加してCopilotを利用している場合、以下の赤枠が表示されていればOKです。
+1. organizationに参加してCopilotを利用している場合、以下の赤枠が表示されていれば良い。
   ![赤枠](imgs/copilot-red.png)

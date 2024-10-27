@@ -7,8 +7,8 @@ sidebar_position: 1
 
 ## Visual Studio Codeのインストール
 
-1. [Visual Studio Code](https://code.visualstudio.com/Download)をインストールします。
-2. 必要な方は、プロキシ設定をします。
+1. [Visual Studio Code](https://code.visualstudio.com/Download)をインストールする。
+2. 必要な方は、プロキシ設定をする。
   <details>
   <summary>Visual Studio Code のプロキシ設定方法</summary>
   1. Visual Studio Code を起動してください。
@@ -22,15 +22,15 @@ sidebar_position: 1
 
 ## GitHub Copilot/GitHub Copilot Chatのインストール
 
-1. GitHub CopilotとGitHub Copilot Chatの拡張機能をインストールします。
+1. GitHub CopilotとGitHub Copilot Chatの拡張機能をインストールする。
     1. [Visual Studio CodeのMarketMarketplace](https://marketplace.visualstudio.com/)で[GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)を開きInstallボタンを押下してください。
-    1. Visual Studio Codeが開き、拡張機能の画面が開きます。
-    1. Visual Studio Code上で Installボタンを押下してください。
+    1. Visual Studio Codeが開き、拡張機能の画面が開く。
+    1. Visual Studio Code上でInstallボタンを押下する。
       ![GitHub Copilotのインストール](./imgs/install-ghc.gif)
-    1. GitHub Copilot Chatも同様にインストールしてください
+    1. GitHub Copilot Chatも同様にインストールすること。
 
 ## GitHub Copilot/GitHub Copilot Chatの動作確認
 
-1. Visual Studio Code 上で GitHub アカウントにログインします。
-    1. Visual Studio Code 左下のユーザアイコン ⇒ 「Sign in with GitHub to use GitHub Copilot」を押下してください。
-    1. ブラウザが起動するので、認証を許可してください。
+1. Visual Studio Code上でGitHubアカウントにログインする。
+    1. Visual Studio Code左下のユーザアイコン⇒"Sign in with GitHub to use GitHub Copilot"を押下する。
+    1. ブラウザが起動するので、認証を許可する。
