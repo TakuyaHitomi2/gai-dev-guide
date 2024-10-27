@@ -1,0 +1,10 @@
+filters:
+  allowlist:
+    allow:
+      - GitHub Copilot
+rules:
+  preset-ja-technical-writing: true
+  preset-jtf-style: true
+  prh: 
+    rulePaths:
+    - ./prh.yaml

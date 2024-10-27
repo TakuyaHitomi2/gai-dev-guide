@@ -1,0 +1,51 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - '*'
+  pull_request:
+    branches:
+      - '*'
+    paths:
+      - website/**
+      - .github/workflows/lint.yaml
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  lint:
+    name: Lints
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: './website/package-lock.json'
+
+      - name: Install dependencies
+        run: npm --prefix website install
+
+      - name: Set up reviewdog
+        uses: reviewdog/action-setup@v1
+        with:
+          reviewdog_version: latest      
+
+      # In the case of reviewdog, the result of the lint error is determined based on the current directory.
+      # So, use cd instead of --prefix to move the current directory.
+      - name: Lint (textlint)
+        run: |
+          cd website && npm run -s lint:text -- -f checkstyle | reviewdog -tee -fail-on-error -reporter=github-check -filter-mode=nofilter -f=checkstyle -name="textlint (GitHub Pages)"
+
+      - name: Build documents
+        run: npm --prefix website run build            

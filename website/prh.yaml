@@ -1,0 +1,16 @@
+version: 1
+rules:
+  - expected: VS Code
+    patterns: VSCode
+  - expected: macOS
+    patterns: MacOS
+  - expected: Docker
+    patterns: docker
+  - expected: ユーザ
+    patterns: ユーザー
+  - expected: サーバ
+    patterns: サーバー
+  - expected: ToDo
+    patterns: Todo
+  - expected: クエリ
+    patterns: クエリー

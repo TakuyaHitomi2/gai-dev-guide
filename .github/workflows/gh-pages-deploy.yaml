@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: ${{ github.workflow }} Lints
+    name: ${{ github.workflow }} Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
@@ -39,7 +39,7 @@ jobs:
           retention-days: 30
 
   deploy:
-    name: Deploy to GitHub Pages
+    name: ${{ github.workflow }} Deploy
     needs: build
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
