@@ -90,9 +90,15 @@ ChatGPTやGitHub Copilotなどの導入方法、基本的な操作、効果的�
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'githubCopilotSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'GitHub Copilot ガイド',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'developmentProcessSidebar',
+          position: 'left',
+          label: '開発プロセス',
         },
         {
           href: 'https://github.com/Fintan-contents/gai-dev-guide',
