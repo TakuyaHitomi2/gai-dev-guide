@@ -2,6 +2,6 @@
 sidebar_position: 4
 ---
 
-# 🧪テストコードを書く
+# テストコードを書く
 
 TODO

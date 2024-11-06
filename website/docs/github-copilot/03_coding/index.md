@@ -1,5 +1,5 @@
 ---
-title: ⌨コードを書く
+title: コードを書く
 sidebar_position: 3
 ---
 
