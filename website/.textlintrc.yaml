@@ -7,13 +7,13 @@ rules:
     sentence-length: 
       max: 100
       skipPatterns: 
-      - "/\(.*\)/"
+        - /\(.*\)/
     ja-no-mixed-period: 
       allowPeriodMarks: 
-      - ":::"
+        - ":::"
     max-kanji-continuous-len: 
       max: 6
-      allow: 
+    no-exclamation-question-mark: false
   preset-jtf-style: true
   textlint-rule-preset-ja-spacing: true
   prh: 
