@@ -34,6 +34,6 @@ sidebar_position: 1
 
 [GitHub Copilot の使用についてのベスト プラクティス | GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F) > 提案の選択
 
-## フィードバック 
+## フィードバック
 
 [GitHub Copilot の使用についてのベスト プラクティス | GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F) > フィードバックする
