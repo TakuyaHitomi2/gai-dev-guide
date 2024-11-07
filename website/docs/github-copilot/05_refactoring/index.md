@@ -67,71 +67,71 @@ GitHub Copilot Chatを使い、こちらのコードにJavadocを書いてもら
 <details>
 <summary>出力されたJavaDoc</summary>
 
-```java
-package com.nablarch.example.app.entity.core.validation.validator;
+    ```java
+    package com.nablarch.example.app.entity.core.validation.validator;
 
-import nablarch.core.util.DateUtil;
-import nablarch.core.util.StringUtil;
-
-/**
-    * 日付範囲のバリデーター。
-    * 開始日と終了日を指定し、その範囲が有効かどうかを検証します。
-    */
-public class DateRangeValidator {
-    private final String start;
-    private final String end;
-
-    private final String dateFormat;
+    import nablarch.core.util.DateUtil;
+    import nablarch.core.util.StringUtil;
 
     /**
-        * デフォルトの日付形式（"yyyyMMdd"）を使用して、バリデーターを作成します。
-        *
-        * @param start 開始日
-        * @param end 終了日
+        * 日付範囲のバリデーター。
+        * 開始日と終了日を指定し、その範囲が有効かどうかを検証します。
         */
-    public DateRangeValidator(final String start, final String end) {
-        this(start, end, "yyyyMMdd");
-    }
+    public class DateRangeValidator {
+        private final String start;
+        private final String end;
 
-    /**
-        * 指定された日付形式を使用して、バリデーターを作成します。
-        *
-        * @param start 開始日
-        * @param end 終了日
-        * @param dateFormat 日付形式
-        */
-    public DateRangeValidator(final String start, final String end, final String dateFormat) {
-        this.start = start;
-        this.end = end;
-        this.dateFormat = dateFormat;
-    }
+        private final String dateFormat;
 
-    /**
-        * 開始日と終了日が有効な範囲であるかどうかを検証します。
-        *
-        * @return 開始日と終了日が有効な範囲であればtrue、そうでなければfalse
-        */
-    public boolean isValid() {
-        if (isValidDate(start) && isValidDate(end)) {
-            return DateUtil.getParsedDate(start, dateFormat).compareTo(DateUtil.getParsedDate(end, dateFormat)) <= 0;
+        /**
+            * デフォルトの日付形式（"yyyyMMdd"）を使用して、バリデーターを作成します。
+            *
+            * @param start 開始日
+            * @param end 終了日
+            */
+        public DateRangeValidator(final String start, final String end) {
+            this(start, end, "yyyyMMdd");
         }
-        return true;
-    }
 
-    /**
-        * 指定された日付が有効かどうかを検証します。
-        *
-        * @param date 検証する日付
-        * @return 日付が有効であればtrue、そうでなければfalse
-        */
-    private boolean isValidDate(final String date) {
-        if (StringUtil.isNullOrEmpty(date)) {
-            return false;
+        /**
+            * 指定された日付形式を使用して、バリデーターを作成します。
+            *
+            * @param start 開始日
+            * @param end 終了日
+            * @param dateFormat 日付形式
+            */
+        public DateRangeValidator(final String start, final String end, final String dateFormat) {
+            this.start = start;
+            this.end = end;
+            this.dateFormat = dateFormat;
         }
-        return DateUtil.isValid(date, dateFormat);
+
+        /**
+            * 開始日と終了日が有効な範囲であるかどうかを検証します。
+            *
+            * @return 開始日と終了日が有効な範囲であればtrue、そうでなければfalse
+            */
+        public boolean isValid() {
+            if (isValidDate(start) && isValidDate(end)) {
+                return DateUtil.getParsedDate(start, dateFormat).compareTo(DateUtil.getParsedDate(end, dateFormat)) <= 0;
+            }
+            return true;
+        }
+
+        /**
+            * 指定された日付が有効かどうかを検証します。
+            *
+            * @param date 検証する日付
+            * @return 日付が有効であればtrue、そうでなければfalse
+            */
+        private boolean isValidDate(final String date) {
+            if (StringUtil.isNullOrEmpty(date)) {
+                return false;
+            }
+            return DateUtil.isValid(date, dateFormat);
+        }
     }
-}
-```
+    ```
 
 </details>
 
@@ -152,9 +152,11 @@ public class DateRangeValidator {
 1. エディタで、該当ファイルを開く
 2. Copilot Chat Viewを開く
 3. GitHub Copilotに以下を入力する
-    ```txt
-    開発基準のMarkdownファイルを開発基準に、対象ファイルをレビューし、問題があれば、改修案を提示してください
-    ```
+
+        ```txt
+        開発基準のMarkdownファイルを開発基準に、対象ファイルをレビューし、問題があれば、改修案を提示してください
+        ```
+
 4. 改修原因と改修内容が提案される
 
 ![suggestion_1.png](images/suggestion_1.png)
