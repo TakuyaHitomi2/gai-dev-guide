@@ -4,7 +4,7 @@ sidebar_position: 09
 
 # 導入検討時に考慮すべき事項 [FAQ]
 
-:::note[インプット]
+:::note
 - [導入検討時に考慮すべき事項 [FAQ]](https://gen-ai-docs.jp/%e5%b0%8e%e5%85%a5%e6%8e%a8%e9%80%b2%e8%80%85-%e6%b1%ba%e8%a3%81%e8%80%85/%e5%b0%8e%e5%85%a5%e6%a4%9c%e8%a8%8e%e6%99%82%e3%81%ab%e8%80%83%e6%85%ae%e3%81%99%e3%81%b9%e3%81%8d%e4%ba%8b%e9%a0%85-faq)
 :::
 

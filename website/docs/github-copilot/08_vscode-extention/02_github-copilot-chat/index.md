@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # GitHub Copilot Chat
 
-:::note[インプット]
+:::note
 - [GitHub Copilot を使用したコードのリファクタリング | GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/example-use-cases/refactoring-code-with-github-copilot)
 :::
 
