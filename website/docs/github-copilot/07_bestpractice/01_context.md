@@ -12,7 +12,20 @@ sidebar_position: 1
 
 ## 変数名などに意味のある名前を付ける
 
-- 開発ガイド ＞ 8.1.5. 意味のある名前を使用する
+
+- (1) fooやbarという名前の関数がある場合、GitHub Copilotは名前から意図を推測不可ため、最適な補完も提供不可です。
+  同様に、関数名fetchData()は同僚（または数ヶ月後のあなた）にとってあまり意味をなさず、GitHub Copilotにとってもあまり意味がありません。
+  良いコーディング習慣を実装することで、GitHub Copilotから最大の価値を取得できます。
+- (2) 関数名fetchData（意味のない名前）
+  1. エディタで、該当ファイルを開く
+  2. メソッド名がfetchDataを指定する
+  3. メソッド中に`Alt＋\`を実行し、提案を要求し、GitHub Copilotへ下記コードを自動補完する
+    ![bad_function_name.png](images/bad_function_name.png)
+- (3) 関数名fetchDataEndwithtxt（意味のある名前）
+  1. エディタで、該当ファイルを開く
+  2. メソッド名がfetchDataEndwithtxtを指定する
+  3. メソッド中に`Alt＋\`を実行し、提案を要求し、GitHub Copilotへ下記コードを自動補完する
+    ![good_function_name.png](images/good_function_name.png)
 
 ## 効果的なコンテキストの指定
 
