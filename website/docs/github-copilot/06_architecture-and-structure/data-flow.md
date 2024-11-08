@@ -6,7 +6,9 @@ sidebar_position: 1
 
 import {SpeakerDeck} from '@site/src/components/Embedded';
 
-※ GitHub Copilotのアップデートで状況が変わる可能性もありますのでご注意ください。記事作成の元となったページを内容毎に記載しておりますので、参考にしてください。
+:::info
+GitHub Copilotのアップデートで状況が変わる可能性もありますのでご注意ください。記事作成の元となったページを内容毎に記載しておりますので、参考にしてください。
+:::
 
 ## 扱うデータの内容
 
