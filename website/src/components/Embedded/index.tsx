@@ -14,7 +14,7 @@ type SpeakerDeckProps = {
 /**
  * SpeakerDeck埋め込み用部品.以下例.
  * 
- * import {SpeakerDeck} from '@site/src/components/Embeded';
+ * import {SpeakerDeck} from '@site/src/components/Embedded';
  * <SpeakerDeck slideId="522ae7bf572044a8898a6b6449e05540"  page={10} />
  * 
  */
