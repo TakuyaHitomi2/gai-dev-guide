@@ -3,9 +3,6 @@ title: コードを書く
 sidebar_position: 3
 ---
 
-
-TODO「開発ガイド ＞ 8.1. コードを生成する」盛り込み。
-
 ## コードから補完する
 
 GitHub Copilotの最も利用頻度の高い使い方です。<br/>
