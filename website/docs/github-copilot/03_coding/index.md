@@ -20,30 +20,26 @@ GitHub Copilotを有効化した状態でいつも通りコードを書くだけ
 候補表示時`Alt + ]`、`Alt +[` で他の補完候補を確認できます。(Macの場合は`Option + ]`、`Option + [`)
 
 ![copilot .gif](images/copilot_.gif)<br/>
-[GitHub Copilot の概要 - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/getting-started-with-github-copilot#seeing-your-first-suggestion)
+
+参考：[GitHub Copilot の概要 - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/getting-started-with-github-copilot#seeing-your-first-suggestion)
 
 ## コメントから補完する
 
-:::note
-- 以下をマージ
-  - コードを書く ＞ 自然言語で実装内容を伝え、コードを生成してもらう
-  - 開発ガイド ＞ 8.1. コードを生成する ＞ 8.1.1. コメントよりコードを補完する
-:::
-
-コメント内で自然言語を使用して実行する操作を記述できます。目標を達成するためのコードの候補が示されます。
-
-1. 新しいJavaScript(*.js*) のファイルを作します
-2. JavaScriptファイルで、次のコメントと関数の開始部分を入力します。GitHubCopilotによる関数の実装の候補が表示されます
-3. 提案を要求します（Windowsの場合は`Alt + \`。Macの場合は`Option + \`）  
-候補表示時`Alt + ]`、`Alt +[` で他の補完候補を確認できます。(Macの場合は`Option + ]`、`Option + [` )
-
-```jsx
-// altのないimgタグ全て探し、赤枠で囲む
-function// ← ここでスペースを挿入。候補が表示されます。
-```
-
-![c0937ad416f85bc010b7106b094b85e4.gif](images/c0937ad416f85bc010b7106b094b85e4.gif)<br/>
-[https://docs.github.com/ja/copilot/getting-started-with-github-copilot#generating-code-suggestions-from-comments](https://docs.github.com/ja/copilot/getting-started-with-github-copilot#generating-code-suggestions-from-comments)
+1. まず関数、クラスの定義や処理をコメントで記述します
+    ![code-completion_1.png](images/code-completion_1.png)
+2. その後下記のような動作を行うとGitHub Copilotが補完候補を提案してくれるので、補完候補を確認しTABキーでコードに反映させます
+    - 候補を提案してほしい場所にカーソルを合わせます
+    - 改行します
+    - 提案を要求します（Windowsの場合は`Alt + \`、Macの場合は`Option + \`）
+      ![code-completion_2.png](images/code-completion_2.png)
+    - 候補表示時`Alt + ]`、`Alt +[` にて他の補完候補を確認できます（Macの場合は`Option + ]`、`Option + [`）
+      ![code-completion_3.png](images/code-completion_3.png)
+    - 候補コードを確認してTABキーでコードに反映させる
+      ※簡単なエラーがあれば、エラー場所に右クリック → Quick Fixで解消できる<br/>
+      **修正前：**<br/>
+      ![code-completion_4.png](images/code-completion_4.png)<br/>
+      **修正後：**<br/>
+      ![code-completion_5.png](images/code-completion_5.png)
 
 ## エラーや問題点のある箇所の修正提案をもらう
 
