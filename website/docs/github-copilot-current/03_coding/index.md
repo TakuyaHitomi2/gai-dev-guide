@@ -45,29 +45,6 @@ function// ← ここでスペースを挿入。候補が表示されます。
 ![c0937ad416f85bc010b7106b094b85e4.gif](images/c0937ad416f85bc010b7106b094b85e4.gif)<br/>
 [https://docs.github.com/ja/copilot/getting-started-with-github-copilot#generating-code-suggestions-from-comments](https://docs.github.com/ja/copilot/getting-started-with-github-copilot#generating-code-suggestions-from-comments)
 
-## エラーや問題点のある箇所の修正提案をもらう
-
-GitHub Copilot Chatで`/fix`を使うことで、修正提案をもらうことができます。
-
-1. エディタで、該当のファイルを開きます。
-2. Copilot Chat Viewを開きます。
-3. `/fix このコードの潜在的なリスクを教えて`と入力し送信します。
-4. GitHub Copilot Chatにより、セキュリティリスクになりそうな箇所と修正案が提示されます。
-
-![security-detect.png](images/security-detect.png)
-
-## エディタ上で提案をもらう
-
-GitHub Copilot Chatは、Copilot Chat Viewを開かなくても利用が可能です。
-
-1. エディタ上で右クリック
-2. Copilotにカーソルをあわせる
-3. `Start in Editor` をクリック
-
-詳細はこちらをご確認ください [インラインチャット](../08_vscode-extention/01_github-copilot/03_inline-chat.md)
-
-![inlineChat2.gif](images/inlineChat2.gif)
-
 ## セキュリティリスクを検知してもらう
 
 セキュリティリスクの可能性があるか意見をもらう。
@@ -75,9 +52,6 @@ GitHub Copilot Chatは、Copilot Chat Viewを開かなくても利用が可能�
 - セキュリティリスクを発見したいファイル
 
     nablarchのサンプルコードに今回のチェック用に修正を加えたものです。
-
-    <details>
-    <summary>ファイル内容</summary>
 
     ```java
     package com.nablarch.example.app.web.action;
@@ -169,11 +143,32 @@ GitHub Copilot Chatは、Copilot Chat Viewを開かなくても利用が可能�
     }
     ```
 
-    </details>
-
 1. エディタで、該当のファイルを開きます。
 2. Copilot Chat Viewを開きます。
 3. `/explain このコードの潜在的なリスクを教えて`と入力し送信します。
 4. GitHub Copilot Chatにより、セキュリティリスクになりそうな箇所が提示されます。
 
 ![security.png](images/security.png)
+
+## エラーや問題点のある箇所の修正提案をもらう
+
+GitHub Copilot Chatで`/fix`を使うことで、修正提案をもらうことができます。
+
+1. エディタで、該当のファイルを開きます。
+2. Copilot Chat Viewを開きます。
+3. `/fix このコードの潜在的なリスクを教えて`と入力し送信します。
+4. GitHub Copilot Chatにより、セキュリティリスクになりそうな箇所と修正案が提示されます。
+
+![security-detect.png](images/security-detect.png)
+
+## エディタ上で提案をもらう
+
+GitHub Copilot Chatは、Copilot Chat Viewを開かなくても利用が可能です。
+
+1. エディタ上で右クリック
+2. Copilotにカーソルをあわせる
+3. `Start in Editor` をクリック
+
+詳細はこちらをご確認ください [インラインチャット](../08_vscode-extention/01_github-copilot/03_inline-chat.md)
+
+![inlineChat2.gif](images/inlineChat2.gif)

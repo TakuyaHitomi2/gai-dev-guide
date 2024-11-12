@@ -2,16 +2,11 @@
 sidebar_position: 2
 ---
 
-# インストール&設定
+# インストール&設定 (所要時間5分〜10分)
 
-## 前提事項
+## 参画PJでの利用可否を判断する
 
-GitHub Copilot導入者向けにて以下実施済みであることを前提とします。
-
-- 参画PJでの利用可否を判断する
-  - 参画しているPJにてGitHub Copilotの利用可否をご判断ください
-- 社内申請する ※GitHub Copilot導入者向け
-  - 各社において必要な申請を行ってください
+参画しているPJにてGitHub Copilotの利用可否をご判断ください。
 
 ## GitHubアカウントを作成する
 
@@ -31,6 +26,10 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
             ![github設定3.png](images/github設定3.png)
 2. organizationに参加してCopilotを利用している場合、以下の`赤枠`が表示されていればOKです
     ![GitHubCopilotUse.png](images/GitHubCopilotUse.png)
+
+## 社内申請する
+
+各社において必要な申請を行ってください。
 
 ## Visual Studio Codeの設定方法
 

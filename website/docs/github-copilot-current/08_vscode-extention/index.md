@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 8
 ---
 
-# GitHub Copilot Chat
+# VS Code Extensionの利用
 
 import DocCardList from '@theme/DocCardList';
 

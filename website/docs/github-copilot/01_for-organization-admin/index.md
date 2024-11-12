@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# GitHub Copilot Chat
+# GitHub Copilot導入者向け
 
 import DocCardList from '@theme/DocCardList';
 
