@@ -4,12 +4,13 @@ sidebar_position: 1
 
 # CopilotとCopilot Chatの利用シーン
 
-GitHub Copilot、GitHub Copilot Chatの使い分けについて説明します。
-
 :::info
 本ページは以下からの抜粋です。詳細は以下を御覧ください。<br/>
 [GitHub Copilotの使用についてのベストプラクティス | GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot)
 :::
+<br/>
+
+GitHub Copilot、GitHub Copilot Chatの使い分けについて説明します。
 
 ## Copilotの使い所
 

@@ -8,27 +8,31 @@ sidebar_position: 3
 GitHub Copilotのアップデートで状況が変わる可能性もありますのでご注意ください。
 :::
 
-## インライン補完とチャットの違い
+Copilot Chat Viewではなく、エディタ上でチャットを実行することができます。  
+
+## 使い方
+
+Windows `ctrl + i` 、Mac `⌘ + i` でチャットを開始します。
+
+- エディタ上で右クリック後「Copilot」の項目が表示されます
+- 「Start in Editor」をクリックすると、インラインチャットが表示されます
+  ![inlinechat_1.png](images/inlinechat_1.png)
+  ![inlinechat_2.png](images/inlinechat_2.png)
+
+## インライン補完とチャットの使い分け
 
 インライン補完機能とチャット機能の違いとして以下のようなものが挙げられています。<br/>
-類似体験の違いからも分かるように、利用シーンが異なるものとなっています。
 
 import {SpeakerDeck} from '@site/src/components/Embedded';
 
 <!-- https://speakerdeck.com/yuhattor/ai-powered-development-with-github-copilot-20240202 -->
 <SpeakerDeck slideId="c183f4601ad7409da0d473f98f93a892"  page={17} />
+<br/>
+類似体験の違いからも分かるように、以下のように利用シーンが異なります。
 
-## インライン補完とチャットの使い分け
-
-### インライン補完機能
-
-- GitHub Copilotがナビゲーター役となり、ペアプログラミングをするような使い方
-
-### チャット機能
-
-- GitHub Copilotに相談・質問をする
-- GitHub Copilotにコードレビューをしてもらう
-- 細かい指示を行い、コードやドキュメントを生成してもらう
-
-参考： <br/>
-[AI-Powered Development with GitHub Copilot 20240202 - Speaker Deck](https://speakerdeck.com/yuhattor/ai-powered-development-with-github-copilot-20240202)
+- **インライン補完機能**
+  - GitHub Copilotがナビゲーター役となり、ペアプログラミングをする
+- **チャット機能**
+  - GitHub Copilotに相談・質問をする
+  - GitHub Copilotにコードレビューをしてもらう
+  - 細かい指示を行い、コードやドキュメントを生成してもらう

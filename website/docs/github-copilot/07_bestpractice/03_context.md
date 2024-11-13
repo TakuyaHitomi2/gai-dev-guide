@@ -12,18 +12,18 @@ sidebar_position: 3
 
 ## 変数名などに意味のある名前を付ける
 
-- (1) fooやbarという名前の関数がある場合、GitHub Copilotは名前から意図を推測不可ため、最適な補完も提供不可です。
+- fooやbarという名前の関数がある場合、GitHub Copilotは名前から意図を推測不可ため、最適な補完も提供不可です。
   同様に、関数名fetchData()は同僚（または数ヶ月後のあなた）にとってあまり意味をなさず、GitHub Copilotにとってもあまり意味がありません。
   良いコーディング習慣を実装することで、GitHub Copilotから最大の価値を取得できます。
-- (2) 関数名fetchData（意味のない名前）
-  1. エディタで、該当ファイルを開く
-  2. メソッド名がfetchDataを指定する
-  3. メソッド中に`Alt＋\`を実行し、提案を要求し、GitHub Copilotへ下記コードを自動補完する
+- 関数名fetchData（意味のない名前）
+  - エディタで、該当ファイルを開く
+  - メソッド名がfetchDataを指定する
+  - メソッド中に`Alt＋\`を実行し、提案を要求し、GitHub Copilotへ下記コードを自動補完する
     ![bad_function_name.png](images/bad_function_name.png)
-- (3) 関数名fetchDataEndwithtxt（意味のある名前）
-  1. エディタで、該当ファイルを開く
-  2. メソッド名がfetchDataEndwithtxtを指定する
-  3. メソッド中に`Alt＋\`を実行し、提案を要求し、GitHub Copilotへ下記コードを自動補完する
+- 関数名fetchDataEndwithtxt（意味のある名前）
+  - エディタで、該当ファイルを開く
+  - メソッド名がfetchDataEndwithtxtを指定する
+  - メソッド中に`Alt＋\`を実行し、提案を要求し、GitHub Copilotへ下記コードを自動補完する
     ![good_function_name.png](images/good_function_name.png)
 
 ## 効果的なコンテキストの指定
@@ -39,15 +39,11 @@ sidebar_position: 3
 
 - IDEでファイルを開いておくことで、GitHub Copilotにコンテキストを提供します。
 - Copilot Chatにて`#editor`を使用して追加のコンテキストを提供できます
-  1. VS Codeで、該当ファイルを開く
+  - VS Codeで、該当ファイルを開く
     ![add_context.png](images/add_context.png)
-  2. GitHub Copilotに以下を入力する
-
-      ```txt
-      #editor /removeTxt　ファイルの拡張子が.csv .txt .mdであれば、リストに該当レコードも削除するを更新してください。
-      ```
-  
-  3. 更新後コードが提案される
+  - GitHub Copilotに以下を入力する
+    - `#editor /removeTxt　ファイルの拡張子が.csv .txt .mdであれば、リストに該当レコードも削除するを更新してください。`
+  - 更新後コードが提案される
 - コンテキストスイッチングを行ったり、次のタスクに移るときには、不要なファイルを閉じることを忘れないでください
 :::
 
@@ -68,35 +64,35 @@ Copilotから有用な回答を得られない場合は、要求を別の言葉�
 
 ### 不要なリクエストの削除
 
-1. Copilot Chat Viewを開く
-2. アイコン`x`をクリックする
-    - 削除前：
-        ![delete_request_before.png](images/delete_request_before.png)
-    - 削除後：
-        ![delete_request_after.png](images/delete_request_after.png)
+- Copilot Chat Viewを開く
+- アイコン`x`をクリックする
+  - 削除前：
+    ![delete_request_before.png](images/delete_request_before.png)
+  - 削除後：
+    ![delete_request_after.png](images/delete_request_after.png)
 
 ### コミュニケーションをクリア
 
-1. Copilot Chat Viewを開く
-2. GitHub Copilotに以下を入力する
+- Copilot Chat Viewを開く
+- GitHub Copilotに以下を入力する
     ![clear_communication_setting.png](images/clear_communication_setting.png)
-3. 現在のコミュニケーションをクリアする
-    - 削除前：
-        ![clear_communication_before.png](images/clear_communication_before.png)
-    - 削除後：
-        ![clear_communication_before.png](images/clear_communication_before.png)
+- 現在のコミュニケーションをクリアする
+  - 削除前：
+    ![clear_communication_before.png](images/clear_communication_before.png)
+  - 削除後：
+    ![clear_communication_before.png](images/clear_communication_before.png)
 
 ## スレッドで会話を整理
 
 Copilot Chatの`＋`をクリックすることで新しい会話（スレッド）を開始できます。<br/>
 これにより、Copilot Chatと複数の異なるトピックを同時進行できます。
 
-1. Copilot Chat Viewを開く
-2. アイコン`＋`をクリックする
-    - 実行前：
-        ![add_thread_before.png](images/add_thread_before.png)
-    - 実行後：
-        ![add_thread_after.png](images/add_thread_after.png)
+- Copilot Chat Viewを開く
+- アイコン`＋`をクリックする
+  - 実行前：
+    ![add_thread_before.png](images/add_thread_before.png)
+  - 実行後：
+    ![add_thread_after.png](images/add_thread_after.png)
 
 ## 提案の選択
 

@@ -29,10 +29,10 @@ sidebar_position: 1
 
 Visual Studio Codeでは、ショートカットキーがデフォルトで設定されていないため、設定をする必要があります。
 
-1. ファイル ＞ ユーザ設定 ＞ キーボードショットカットの順で設定画面を開く
-2. 「GitHub Copilot: Enable/Disable Copilot completions」で検索をする
+- ファイル ＞ ユーザ設定 ＞ キーボードショットカットの順で設定画面を開く
+- 「GitHub Copilot: Enable/Disable Copilot completions」で検索をする
     ![Untitled](images/Untitled_3.png)
-3. 「＋」をクリックし、任意のショートカットキーを設定し、完了。
+- 「＋」をクリックし、任意のショートカットキーを設定し、完了。
     ![GitHubCopilotSettingVSCode.png](images/GitHubCopilotSettingVSCode.png)
 
 ※特定の言語でのGitHub Copilotの有効化・無効化の設定をしていると、言語の有効化・無効化が優先されるので、ショートカットだけでは有効化・無効化の切り替えができません。設定方法は[こちらをご参照](https://docs.github.com/ja/copilot/managing-copilot/configure-personal-settings/configuring-github-copilot-in-your-environment?tool=vscode#enabling-or-disabling-inline-suggestions)ください。

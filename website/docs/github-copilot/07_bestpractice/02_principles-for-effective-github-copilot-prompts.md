@@ -4,6 +4,12 @@ sidebar_position: 2
 
 # 効果的なGitHub Copilotプロンプトの原則
 
+:::info
+本ページは以下からの抜粋です。詳細は以下を御覧ください。<br/>
+[AI-Powered Development with GitHub Copilot 20240202 - Speaker Deck](https://speakerdeck.com/yuhattor/ai-powered-development-with-github-copilot-20240202)
+:::
+<br/>
+
 GitHub Copilotを効果的に扱うコツとして以下の4つが挙げられています。
 
 import {SpeakerDeck} from '@site/src/components/Embedded';
@@ -37,6 +43,3 @@ GitHub Copilotは指示が明瞭であればあるほど、意図した結果が
 
 - 具体的な出力例をプロンプトに含める
 - 出力・入力の型を記載する
-
-引用元：<br/>
-[AI-Powered Development with GitHub Copilot 20240202 - Speaker Deck](https://speakerdeck.com/yuhattor/ai-powered-development-with-github-copilot-20240202)

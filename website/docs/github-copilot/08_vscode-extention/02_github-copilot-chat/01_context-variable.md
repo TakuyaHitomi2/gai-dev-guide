@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# コンテキスト変数について
+# コンテキスト変数
 
 GitHub Copilot Chatにはコンテキスト変数という便利な機能があります。<br/>
 ここではその機能について紹介します。
@@ -22,6 +22,3 @@ import {SpeakerDeck} from '@site/src/components/Embedded';
 
 <!-- https://speakerdeck.com/yuhattor/ai-powered-development-with-github-copilot-20240202 -->
 <SpeakerDeck slideId="c183f4601ad7409da0d473f98f93a892"  page={23} />
-
-参考：<br/>
-[AI-Powered Development with GitHub Copilot 20240202 - Speaker Deck](https://speakerdeck.com/yuhattor/ai-powered-development-with-github-copilot-20240202)
