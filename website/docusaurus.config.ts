@@ -7,6 +7,18 @@ const project = 'gai-dev-guide';
 const urlWithBase = `https://${organization}.github.io/${project}/`;
 const ogpImageUrl = `${urlWithBase}img/OGP.png`;
 
+
+const copyright = `
+<div class="no-content">
+  <div class="copyright">
+    ドキュメントは、<a rel="license" href="https://fintan.jp/?page_id=201" target="_blank">Fintan コンテンツ 使用許諾条項<
+    /a>の下に提供されています。
+  </div>
+  <div class="supplementary">
+    <a href="/${project}/trademark/" class="footer__link-item">商標について</a>
+  </div>
+</div>`;
+
 const config: Config = {
   title: 'Fintan » Development Guide with Generative AI',
   tagline: '',
@@ -104,9 +116,10 @@ ChatGPTやGitHub Copilotなどの導入方法、基本的な操作、効果的�
           label: '開発プロセス',
         },
         {
-          href: urlWithBase,
-          label: 'GitHub',
+          href: `https://github.com/${organization}/${project}`,
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
       hideOnScroll: false,
@@ -115,9 +128,17 @@ ChatGPTやGitHub Copilotなどの導入方法、基本的な操作、効果的�
       style: 'light',
       links: [
         {
-          // TODO: コンテンツができたら置き換える
           title: 'Docs',
-          items: [],
+          items: [
+            {
+              label: 'GitHub Copilotガイド',
+              to: 'github-copilot',
+            },
+            {
+              label: '開発プロセス',
+              to: 'development-process',
+            },
+          ],
         },
         {
           title: 'Related Work',
@@ -129,19 +150,7 @@ ChatGPTやGitHub Copilotなどの導入方法、基本的な操作、効果的�
           ],
         },
       ],
-      copyright: `<div class="no-content">
-<div class="copyright">
-  ドキュメントは、<a rel="license" href="https://fintan.jp/?page_id=201" target="_blank">Fintan コンテンツ 使用許諾条項</a
-  >の下に提供されています。</div></div>`,
-
-/*
-TODO: コンテンツができたら置き換える
-<div class="supplementary">
-  <a href="/${project}/terms-of-use/" class="footer__link-item">当サイトのご利用にあたって</a>
-  <a href="/${project}/trademark/" class="footer__link-item">商標について</a>
-</div>
-</div>
-*/
+      copyright,
     },
     prism: {
       theme: prismThemes.github,
