@@ -61,7 +61,7 @@ sidebar_position: 10
 
   ```bash
   # gai-dev-guide/website直下で実行
-  npm run build:local
+  npm run build:usableWithoutServer
   ```
 
 - `website/build`ディレクトリ配下に静的HTMLが出力されるので直下の`index.html`のファイルパスをコピーして、ブラウザにてアクセスして表示されれば出力成功です
