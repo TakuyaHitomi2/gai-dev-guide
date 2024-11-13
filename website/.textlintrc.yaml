@@ -1,4 +1,6 @@
 filters:
+  comments:
+    true
   allowlist:
     allow:
       - GitHub Copilot
