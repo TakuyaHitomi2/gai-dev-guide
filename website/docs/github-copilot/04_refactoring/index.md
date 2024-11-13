@@ -55,13 +55,13 @@ GitHub Copilot Chatを使い、こちらのコードにJavadocを書いてもら
 
 </details>
 
-1. エディタで、該当のファイルを開く
-2. Copilot Chat Viewを開く
-3. `/doc 日本語でjavadocを書いてください`と入力し送信
-4. GitHub Copilot Chatにより、元のコードにJavadocを加えた結果が出力される
-5. ファイル（DateRangeValidator.java）の内容を全選択する
-6. Insert at Cursorボタンを押す
-7. ファイルの内容がJavadocを加えた新しいものに置き換わる
+- エディタで、該当のファイルを開く
+- Copilot Chat Viewを開く
+- `/doc 日本語でjavadocを書いてください`と入力し送信
+- GitHub Copilot Chatにより、元のコードにJavadocを加えた結果が出力される
+- ファイル（DateRangeValidator.java）の内容を全選択する
+- Insert at Cursorボタンを押す
+- ファイルの内容がJavadocを加えた新しいものに置き換わる
 
 ![Untitled](images/Untitled.png)
 
@@ -139,27 +139,27 @@ GitHub Copilot Chatを使い、こちらのコードにJavadocを書いてもら
 
 ## Javaクラスをリファクタリングする
 
-1. エディタで、該当のファイルを開く
-2. Copilot Chat Viewを開く
-3. `/fix リファクタリングしてください`と入力し送信
-4. GitHub Copilot Chatにより、リファクタリング内容とリファクタリング後のクラスが提案されます
-5. ファイルの内容を全選択する
-6. Insert at Cursorボタンを押す
-7. ファイルの内容がリファクタリングされた新しいものに置き換わる
+- エディタで、該当のファイルを開く
+- Copilot Chat Viewを開く
+- `/fix リファクタリングしてください`と入力し送信
+- GitHub Copilot Chatにより、リファクタリング内容とリファクタリング後のクラスが提案されます
+- ファイルの内容を全選択する
+- Insert at Cursorボタンを押す
+- ファイルの内容がリファクタリングされた新しいものに置き換わる
 
 ![スクリーンショット 2023-12-04 16.51.44.png](images/スクリーンショット_2023-12-04_16.51.44.png)
 
 ## Javaクラスをレビューする
 
-1. エディタで、該当ファイルを開く
-2. Copilot Chat Viewを開く
-3. GitHub Copilotに以下を入力する
+- エディタで、該当ファイルを開く
+- Copilot Chat Viewを開く
+- GitHub Copilotに以下を入力する
 
         ```txt
         開発基準のMarkdownファイルを開発基準に、対象ファイルをレビューし、問題があれば、改修案を提示してください
         ```
 
-4. 改修原因と改修内容が提案される
+- 改修原因と改修内容が提案される
 
 ![suggestion_1.png](images/suggestion_1.png)
 ![suggestion_2.png](images/suggestion_2.png)

@@ -89,7 +89,7 @@ GitHub Copilot for Businessでは、この設定を強制することができ�
 - GitHub Enterprise: 年間契約で1人あたり年間231ドル、1ドル=150円の場合に34,650円/年*1
 - GitHub Copilot for Business: 1人あたり年間約228ドル。1ドル=150円の場合に34,200円/年
 
-:::note
+:::info
 *1 `GitHub Enterprise`の契約は各社契約ごとに変動ありますので、あくまで参考情報として参照してください。
 :::
 

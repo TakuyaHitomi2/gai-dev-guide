@@ -9,11 +9,11 @@ sidebar_position: 2
 GitHub Copilot導入者向けにて以下実施済みであることを前提とします。
 
 - 参画PJでの利用可否を判断する
-  - 参画しているPJにてGitHub Copilotの利用可否をご判断ください
-- 社内申請する ※GitHub Copilot導入者向け
-  - 各社において必要な申請を行ってください
+  - → 参画しているPJにてGitHub Copilotの利用可否をご判断ください
+- 社内申請する
+  - → 各社において必要な申請を行ってください
 
-## GitHubアカウントを作成する
+## GitHubアカウントの作成
 
 GitHubアカウントをお持ちでない方は、[GitHubのトップページ](https://github.com/)を開き、右上にある「Sign up」からアカウントを作成してください。
 
@@ -24,11 +24,15 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
 ## GitHub Copilotがアカウントに紐づいていることの確認
 
 1. GitHubアカウントの [Copilotの設定ページ](https://github.com/settings/copilot)を開いてください。
-    - 画面右上のプロファイル画像をクリック ⇒ Copilotを選択することで開くこともできます
-        - 画面右上のプロファイル画像（赤枠箇所）をクリック
-            ![github設定2.png](images/github設定2.png)
-        - Copilotを選択（赤枠箇所）
-            ![github設定3.png](images/github設定3.png)
+    <details>
+    <summary>画面右上のプロファイル画像をクリック ⇒ Copilotを選択することで開くこともできます</summary>
+
+     - 画面右上のプロファイル画像（赤枠箇所）をクリック
+          ![github設定2.png](images/github設定2.png)
+     - Copilotを選択（赤枠箇所）
+          ![github設定3.png](images/github設定3.png)
+
+      </details>
 2. organizationに参加してCopilotを利用している場合、以下の`赤枠`が表示されていればOKです
     ![GitHubCopilotUse.png](images/GitHubCopilotUse.png)
 
@@ -38,6 +42,10 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
 
 1. [Visual Studio Code](https://code.visualstudio.com/Download)をインストールします。
 2. 必要な方は、プロキシ設定をします
+
+    <details>
+    <summary>Visual Studio Code のプロキシ設定方法</summary>
+
     1. Visual Studio Codeを起動してください
     2. `Ctrl`+ `,`もしくは `File`⇒ `Preferences` ⇒ `Settings`から設定を開いてください
         ![Untitled.png](images/Untitled.png)
@@ -45,6 +53,8 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
         ![vscode setting 1.png](images/vscode_setting_1.png)
     4. `Http: Proxy`の項目にプロキシの情報を入力してください
         ![vscode setting.png](images/vscode_setting.png)
+
+    </details>
 
 ### 拡張機能GitHub Copilotのインストール
 
@@ -88,7 +98,7 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
   - 検索欄へ`github.copilot.chat.localeOverride`と入力して、表示された項目を`ja`に設定します
     ![japanese_1.png](images/japanese_1.png)  
     ※ この設定を行うにはVS Codeのバージョンが1.8.4以降である必要があります  
-    [https://code.visualstudio.com/updates/v1_84#_chat-using-configured-display-language](https://code.visualstudio.com/updates/v1_84#_chat-using-configured-display-language)
+    参考：[VSCode更新情報 2023年10月](https://code.visualstudio.com/updates/v1_84#_chat-using-configured-display-language)
 
 ## 参考
 

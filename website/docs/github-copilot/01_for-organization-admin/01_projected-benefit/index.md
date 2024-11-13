@@ -36,7 +36,7 @@ sidebar_position: 1
 
 [調査：GitHub Copilotがコード品質に与える影響を数値化](https://github.blog/jp/2023-10-20-research-quantifying-github-copilots-impact-on-code-quality/)
 
-## 事例まとめ
+## 導入による改善の事例
 
 - [GitHub Copilotの全社導入とその効果 - ZOZO TECH BLOG](https://techblog.zozo.com/entry/introducing_github_copilot)
 - [GitHub Copilotの本当の効果とは何か - カカクコムTechBlog](https://kakaku-techblog.com/entry/copilot-kakaku-dev)
