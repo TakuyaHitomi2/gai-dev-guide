@@ -129,11 +129,16 @@ html[data-theme="dark"] .header-github-link::before {
  *****************************************************************************/
 .markdown img {
   display: block;
-  margin: auto;
   width: auto;
   height: auto;
   max-width: 100%;
   max-height: 50em;
+  /*
+  デフォルトだと上段行-画像-下行の隙間が詰まって見えるため余白をもたせる 
+  上行に関連する画像が多いので、上余白は下余白よりも小さく設定
+  */
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 /******************************************************************************
@@ -148,13 +153,4 @@ html[data-theme="dark"] .header-github-link::before {
   border-radius: 0.5rem;
   margin-top: 0 !important;
   padding: 1.5rem 1rem 0.5rem;
-}
-
-/* 
-デフォルトだと上段行-画像-下行の隙間が詰まって見えるため余白をもたせる 
-上行に関連する画像が多いので、上余白は下余白よりも小さく設定
-*/
-.img_node_modules-\@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module {
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
 }
