@@ -19,3 +19,8 @@ sidebar_position: 0
 
 **すばやく開発環境構築を実施し、効率的な使いこなしができるようになります✨**<br/>
 ➡️[**インストール&設定**](./github-copilot/installation-and-settings)以降をお読みください。
+
+### 🎯GitHub Copilotの利用方法を決定する方（技術責任者の方）
+
+**本ガイドをプロジェクト個別にカスタマイズして、オフラインでも参照可能なHTMLファイルとして配布できます✨**<br/>
+➡️[**ガイドのカスタマイズ・配布**](./github-copilot/customize-and-distribution)をお読みください。

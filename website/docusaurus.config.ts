@@ -7,6 +7,8 @@ const project = 'gai-dev-guide';
 const urlWithBase = `https://${organization}.github.io/${project}/`;
 const ogpImageUrl = `${urlWithBase}img/OGP.png`;
 
+const baseUrl = process.env.BUILD_USABLE_WITHOUT_SERVER === 'true' ? '' : `/${project}/`;
+const experimental_router = process.env.BUILD_USABLE_WITHOUT_SERVER === 'true' ? 'hash' : 'browser';
 
 const copyright = `
 <div class="no-content">
@@ -22,7 +24,7 @@ const config: Config = {
   title: 'Fintan » Development Guide with Generative AI',
   tagline: '',
   url: `https://${organization}.github.io`,
-  baseUrl: `/${project}/`,
+  baseUrl,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -157,6 +159,9 @@ ChatGPTやGitHub Copilotなどの導入方法、基本的な操作、効果的�
       additionalLanguages: ['java'],
     },
   } satisfies Preset.ThemeConfig,
+  future: {
+    experimental_router,
+  },
 };
 
 export default config;
