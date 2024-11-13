@@ -11,8 +11,7 @@ const ogpImageUrl = `${urlWithBase}img/OGP.png`;
 const copyright = `
 <div class="no-content">
   <div class="copyright">
-    ドキュメントは、<a rel="license" href="https://fintan.jp/?page_id=201" target="_blank">Fintan コンテンツ 使用許諾条項<
-    /a>の下に提供されています。
+    ドキュメントは、<a rel="license" href="https://fintan.jp/?page_id=201" target="_blank">Fintan コンテンツ 使用許諾条項</a>の下に提供されています。
   </div>
   <div class="supplementary">
     <a href="/${project}/trademark/" class="footer__link-item">商標について</a>

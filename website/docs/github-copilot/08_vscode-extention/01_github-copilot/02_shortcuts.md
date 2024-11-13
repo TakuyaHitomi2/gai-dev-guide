@@ -16,7 +16,7 @@ GitHub Copilotの基本操作を学びます。
 | 前のインライン候補を表示する | 複数の候補を提案された場合、前の候補を表示する。 | Windows: `Alt + [` <br/> Mac: `Option + [` |
 | インライン候補をトリガーする | 現在カーソルがある位置で提案させる。 | Windows: `Alt + \` <br/> Mac: `Option + \` |
 | GitHub Copilot を開く（VS Codeにて） | 提案候補一覧を表示する。 | Windows: `Ctrl + Enter` <br/> Mac: `Ctrl + Return` |
-| GitHub Copilot のオン/オフを切り替える（VS Codeにて） |  | ※[**GitHub Copilotを有効化・無効化する**](./01_truning-on-off.md)を参照 |
+| GitHub Copilot のオン/オフを切り替える（VS Codeにて） |  | ※[**GitHub Copilotを有効化・無効化する**](./01_turning-on-off.md)を参照 |
 
 参考：[環境での GitHub Copilot の構成 - GitHub Docs](https://docs.github.com/ja/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment?tool=vscode)
 
