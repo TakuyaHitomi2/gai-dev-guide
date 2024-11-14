@@ -55,6 +55,13 @@ sidebar_position: 10
   npm start
   ```
 
+:::warning
+
+オフライン環境に配布する場合、ガイドに記載された外部リンクにはアクセスできません。<br/>
+必要に応じて、外部リンク先の情報をガイドに追記してください。
+
+:::
+
 ### ガイドを静的HTMLに出力する
 
 - ビルドを実行します。この時のnpm scriptは`build`ではなく`build:usableWithoutServer`を実行します
