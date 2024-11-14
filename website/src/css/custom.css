@@ -154,3 +154,14 @@ html[data-theme="dark"] .header-github-link::before {
   margin-top: 0 !important;
   padding: 1.5rem 1rem 0.5rem;
 }
+
+/******************************************************************************
+ * Link（本文中の外部リンク）
+ *****************************************************************************/
+/* ヘッダー・フッターに影響しないようにmainを指定してコンテンツ部分に限定*/
+main a[href^="http"]:not(:where( /* httpとhttps両方含む */
+ [href^="#"], /* ハッシュリンクを除外 */
+ [href^="/"]:not([href^="//"]), /* 絶対パスを除外 */
+)):after {
+ content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
+}
