@@ -104,13 +104,6 @@ ChatGPTやGitHub Copilotなどの導入方法、基本的な操作、効果的�
           position: 'left',
           label: 'GitHub Copilot ガイド',
         },
-        // TODO: レビュー後削除
-        {
-          type: 'docSidebar',
-          sidebarId: 'githubCopilotCurrentSidebar',
-          position: 'left',
-          label: 'GitHub Copilot ガイド（現状）',
-        },
         {
           type: 'docSidebar',
           sidebarId: 'developmentProcessSidebar',
