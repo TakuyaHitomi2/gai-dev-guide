@@ -17,24 +17,17 @@ sidebar_position: 1
 
 ## GitHubによる調査結果
 
-### GitHub Copilot利用による生産性・満足度の向上
+GitHubによる調査においても以下のような導入効果が紹介されています。
 
-> 実験では、両グループのタスク成功率の平均、および両グループが完了するまでに要した時間の平均を測定しました。
->
->
-> - GitHub Copilotを使用したグループのほうが、タスクの完了率が高かった(GitHub Copilotを使用しないグループの70%に対して、78%)。
-> - 顕著な違いは、GitHub Copilotを使用した開発者は、GitHub Copilotを使用しなかった開発者よりも55%速くタスクを完了したことです。具体的には、GitHub Copilotを使用した開発者はタスク完了に平均1時間11分を必要としました。一方のGitHub Copilotを使用しなかった開発者は平均2時間41分を要しました。これらの結果は統計的に有意(P=.0017)であり、速度増加率の95%信頼区間は[21%, 89%]です。
->
+**[GitHub Copilotが開発者の生産性と満足度に与える影響を数値化](https://github.blog/jp/2022-09-15-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)**
 
-[調査：GitHub Copilotが開発者の生産性と満足度に与える影響を数値化 - GitHubブログ](https://github.blog/jp/2022-09-15-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
+- GitHub Copilotを使用したグループのほうが、**タスクの完了率が高かった（未使用の場合70%だが使用場合は78%）**
+- 顕著な違いは、GitHub Copilotを使用した開発者は、GitHub Copilotを使用しなかった開発者よりも**55%速くタスクを完了した**ことです
 
-### GitHub Copilotの提案の採用率
-
-> On average, within the first year in the market, users accept nearly 30% of code suggestions from GitHub Copilot
-平均して、GitHub Copilotから提案されたコードの30%近くを、受け入れることができます。
->
-
-[調査：GitHub Copilotがコード品質に与える影響を数値化 - GitHubブログ](https://github.blog/jp/2023-10-20-research-quantifying-github-copilots-impact-on-code-quality/)
+**[GitHub Copilotがコード品質に与える影響を数値化](https://github.blog/jp/2023-10-20-research-quantifying-github-copilots-impact-on-code-quality/)**
+- **開発者の85%は**、GitHub CopilotとGitHub Copilot Chatを使ってコードを作成すると、**コードの品質に自信を持てた**と感じています
+- GitHub Copilot Chatを使うことで、**コードレビューをすぐに始められる**ようになり、**完了までの時間が15%短く**なりました（**初めて使ったユーザも同様です！**）
+- **開発者の88%は**、GitHub Copilot Chatを使うことで**集中力が増し、イライラが減り、コーディングがさらに楽しくなったため、フロー状態が維持された**と報告しています
 
 ## 導入による改善の事例
 
