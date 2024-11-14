@@ -6,4 +6,4 @@ sidebar_position: 9
 
 以下を参照してください。
 
-[GitHub Copilot のトラブルシューティング | GitHub Docs](https://docs.github.com/ja/copilot/troubleshooting-github-copilot)
+[GitHub Copilot のトラブルシューティング - GitHub Docs](https://docs.github.com/ja/copilot/troubleshooting-github-copilot)

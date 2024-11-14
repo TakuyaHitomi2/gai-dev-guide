@@ -26,7 +26,7 @@ sidebar_position: 1
 > 顕著な違いは、GitHub Copilotを使用した開発者は、GitHub Copilotを使用しなかった開発者よりも55%速くタスクを完了したことです。具体的には、GitHub Copilotを使用した開発者はタスク完了に平均1時間11分を必要としました。一方のGitHub Copilotを使用しなかった開発者は平均2時間41分を要しました。これらの結果は統計的に有意(P=.0017)であり、速度増加率の95%信頼区間は[21%, 89%]です。
 >
 
-[調査：GitHub Copilotが開発者の生産性と満足度に与える影響を数値化](https://github.blog/jp/2022-09-15-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
+[調査：GitHub Copilotが開発者の生産性と満足度に与える影響を数値化 - GitHubブログ](https://github.blog/jp/2022-09-15-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
 
 ### Copilotの提案の採用率
 
@@ -34,7 +34,7 @@ sidebar_position: 1
 平均して、GitHub Copilotから提案されたコードの30%近くを、受け入れることができます。
 >
 
-[調査：GitHub Copilotがコード品質に与える影響を数値化](https://github.blog/jp/2023-10-20-research-quantifying-github-copilots-impact-on-code-quality/)
+[調査：GitHub Copilotがコード品質に与える影響を数値化 - GitHubブログ](https://github.blog/jp/2023-10-20-research-quantifying-github-copilots-impact-on-code-quality/)
 
 ## 導入による改善の事例
 
@@ -42,6 +42,6 @@ sidebar_position: 1
 - [GitHub Copilotの本当の効果とは何か - カカクコムTechBlog](https://kakaku-techblog.com/entry/copilot-kakaku-dev)
 - [Sansan における GitHub Copilot の利用状況について - Sansan Tech Blog](https://buildersbox.corp-sansan.com/entry/2023/09/01/110000)
 - [GitHub Copilotの導入によってペパボの開発生産性はどう変化したか - Pepabo Tech Portal](https://tech.pepabo.com/2023/08/30/github-copilot-effects/)
-- [How GitHub Copilot Transforms Development Productivity](https://speakerdeck.com/kurotaky/how-github-copilot-transforms-development-productivity)
-- [GitHub Copilot が KAG 社エンジニアの開発効率に与えた影響](https://developers.kddi.com/blog/JeaNGpkzrgQ83xN8jywwQ)
+- [How GitHub Copilot Transforms Development Productivity- SpeakerDeck](https://speakerdeck.com/kurotaky/how-github-copilot-transforms-development-productivity)
+- [GitHub Copilot が KAG 社エンジニアの開発効率に与えた影響 - KDDI Engineer Portal](https://developers.kddi.com/blog/JeaNGpkzrgQ83xN8jywwQ)
 - [GitHub Copilotの導入がニフティの開発生産性に与えた影響 - NIFTY engineering](https://engineering.nifty.co.jp/blog/21632)

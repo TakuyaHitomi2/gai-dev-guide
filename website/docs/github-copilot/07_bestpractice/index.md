@@ -6,7 +6,7 @@ sidebar_position: 7
 
 :::info
 本ページは以下からの抜粋です。詳細は以下を御覧ください。<br/>
-[GitHub Copilotの使用についてのベストプラクティス | GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot)
+[GitHub Copilotの使用についてのベストプラクティス - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot)
 :::
 
 import DocCardList from '@theme/DocCardList';

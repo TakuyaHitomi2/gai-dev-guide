@@ -6,7 +6,7 @@ sidebar_position: 4
 
 GitHub Copilotにサポートしてもらいながら、リファクタリングやドキュメント生成する方法を学びます。<br/>
 以下リンクにて豊富はTipsが公開されているので、こちらも参考にしてください。<br/>
-[GitHub Copilot を使用したコードのリファクタリング | GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/example-use-cases/refactoring-code-with-github-copilot)
+[GitHub Copilot を使用したコードのリファクタリング - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/example-use-cases/refactoring-code-with-github-copilot)
 
 ## JavaクラスのJavadocを生成する
 
