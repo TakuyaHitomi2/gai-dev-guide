@@ -18,3 +18,5 @@ rules:
     patterns: /(?<!GitHub )Copilot/
   - expected: プロジェクト
     pattern: /\bPJ\b/
+  - expected: Nablarch
+    pattern: nablarch
