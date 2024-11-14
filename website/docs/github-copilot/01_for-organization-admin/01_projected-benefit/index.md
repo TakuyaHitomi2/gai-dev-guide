@@ -22,8 +22,8 @@ sidebar_position: 1
 > 実験では、両グループのタスク成功率の平均、および両グループが完了するまでに要した時間の平均を測定しました。
 >
 >
-> GitHub Copilotを使用したグループのほうが、タスクの完了率が高かった(GitHub Copilotを使用しないグループの70%に対して、78%)。
-> 顕著な違いは、GitHub Copilotを使用した開発者は、GitHub Copilotを使用しなかった開発者よりも55%速くタスクを完了したことです。具体的には、GitHub Copilotを使用した開発者はタスク完了に平均1時間11分を必要としました。一方のGitHub Copilotを使用しなかった開発者は平均2時間41分を要しました。これらの結果は統計的に有意(P=.0017)であり、速度増加率の95%信頼区間は[21%, 89%]です。
+> - GitHub Copilotを使用したグループのほうが、タスクの完了率が高かった(GitHub Copilotを使用しないグループの70%に対して、78%)。
+> - 顕著な違いは、GitHub Copilotを使用した開発者は、GitHub Copilotを使用しなかった開発者よりも55%速くタスクを完了したことです。具体的には、GitHub Copilotを使用した開発者はタスク完了に平均1時間11分を必要としました。一方のGitHub Copilotを使用しなかった開発者は平均2時間41分を要しました。これらの結果は統計的に有意(P=.0017)であり、速度増加率の95%信頼区間は[21%, 89%]です。
 >
 
 [調査：GitHub Copilotが開発者の生産性と満足度に与える影響を数値化 - GitHubブログ](https://github.blog/jp/2022-09-15-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
