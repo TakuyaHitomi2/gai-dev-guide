@@ -16,3 +16,5 @@ rules:
     patterns: クエリー
   - expected: GitHub Copilot
     patterns: /(?<!GitHub )Copilot/
+  - expected: プロジェクト
+    pattern: /\bPJ\b/
