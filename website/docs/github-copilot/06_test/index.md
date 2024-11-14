@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # テストコードを書く
 
-GitHub Copilotにサポートしてもらいながらテストコードを効率良く書くことができます。
+GitHub Copilotにサポートしてもらいながら、テストコードを効率良く記述できます。
 
 :::info
 [ユニットテストの作成 | GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/v/ja/testing/creating-unit-tests)
@@ -12,11 +12,11 @@ GitHub Copilotにサポートしてもらいながらテストコードを効率
 
 ## 関数からテストコードを生成する
 
-- 実装ファイルを開く
-- テストを記述するファイルを別タブで開く  
+1. 実装ファイルを開く
+2. テストを記述するファイルを別タブで開く  
    ※GitHub Copilotが関数をコンテキストとして扱えるように、関数が記載されているファイルを別タブで開いておく必要があります
-- テストを途中まで書く
-- テストの内容が提案されます
+3. テストを途中まで書く
+4. テストの内容が提案されます
 
 ### 例１（提案時 → 提案受け入れ後）
 

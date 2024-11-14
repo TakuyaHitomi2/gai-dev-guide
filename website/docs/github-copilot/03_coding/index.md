@@ -6,16 +6,16 @@ sidebar_position: 3
 ## コードから補完する
 
 GitHub Copilotの最も利用頻度の高い使い方です。<br/>
-今書いているコードに対してリアルタイムに次書くべきコードを提案をもらいます。<br/>
-GitHub Copilotを有効化した状態でいつも通りコードを書くだけでも恩恵を受けることができます。<br/>
+記述中のコードに対し、次に記述されるべきであろうコードをリアルタイムに提案できます。<br/>
+GitHub Copilotを有効化した状態でいつも通りコードを書くだけで、その恩恵を受けることができます。<br/>
 
-例として、関数の実装内容をGitHub Copilotに補完してもらう方法を記します。
+例として、関数の実装内容をGitHub Copilotに補完させる方法を示します。
 
-1. まず関数、クラスの定義や処理を記述します。
-2. その後下記のような動作を行うとGitHub Copilotが補完候補を提案してくれるので、補完候補を確認しTABキーでコードに反映させます。
-- 候補を提案してほしい場所にカーソルを合わせます
-- 改行します
-- 提案を要求します（Windowsの場合は`Alt + \`、Macの場合は`Option + \`）
+1. 最初に、関数、クラスの定義や処理を記述します。
+2. その後、下記のような動作を行うとGitHub Copilotが補完候補を提案してくれるので、補完候補を確認し、TABキーで反映させます。
+    1. 候補を提案してほしい場所にカーソルを合わせます
+    2. 改行します
+    3. 提案を要求します（Windowsの場合は`Alt + \`、Macの場合は`Option + \`）
 
 候補表示時`Alt + ]`、`Alt +[` で他の補完候補を確認できます。(Macの場合は`Option + ]`、`Option + [`)
 
@@ -28,13 +28,13 @@ GitHub Copilotを有効化した状態でいつも通りコードを書くだけ
 1. まず関数、クラスの定義や処理をコメントで記述します
     ![code-completion_1.png](images/code-completion_1.png)
 2. その後下記のような動作を行うとGitHub Copilotが補完候補を提案してくれるので、補完候補を確認しTABキーでコードに反映させます
-    - 候補を提案してほしい場所にカーソルを合わせます
-    - 改行します
-    - 提案を要求します（Windowsの場合は`Alt + \`、Macの場合は`Option + \`）
+    1. 候補を提案してほしい場所にカーソルを合わせます
+    2. 改行します
+    3. 提案を要求します（Windowsの場合は`Alt + \`、Macの場合は`Option + \`）
       ![code-completion_2.png](images/code-completion_2.png)
-    - 候補表示時`Alt + ]`、`Alt +[` にて他の補完候補を確認できます（Macの場合は`Option + ]`、`Option + [`）
+    4. 候補表示時`Alt + ]`、`Alt +[` にて他の補完候補を確認できます（Macの場合は`Option + ]`、`Option + [`）
       ![code-completion_3.png](images/code-completion_3.png)
-    - 候補コードを確認してTABキーでコードに反映させる
+    5. 候補コードを確認してTABキーでコードに反映させます
       ※簡単なエラーがあれば、エラー場所に右クリック → Quick Fixで解消できる<br/>
       **修正前：**<br/>
       ![code-completion_4.png](images/code-completion_4.png)<br/>
@@ -48,7 +48,7 @@ GitHub Copilot Chatで`/fix`を使うことで、修正提案をもらうこと�
 1. エディタで、該当のファイルを開きます。
 2. Copilot Chat Viewを開きます。
 3. `/fix このコードの潜在的なリスクを教えて`と入力し送信します。
-4. GitHub Copilot Chatにより、セキュリティリスクになりそうな箇所と修正案が提示されます。
+4. GitHub Copilot Chatにより、リスクになりそうな箇所と修正案が提示されます。
 
 ![security-detect.png](images/security-detect.png)
 

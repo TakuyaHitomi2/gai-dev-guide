@@ -58,7 +58,7 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
 
 ### 拡張機能GitHub Copilotのインストール
 
-- [Visual Studio CodeのマーケットでGitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) を開きInstallボタンを押下してください
+- [Extensions for Visual Studio Code](https://marketplace.visualstudio.com/)で[GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)を開きInstallボタンを押下してください
 - Visual Studio Codeが開き、拡張機能の画面が開きます
 - Visual Studio Code上でInstallボタンを押下してください
     ![vscode1_透過なし.gif](images/vscode1_透過なし.gif)
