@@ -19,27 +19,27 @@ GitHub Copilotを有効化した状態でいつも通りコードを書くだけ
 
 候補表示時`Alt + ]`、`Alt +[` で他の補完候補を確認できます。(Macの場合は`Option + ]`、`Option + [`)
 
-![copilot .gif](images/copilot_.gif)<br/>
+![コード補完手順（gifアニメ）](images/code-completion.gif)<br/>
 
 参考：[GitHub Copilot の概要 - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/getting-started-with-github-copilot#seeing-your-first-suggestion)
 
 ## コメントから補完する
 
 1. まず関数、クラスの定義や処理をコメントで記述します
-    ![code-completion_1.png](images/code-completion_1.png)
+    ![コード補完元のコメント](images/code-completion_1.png)
 2. その後下記のような動作を行うとGitHub Copilotが補完候補を提案してくれるので、補完候補を確認しTABキーでコードに反映させます
     1. 候補を提案してほしい場所にカーソルを合わせます
     2. 改行します
     3. 提案を要求します（Windowsの場合は`Alt + \`、Macの場合は`Option + \`）
-      ![code-completion_2.png](images/code-completion_2.png)
+      ![コード補完：提案の要求](images/code-completion_2.png)
     4. 候補表示時`Alt + ]`、`Alt +[` にて他の補完候補を確認できます（Macの場合は`Option + ]`、`Option + [`）
-      ![code-completion_3.png](images/code-completion_3.png)
+      ![コード補完：他提案の確認](images/code-completion_3.png)
     5. 候補コードを確認してTABキーでコードに反映させます
       ※簡単なエラーがあれば、エラー場所に右クリック → Quick Fixで解消できる<br/>
       **修正前：**<br/>
-      ![code-completion_4.png](images/code-completion_4.png)<br/>
+      ![コード補完：提案受け入れ前](images/code-completion_4.png)<br/>
       **修正後：**<br/>
-      ![code-completion_5.png](images/code-completion_5.png)
+      ![コード補完：提案受け入れ後](images/code-completion_5.png)
 
 ## エラーや問題点のある箇所の修正提案をもらう
 
@@ -50,7 +50,7 @@ GitHub Copilot Chatで`/fix`を使うことで、修正提案をもらうこと�
 3. `/fix このコードの潜在的なリスクを教えて`と入力し送信します。
 4. GitHub Copilot Chatにより、リスクになりそうな箇所と修正案が提示されます。
 
-![security-detect.png](images/security-detect.png)
+![GitHub Copilot Chatで潜在的なリスクを教えてもらう手順](images/security-detect_1.png)
 
 ## エディタ上で提案をもらう
 
@@ -62,7 +62,7 @@ GitHub Copilot Chatは、GitHub Copilot Chat Viewを開かなくても利用が�
 
 詳細はこちらをご確認ください [インラインチャット](../08_vscode-extention/01_github-copilot/03_inline-chat.md)
 
-![inlineChat2.gif](images/inlineChat2.gif)
+![インラインチャットで提案をもらう手順（gifアニメ）](images/inline-chat.gif)
 
 ## セキュリティリスクを検知してもらう
 
@@ -169,4 +169,4 @@ public class AuthenticationAction {
 3. `/explain このコードの潜在的なリスクを教えて`と入力し送信します。
 4. GitHub Copilot Chatにより、セキュリティリスクになりそうな箇所が提示されます。
 
-![security.png](images/security.png)
+![セキュリティリスク検知手順（gifアニメ）](images/security-detect_2.png)

@@ -17,9 +17,9 @@ sidebar_position: 5
 ```
 
 - クラス図が提案される  
-    ![graph_1.png](images/graph_1.png)
+    ![クラス図](images/class-diagram.png)
 - Mermaidで表現するクラス図  
-    ![graph_2.png](images/graph_2.png)
+    ![クラス図（Mermaid形式）](images/class-diagram-mermaid-style.png)
 
 ## フロー図を作成する
 
@@ -32,9 +32,9 @@ sidebar_position: 5
 ```
 
 - フロー図が提案される  
-    ![graph_3.png](images/graph_3.png)<br/>
+    ![graph_3.png](images/flow-diagram_1.png)<br/>
     ※中は省略<br/>
-    ![graph_4.png](images/graph_4.png)
+    ![graph_4.png](images/flow-diagram_2.png)
 
 - Mermaidで表現するフロー図  
-    ![graph_5.png](images/graph_5.png)
+    ![graph_5.png](images/flow-diagram-mermaid-style.png)

@@ -23,18 +23,20 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
 
 ## GitHub Copilotがアカウントに紐づいていることの確認
 
-1. GitHubアカウントの [Copilotの設定ページ](https://github.com/settings/copilot)を開いてください。
+1. GitHubアカウントの [GitHub Copilotの設定ページ](https://github.com/settings/copilot)を開いてください。
     <details>
     <summary>画面右上のプロファイル画像をクリック ⇒ Copilotを選択することで開くこともできます</summary>
 
-     - 画面右上のプロファイル画像（赤枠箇所）をクリック
-          ![github設定2.png](images/github設定2.png)
-     - GitHub Copilotを選択（赤枠箇所）
-          ![github設定3.png](images/github設定3.png)
+    <!-- textlint-disable prh -->
+    - 画面右上のプロファイル画像（赤枠箇所）をクリック
+      ![GitHubアカウント設定を開く](images/github-account-setting_1.png)
+    - Copilotを選択（赤枠箇所）
+      ![GitHub Copilotの設定を開く](images/github-account-setting_2.png)
+    <!-- textlint-enable prh -->
 
       </details>
 2. organizationに参加してGitHub Copilotを利用している場合、以下の`赤枠`が表示されていればOKです
-    ![GitHubCopilotUse.png](images/GitHubCopilotUse.png)
+    ![GitHub Copilotの設定画面](images/github-account-setting_3.png)
 
 ## Visual Studio Codeの設定方法
 
@@ -48,11 +50,11 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
 
     1. Visual Studio Codeを起動してください
     2. `Ctrl`+ `,`もしくは `File`⇒ `Preferences` ⇒ `Settings`から設定を開いてください
-        ![Untitled.png](images/Untitled.png)
+        ![VS Codeの設定を開く](images/vscode-proxy-setting_1.png)
     3. 設定画面の `Search settings`欄に `proxy`と入力してください
-        ![vscode setting 1.png](images/vscode_setting_1.png)
+        ![VS Codeのプロキシ設定を開く](images/vscode-proxy-setting_2.png)
     4. `Http: Proxy`の項目にプロキシの情報を入力してください
-        ![vscode setting.png](images/vscode_setting.png)
+        ![VS Codeのプロキシ設定入力欄](images/vscode-proxy-setting_3.png)
 
     </details>
 
@@ -61,11 +63,11 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
 - [Extensions for Visual Studio Code](https://marketplace.visualstudio.com/)で[GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)を開きInstallボタンを押下してください
 - Visual Studio Codeが開き、拡張機能の画面が開きます
 - Visual Studio Code上でInstallボタンを押下してください
-    ![vscode1_透過なし.gif](images/vscode1_透過なし.gif)
+    ![VS Code拡張機能GitHub Copilotのインストール手順（gifアニメ）](images/vscode-github-copilot-install_1.gif)
 - Visual Studio Code上でGitHubアカウントにログインします
   - Visual Studio Code左下のユーザアイコン ⇒「Sign in with GitHub to use GitHub Copilot」を押下してください
   - ブラウザが起動するので、認証を許可してください
-    ![vscode2_透過なし.gif](images/vscode2_透過なし.gif)
+    ![VS CodeでGitHubにログインする手順（gifアニメ）](images/vscode-github-copilot-install_2.gif)
 - GitHub Copilotが利用できることを確認します
   - 新規JavaScriptファイルを作成してください。以下のコードを貼り付け、**エンターキーを押して**ください。候補が表示されれば確認完了です
 
@@ -73,7 +75,7 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
     function calculateDaysBetweenDates(begin, end) {
     ```
 
-    ![vscode3_透過なし大.gif](images/vscode3_透過なし大.gif)
+    ![VS Code拡張機能GitHub Copilotがインストールできたかの検証手順（gifアニメ）](images/vscode-github-copilot-install_3.gif)
 
     :::info
     💡 うまく候補が表示されない場合は、以下を試してください。
@@ -89,15 +91,15 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
   - ①のメニューを押下しGitHub Copilot Chatパネルを開きます
   - ②の入力欄に`@workspace ワークスペース内のファイルについて教えてください`と入力・送信します
   - ③のエリアにGitHub Copilotからの回答が表示されれば確認完了です
-    ![screenshot_2023-12-04_17.50.49.png](images/screenshot_2023-12-04_17.50.49.png)
+    ![VS Code拡張機能GitHub Copilot Chatのインストール手順](images/vscode-github-copilot-chat-install_1.png)
 - Chatの応答を日本語化
   - GitHub Copilot Chatは、デフォルトでは[display language](https://code.visualstudio.com/docs/getstarted/locales)で設定された言語を用いて初期応答を行います
   - `github.copilot.chat.localeOverride`を設定することでこの動作を上書きすることができます
   - `Ctrl + Shift + P`キーを押してコマンドパレットを表示し、`settings`と入力して、設定を表示して開きます
-    ![japanese_1.png](images/japanese_1.png)
+    ![VS Code拡張機能GitHub Copilot Chatの日本語化手順１](images/vscode-github-copilot-chat-japanese_1.png)
   - 検索欄へ`github.copilot.chat.localeOverride`と入力して、表示された項目を`ja`に設定します
-    ![japanese_1.png](images/japanese_1.png)  
-    ※ この設定を行うにはVS Codeのバージョンが1.8.4以降である必要があります  
+    ![japanese_1.png](images/vscode-github-copilot-chat-japanese_2.png)<br/>
+    ※ この設定を行うにはVS Codeのバージョンが1.8.4以降である必要があります<br/>
     参考：[VSCode更新情報 2023年10月](https://code.visualstudio.com/updates/v1_84#_chat-using-configured-display-language)
 
 ## 参考

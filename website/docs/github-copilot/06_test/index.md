@@ -20,30 +20,30 @@ GitHub Copilotにサポートしてもらいながら、テストコードを効
 
 ### 例１（提案時 → 提案受け入れ後）
 
-![sample2_before.png](images/sample2_before.png)<br/>
+![テストコード生成：例１：提案時](images/generate-test_1_before.png)<br/>
 ↓<br/>
-![sample2_after.png](images/sample2_after.png)
+![テストコード生成：例１：提案受け入れ後](images/generate-test_1_after.png)
 
 ### 例２（提案時 → 提案受け入れ後）
 
-![sample3_before.png](images/sample3_before.png)<br/>
+![テストコード生成：例２：提案時](images/generate-test_2_before.png)<br/>
 ↓<br/>
-![sample3_after.png](images/sample3_after.png)
+![テストコード生成：例２：提案受け入れ後](images/generate-test_2_after.png)
 
 ### 例３
 
-![unitTest.gif](images/unitTest.gif)
+![テストコード生成：例３（gifアニメ）](images/generate-test_3.gif)
 
 ## GitHub Copilot Chatからテストコードを生成する
 
 - エディタで、テストを生成したい処理が書かれているファイルを開く
 - GitHub Copilot Chat Viewを開く
 - GitHub Copilotに`/tests`と入力する
-  ![1to3.png](images/from-chat_1to3.png)
+  ![チャットからテストコードを生成する手順１から３](images/generate-test-from-chat_1to3.png)
 - テストコードが提案される
   - ※ボタン「Create」をクリックし、「Create As」を選択できる
   - ボタン「Accept」：提案されたコードに反映させる
   - ボタン「Discard」：提案されたコードに破棄させる
   - ボタン「Create」：提案されたコードは生成元ファイルと同じフォルダにテストコードファイルを生成する
   - ボタン「Create As」：提案されたコードは自分指定したフォルダにテストコードファイルを生成する
-    ![4png](images/from-chat_4.png)
+    ![チャットからテストコードを生成する手順４](images/generate-test-from-chat_4.png)

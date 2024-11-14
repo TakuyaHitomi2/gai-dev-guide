@@ -21,12 +21,12 @@ sidebar_position: 3
   - エディタで、該当ファイルを開く
   - メソッド名がfetchDataを指定する
   - メソッド中に`Alt＋\`を実行し、提案を要求し、GitHub Copilotへ下記コードを自動補完する
-    ![bad_function_name.png](images/bad_function_name.png)
+    ![良くない関数名のコード](images/function-name_bad.png)
 - 関数名fetchDataEndwithtxt（意味のある名前）
   - エディタで、該当ファイルを開く
   - メソッド名がfetchDataEndwithtxtを指定する
   - メソッド中に`Alt＋\`を実行し、提案を要求し、GitHub Copilotへ下記コードを自動補完する
-    ![good_function_name.png](images/good_function_name.png)
+    ![良い関数名のコード](images/function-name_good.png)
 
 ## 効果的なコンテキストの指定
 
@@ -42,7 +42,7 @@ sidebar_position: 3
 - IDEでファイルを開いておくことで、GitHub Copilotにコンテキストを提供します。
 - GitHub Copilot Chatにて`#editor`を使用して追加のコンテキストを提供できます
   - VS Codeで、該当ファイルを開く
-    ![add_context.png](images/add_context.png)
+    ![コンテキストに含めるファイルをVS Codeで開く](images/add-context.png)
   - GitHub Copilotに以下を入力する
     - `#editor /removeTxt　ファイルの拡張子が.csv .txt .mdであれば、リストに該当レコードも削除するを更新してください。`
   - 更新後コードが提案される
@@ -69,20 +69,20 @@ GitHub Copilotから有用な回答を得られない場合は、要求を別の
 - GitHub Copilot Chat Viewを開く
 - アイコン`x`をクリックする
   - 削除前：
-    ![delete_request_before.png](images/delete_request_before.png)
+    ![不要なリクエスト削除前](images/delete-request_before.png)
   - 削除後：
-    ![delete_request_after.png](images/delete_request_after.png)
+    ![不要なリクエスト削除後](images/delete-request_after.png)
 
 ### コミュニケーションをクリア
 
 - GitHub Copilot Chat Viewを開く
 - GitHub Copilotに以下を入力する
-    ![clear_communication_setting.png](images/clear_communication_setting.png)
+    ![コミュニケーションをクリア](images/clear-communication-setting.png)
 - 現在のコミュニケーションをクリアする
   - 削除前：
-    ![clear_communication_before.png](images/clear_communication_before.png)
+    ![コミュニケーションをクリアする前](images/clear-communication_before.png)
   - 削除後：
-    ![clear_communication_before.png](images/clear_communication_before.png)
+    ![コミュニケーションをクリアした後](images/clear-communication_before.png)
 
 ## スレッドで会話を整理
 
@@ -92,9 +92,9 @@ GitHub Copilot Chatの`＋`をクリックすることで新しい会話（ス�
 - GitHub Copilot Chat Viewを開く
 - アイコン`＋`をクリックする
   - 実行前：
-    ![add_thread_before.png](images/add_thread_before.png)
+    ![スレッド追加前](images/add-thread_before.png)
   - 実行後：
-    ![add_thread_after.png](images/add_thread_after.png)
+    ![スレッド追加後](images/add-thread_after.png)
 
 ## 提案の選択
 

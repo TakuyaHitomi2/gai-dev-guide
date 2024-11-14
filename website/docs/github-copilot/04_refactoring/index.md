@@ -63,7 +63,7 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 6. Insert at Cursorボタンを押す
 7. ファイルの内容が、Javadocを加えた新しいものに置き換わる
 
-![Untitled](images/Untitled.png)
+![JavaDoc生成手順](images/generate-javadoc.png)
 
 最終的に以下のようなJavadocが出力されました。
 <details>
@@ -147,7 +147,7 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 6. Insert at Cursorボタンを押す
 7. ファイルの内容がリファクタリングされた新しいものに置き換わる
 
-![スクリーンショット 2023-12-04 16.51.44.png](images/スクリーンショット_2023-12-04_16.51.44.png)
+![リファクタリング手順](images/refactoring.png)
 
 ## Javaクラスをレビューする
 
@@ -161,6 +161,6 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 
 4. 改修原因と改修内容が提案される
 
-![suggestion_1.png](images/suggestion_1.png)
-![suggestion_2.png](images/suggestion_2.png)
-![suggestion_3.png](images/suggestion_3.png)
+![Javaクラスレビュー：チャットで依頼](images/suggestion_1.png)
+![Javaクラスレビュー：レビューフィードバック1](images/suggestion_2.png)
+![Javaクラスレビュー：レビューフィードバック2](images/suggestion_3.png)
