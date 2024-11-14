@@ -46,7 +46,7 @@ GitHub Copilotを有効化した状態でいつも通りコードを書くだけ
 GitHub Copilot Chatで`/fix`を使うことで、修正提案をもらうことができます。
 
 1. エディタで、該当のファイルを開きます。
-2. Copilot Chat Viewを開きます。
+2. GitHub Copilot Chat Viewを開きます。
 3. `/fix このコードの潜在的なリスクを教えて`と入力し送信します。
 4. GitHub Copilot Chatにより、リスクになりそうな箇所と修正案が提示されます。
 
@@ -54,10 +54,10 @@ GitHub Copilot Chatで`/fix`を使うことで、修正提案をもらうこと�
 
 ## エディタ上で提案をもらう
 
-GitHub Copilot Chatは、Copilot Chat Viewを開かなくても利用が可能です。
+GitHub Copilot Chatは、GitHub Copilot Chat Viewを開かなくても利用が可能です。
 
 1. エディタ上で右クリック
-2. Copilotにカーソルをあわせる
+2. GitHub Copilotにカーソルをあわせる
 3. `Start in Editor` をクリック
 
 詳細はこちらをご確認ください [インラインチャット](../08_vscode-extention/01_github-copilot/03_inline-chat.md)
@@ -70,7 +70,7 @@ GitHub Copilot Chatは、Copilot Chat Viewを開かなくても利用が可能�
 <details>
 <summary>セキュリティリスクを発見したいファイルの詳細</summary>
 
-nablarchのサンプルコードに今回のチェック用に修正を加えたものです。
+Nablarchのサンプルコードに今回のチェック用に修正を加えたものです。
 
 ```java
 package com.nablarch.example.app.web.action;
@@ -165,7 +165,7 @@ public class AuthenticationAction {
 </details>
 
 1. エディタで、該当のファイルを開きます。
-2. Copilot Chat Viewを開きます。
+2. GitHub Copilot Chat Viewを開きます。
 3. `/explain このコードの潜在的なリスクを教えて`と入力し送信します。
 4. GitHub Copilot Chatにより、セキュリティリスクになりそうな箇所が提示されます。
 

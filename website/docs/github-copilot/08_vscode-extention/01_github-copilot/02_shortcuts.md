@@ -6,7 +6,7 @@ sidebar_position: 2
 
 GitHub Copilotの基本操作を学びます。
 
-## Github Copilotの操作方法
+## GitHub Copilotの操作方法
 
 | アクション | 説明 | ショートカット |
 | :--- | :--- | :--- |
@@ -20,14 +20,14 @@ GitHub Copilotの基本操作を学びます。
 
 参考：[環境での GitHub Copilot の構成 - GitHub Docs](https://docs.github.com/ja/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment?tool=vscode)
 
-## Github Copilot Chatの操作方法
+## GitHub Copilot Chatの操作方法
 
-Copilot Chatにはエージェントコマンドとスラッシュコマンドが用意されており、<br/>
+GitHub Copilot Chatにはエージェントコマンドとスラッシュコマンドが用意されており、<br/>
 それぞれを単独、もしくは組み合わせて、質問の意図と範囲を伝えることができます。
 
 ### エージェントコマンド
 
-Copilotのロールを設定するためのコマンドです。回答の範囲を限定することができます。<br/>
+GitHub Copilotのロールを設定するためのコマンドです。回答の範囲を限定することができます。<br/>
 コマンドの後に質問を入力し使用します。
 
 | コマンド | 説明 |
@@ -37,7 +37,7 @@ Copilotのロールを設定するためのコマンドです。回答の範囲�
 
 ### スラッシュコマンド
 
-Copilotに行ってほしいタスクを指示するコマンドです。<br/>
+GitHub Copilotに行ってほしいタスクを指示するコマンドです。<br/>
 コマンドの後ろに指示を追加して使用することも可能です。
 
 | コマンド | 説明 | 併用可能コマンド |
@@ -49,5 +49,5 @@ Copilotに行ってほしいタスクを指示するコマンドです。<br/>
 | /terminal | 行いたい作業のコマンドを説明してくれます。<br/>`/terminal dockerのコンテナに入りたい` | @workspace |
 | /tests | 選択したコードのテストを生成してくれます。 | @workspace |
 | /api | VS Codeの拡張機能開発に関する質問に答えてくれます。 | @vscode |
-| /help | Copilotのヘルプを表示してくれます。 |  |
+| /help | GitHub Copilotのヘルプを表示してくれます。 |  |
 | /clear | 現在の会話を終了します。 |  |

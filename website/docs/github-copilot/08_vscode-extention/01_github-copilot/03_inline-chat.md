@@ -8,13 +8,15 @@ sidebar_position: 3
 GitHub Copilotのアップデートで状況が変わる可能性もありますのでご注意ください。
 :::
 
-Copilot Chat Viewではなく、エディタ上でチャットを実行することができます。  
+GitHub Copilot Chat Viewではなく、エディタ上でチャットを実行することができます。
 
 ## 使い方
 
 Windows `ctrl + i` 、Mac `⌘ + i` でチャットを開始します。
 
+<!-- textlint-disable prh -->
 - エディタ上で右クリック後「Copilot」の項目が表示されます
+<!-- textlint-enable prh -->
 - 「Start in Editor」をクリックすると、インラインチャットが表示されます
   ![inlinechat_1.png](images/inlinechat_1.png)
   ![inlinechat_2.png](images/inlinechat_2.png)

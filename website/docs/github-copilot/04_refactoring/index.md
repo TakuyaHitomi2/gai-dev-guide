@@ -56,7 +56,7 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 </details>
 
 1. エディタで、該当のファイルを開く
-2. Copilot Chat Viewを開く
+2. GitHub Copilot Chat Viewを開く
 3. `/doc 日本語でjavadocを書いてください`と入力し送信
 4. GitHub Copilot Chatにより、元のコードにJavadocを加えた結果が出力される
 5. ファイル（`DateRangeValidator.java`）の内容を全選択する
@@ -140,7 +140,7 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 ## Javaクラスをリファクタリングする
 
 1. エディタで、該当のファイルを開く
-2. Copilot Chat Viewを開く
+2. GitHub Copilot Chat Viewを開く
 3. `/fix リファクタリングしてください`と入力し送信
 4. GitHub Copilot Chatにより、リファクタリング内容とリファクタリング後のクラスが提案されます
 5. ファイルの内容を全選択する
@@ -152,7 +152,7 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 ## Javaクラスをレビューする
 
 1. エディタで、該当ファイルを開く
-2. Copilot Chat Viewを開く
+2. GitHub Copilot Chat Viewを開く
 3. GitHub Copilotに以下を入力する
 
         ```txt

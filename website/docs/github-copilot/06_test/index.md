@@ -37,7 +37,7 @@ GitHub Copilotにサポートしてもらいながら、テストコードを効
 ## GitHub Copilot Chatからテストコードを生成する
 
 - エディタで、テストを生成したい処理が書かれているファイルを開く
-- Copilot Chat Viewを開く
+- GitHub Copilot Chat Viewを開く
 - GitHub Copilotに`/tests`と入力する
   ![1to3.png](images/from-chat_1to3.png)
 - テストコードが提案される

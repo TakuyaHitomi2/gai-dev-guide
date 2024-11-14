@@ -17,7 +17,7 @@ sidebar_position: 1
 
 ## GitHubによる調査結果
 
-### Copilot利用による生産性・満足度の向上
+### GitHub Copilot利用による生産性・満足度の向上
 
 > 実験では、両グループのタスク成功率の平均、および両グループが完了するまでに要した時間の平均を測定しました。
 >
@@ -28,7 +28,7 @@ sidebar_position: 1
 
 [調査：GitHub Copilotが開発者の生産性と満足度に与える影響を数値化 - GitHubブログ](https://github.blog/jp/2022-09-15-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
 
-### Copilotの提案の採用率
+### GitHub Copilotの提案の採用率
 
 > On average, within the first year in the market, users accept nearly 30% of code suggestions from GitHub Copilot
 平均して、GitHub Copilotから提案されたコードの30%近くを、受け入れることができます。

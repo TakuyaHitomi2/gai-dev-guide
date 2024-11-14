@@ -8,8 +8,8 @@ sidebar_position: 2
 
 GitHub Copilot導入者向けにて以下実施済みであることを前提とします。
 
-- 参画PJでの利用可否を判断する
-  - → 参画しているPJにてGitHub Copilotの利用可否をご判断ください
+- 参画プロジェクトでの利用可否を判断する
+  - → 参画しているプロジェクトにてGitHub Copilotの利用可否をご判断ください
 - 社内申請する
   - → 各社において必要な申請を行ってください
 
@@ -29,11 +29,11 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
 
      - 画面右上のプロファイル画像（赤枠箇所）をクリック
           ![github設定2.png](images/github設定2.png)
-     - Copilotを選択（赤枠箇所）
+     - GitHub Copilotを選択（赤枠箇所）
           ![github設定3.png](images/github設定3.png)
 
       </details>
-2. organizationに参加してCopilotを利用している場合、以下の`赤枠`が表示されていればOKです
+2. organizationに参加してGitHub Copilotを利用している場合、以下の`赤枠`が表示されていればOKです
     ![GitHubCopilotUse.png](images/GitHubCopilotUse.png)
 
 ## Visual Studio Codeの設定方法
@@ -86,9 +86,9 @@ GitHubアカウントをお持ちでない方は、[GitHubのトップページ]
 
 - [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) をインストールする
 - GitHub Copilot Chatが利用できることを確認します
-  - ①のメニューを押下しCopilot Chatパネルを開きます
+  - ①のメニューを押下しGitHub Copilot Chatパネルを開きます
   - ②の入力欄に`@workspace ワークスペース内のファイルについて教えてください`と入力・送信します
-  - ③のエリアにCopilotからの回答が表示されれば確認完了です
+  - ③のエリアにGitHub Copilotからの回答が表示されれば確認完了です
     ![screenshot_2023-12-04_17.50.49.png](images/screenshot_2023-12-04_17.50.49.png)
 - Chatの応答を日本語化
   - GitHub Copilot Chatは、デフォルトでは[display language](https://code.visualstudio.com/docs/getstarted/locales)で設定された言語を用いて初期応答を行います

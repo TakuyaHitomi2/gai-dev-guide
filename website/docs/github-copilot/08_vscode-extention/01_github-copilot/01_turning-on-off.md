@@ -30,7 +30,9 @@ sidebar_position: 1
 Visual Studio Codeでは、ショートカットキーがデフォルトで設定されていないため、設定をする必要があります。
 
 - ファイル ＞ ユーザ設定 ＞ キーボードショットカットの順で設定画面を開く
+<!-- textlint-disable prh -->
 - 「GitHub Copilot: Enable/Disable Copilot completions」で検索をする
+<!-- textlint-enable prh -->
     ![Untitled](images/Untitled_3.png)
 - 「＋」をクリックし、任意のショートカットキーを設定し、完了。
     ![GitHubCopilotSettingVSCode.png](images/GitHubCopilotSettingVSCode.png)

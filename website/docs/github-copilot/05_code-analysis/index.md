@@ -8,7 +8,7 @@ sidebar_position: 5
 
 ## クラス図を作成する
 
-- Copilot Chat Viewを開く
+- GitHub Copilot Chat Viewを開く
 - GitHub Copilotに以下を入力する
 
 ```txt
@@ -23,7 +23,7 @@ sidebar_position: 5
 
 ## フロー図を作成する
 
-- Copilot Chat Viewを開く
+- GitHub Copilot Chat Viewを開く
 - GitHub Copilotに以下を入力する
 
 ```txt

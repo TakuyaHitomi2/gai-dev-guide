@@ -30,17 +30,17 @@ sidebar_position: 3
 
 ## 効果的なコンテキストの指定
 
-- VS CodeでCopilotを使用している場合は、関連するファイルを開き、無関係なファイルを閉じます（※1）
-- Copilot Chatでは、特定の要求が有用なコンテキストでなくなった場合は、その要求を会話から削除します
-- Copilot Chatでは、特定の会話のどのコンテキストも役に立たない場合は、新しい会話を開始します
-- VS CodeでCopilot Chatを使用している場合は、キーワードを使用して、Copilotを特定のタスクまたはコンテキストにフォーカスします
+- VS CodeでGitHub Copilotを使用している場合は、関連するファイルを開き、無関係なファイルを閉じます（※1）
+- GitHub Copilot Chatでは、特定の要求が有用なコンテキストでなくなった場合は、その要求を会話から削除します
+- GitHub Copilot Chatでは、特定の会話のどのコンテキストも役に立たない場合は、新しい会話を開始します
+- VS CodeでGitHub Copilot Chatを使用している場合は、キーワードを使用して、GitHub Copilotを特定のタスクまたはコンテキストにフォーカスします
 
 :::info
 
 ### ※1 コンテキストの提供
 
 - IDEでファイルを開いておくことで、GitHub Copilotにコンテキストを提供します。
-- Copilot Chatにて`#editor`を使用して追加のコンテキストを提供できます
+- GitHub Copilot Chatにて`#editor`を使用して追加のコンテキストを提供できます
   - VS Codeで、該当ファイルを開く
     ![add_context.png](images/add_context.png)
   - GitHub Copilotに以下を入力する
@@ -51,8 +51,8 @@ sidebar_position: 3
 
 ## プロンプトの言い換え・分割
 
-Copilotから有用な回答を得られない場合は、要求を別の言葉で言い換えるか、要求を複数の小さな要求に分割してみます。<br/>
-たとえば、Copilotに単語検索パズルを生成するように依頼する代わりに、プロセスを小さなタスクに分割し、Copilotに1つずつ実行するように依頼します。
+GitHub Copilotから有用な回答を得られない場合は、要求を別の言葉で言い換えるか、要求を複数の小さな要求に分割してみます。<br/>
+たとえば、GitHub Copilotに単語検索パズルを生成するように依頼する代わりに、プロセスを小さなタスクに分割し、GitHub Copilotに1つずつ実行するように依頼します。
 
 - 10x10の文字グリッドを生成する関数を記述します
 - 有効な単語の一覧を指定して、文字グリッド内のすべての単語を検索する関数を記述します
@@ -66,7 +66,7 @@ Copilotから有用な回答を得られない場合は、要求を別の言葉�
 
 ### 不要なリクエストの削除
 
-- Copilot Chat Viewを開く
+- GitHub Copilot Chat Viewを開く
 - アイコン`x`をクリックする
   - 削除前：
     ![delete_request_before.png](images/delete_request_before.png)
@@ -75,7 +75,7 @@ Copilotから有用な回答を得られない場合は、要求を別の言葉�
 
 ### コミュニケーションをクリア
 
-- Copilot Chat Viewを開く
+- GitHub Copilot Chat Viewを開く
 - GitHub Copilotに以下を入力する
     ![clear_communication_setting.png](images/clear_communication_setting.png)
 - 現在のコミュニケーションをクリアする
@@ -86,10 +86,10 @@ Copilotから有用な回答を得られない場合は、要求を別の言葉�
 
 ## スレッドで会話を整理
 
-Copilot Chatの`＋`をクリックすることで新しい会話（スレッド）を開始できます。<br/>
-これにより、Copilot Chatと複数の異なるトピックを同時進行できます。
+GitHub Copilot Chatの`＋`をクリックすることで新しい会話（スレッド）を開始できます。<br/>
+これにより、GitHub Copilot Chatと複数の異なるトピックを同時進行できます。
 
-- Copilot Chat Viewを開く
+- GitHub Copilot Chat Viewを開く
 - アイコン`＋`をクリックする
   - 実行前：
     ![add_thread_before.png](images/add_thread_before.png)
@@ -98,11 +98,11 @@ Copilot Chatの`＋`をクリックすることで新しい会話（スレッド
 
 ## 提案の選択
 
-コード補完時にCopilotは複数の提案を提示する可能性があります。<br/>
+コード補完時にGitHub Copilotは複数の提案を提示する可能性があります。<br/>
 キーボードショートカット（`Ctrl+Enter`）を使用すると、使用可能なすべての提案をすばやく確認できます。
 
 ## フィードバック
 
 今後の提案を改善するためのフィードバックを提供します。<br/>
-次のようなさまざまな方法でフィードバックを提供できます。コード補完の場合は、Copilotの提案を受け入れるか拒否します。<br/>
-Copilot Chatの個々の応答の場合は、応答の横にあるサムアップアイコンまたはサムダウンアイコンをクリックします。
+次のようなさまざまな方法でフィードバックを提供できます。コード補完の場合は、GitHub Copilotの提案を受け入れるか拒否します。<br/>
+GitHub Copilot Chatの個々の応答の場合は、応答の横にあるサムアップアイコンまたはサムダウンアイコンをクリックします。
