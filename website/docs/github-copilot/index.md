@@ -23,4 +23,4 @@ sidebar_position: 0
 ### 🎯GitHub Copilotの利用方法を決定する方（技術責任者の方）
 
 **本ガイドをプロジェクト個別にカスタマイズして、オフラインでも参照可能なHTMLファイルとして配布できます✨**<br/>
-➡️[**ガイドのカスタマイズ・配布**](./github-copilot/customize-and-distribution)をお読みください。
+➡️[**ガイドのカスタマイズ・配布**](./customize-and-distribution)をお読みください。

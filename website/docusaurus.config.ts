@@ -17,6 +17,7 @@ const copyright = `
   </div>
   <div class="supplementary">
     <a href="/${project}/trademark/" class="footer__link-item">商標について</a>
+    <a href="/${project}/customize-and-distribution/" class="footer__link-item">ガイドのカスタマイズ・配布について</a>
   </div>
 </div>`;
 

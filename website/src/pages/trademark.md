@@ -2,11 +2,11 @@
 title: 商標について
 ---
 
-## 商標について
+# 商標について
 
 本サイトに掲載されている商品またはサービスなどの名称は、各社の商標または登録商標です。
 
-### 各社の商標または登録商標
+## 各社の商標または登録商標
 
 <!-- textlint-disable ja-technical-writing/sentence-length -->
 - 「TypeScript」「Visual Studio Code」「VS Code」「Windows」は、 Microsoft Corporationの米国およびその他の国におけるMicrosoft Corporationおよび/またはその関連会社の登録商標または商標です。

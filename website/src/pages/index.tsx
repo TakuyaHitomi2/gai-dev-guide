@@ -6,6 +6,7 @@ import React from 'react';
 
 import styles from './styles.module.css';
 import {PageList} from '../components/PageList';
+import Link from '@docusaurus/Link';
 
 const genericOverview = [
   {
@@ -40,15 +41,25 @@ function Home() {
             ChatGPTやGitHub Copilotなどの導入方法、基本的な操作、効果的な使い方などを提供します。<br/>  
             どなたでも無償で利用いただけます。
           </p>
-          <Admonition type="info">
+        </div>
+        <PageList overviews={genericOverview} colSize={6} />
+        <div className={clsx("container", styles.descriptionContainer)}>
+          <Admonition type="note">
             <p>
               ページは随時アップデートしていきます。
               改善のため、バグ報告や「こうしたらもっといいな」など、<a href="https://forms.office.com/r/TZCDzPHEZQ">フィードバック</a>をお待ちしています！<br/>
               ※このガイドでは個人情報、社外秘情報は取り扱いません。
             </p>
           </Admonition>
+          <Admonition type="info">
+            <p>
+              色々な開発プロジェクトがあるなかで、必ずしも本ガイドどおりに開発するケースは稀です。<br/>
+              そこで本ガイドでは、プロジェクトの様々な特性に合わせて、ガイドを個別にカスタマイズできるようにしています。<br/>
+              さらに、オフライン環境で開発する方向けであっても参照できるように、参照時にWEBサーバを必要としないHTMLファイルとして配布可能です。<br/>
+              詳細は<Link to="/customize-and-distribution">ガイドのカスタマイズ・配布</Link>をお読みください
+            </p>
+          </Admonition>
         </div>
-        <PageList overviews={genericOverview} colSize={6} />
       </main>
     </Layout>
   );
