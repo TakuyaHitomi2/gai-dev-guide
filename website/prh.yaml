@@ -14,3 +14,5 @@ rules:
     patterns: Todo
   - expected: クエリ
     patterns: クエリー
+  - expected: GitHub Copilot
+    patterns: /(?<!GitHub )Copilot/
