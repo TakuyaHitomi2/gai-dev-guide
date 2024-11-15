@@ -62,7 +62,7 @@ GitHub Copilotによって生成されたコードの権利は、そのコード
 ### Q. GitHub Copilotの提案にOSSライセンスのコードが含まれる場合はありますか？
 
 GitHub Copilotには、公開されたコードと一致するコードの提案をブロックする機能があり、それを有効化することで著作権・ライセンス違反のリスクを軽減できます。
-具体的な有効化方法は[パブリック コードに一致する候補の有効化または無効化 - GitHub Docs](https://docs.github.com/ja/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-copilot-policies-as-an-individual-subscriber#enabling-or-disabling-suggestions-matching-public-code)を参照してください。
+具体的な有効化方法は[パブリック コードに一致する候補の有効化または無効化 - GitHub Docs](https://docs.github.com/ja/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-copilot-policies-as-an-individual-subscriber#enabling-or-disabling-suggestions-matching-public-code)を参照ください。
 
 ### Q. プロジェクト内のソースコードはGitHub Copilotの学習に使用されますか？
 
@@ -79,7 +79,7 @@ GitHub Copilotには、公開されたコードと一致するコードの提案
 - GitHub Copilot for Business: 1人あたり年間228ドル
 
 :::info
-（*1）著作権侵害の場合はマイクロソフトが法的防御を行い、不利な判決や和解に伴う費用を負担します。詳細は[マイクロソフト、お客様向けの Copilot Copyright Commitment を発表 - News Center Japan](https://news.microsoft.com/ja-jp/2023/09/12/230912-copilot-copyright-commitment-ai-legal-concerns/)を参照してください。<br/>
+（*1）著作権侵害の場合はマイクロソフトが法的防御を行い、不利な判決や和解に伴う費用を負担します。詳細は[マイクロソフト、お客様向けの Copilot Copyright Commitment を発表 - News Center Japan](https://news.microsoft.com/ja-jp/2023/09/12/230912-copilot-copyright-commitment-ai-legal-concerns/)を参照ください。<br/>
 （*2）GitHub Enterprise`の費用は各社契約ごとに変動がありますので、あくまで参考情報としてご参照ください。
 :::
 

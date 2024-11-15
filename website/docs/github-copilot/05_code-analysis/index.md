@@ -22,7 +22,7 @@ VS CodeのGitHub Copilot ChatにてJavaファイルのクラス図を作成す�
       #file:LoginForm.javaを読み込んでMermaid形式のクラス図を作成してください。
       ```
       ![クラス図作成用プロンプト](images/class-diagram_prompt.png)
-      ※`#file`の使い方は[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照してください
+      ※`#file`の使い方は[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照ください
 - **▼出力結果**
 - 以下のようにMermaid形式のテキストが出力されます
   ![出力されたクラス図（Mermaid形式のテキスト）](images/class-diagram_answer.png)
@@ -79,7 +79,7 @@ VS CodeのGitHub Copilot ChatにてJavaファイルのクラス図を作成す�
       #file:ProjectAction.javaのconfirmOfCreateメソッドを読み込んで、Mermaid形式のフロー図を作成してください。なお処理の説明は日本語でお願いします。
       ```
       ![フロー図作成用プロンプト](images/flow-diagram_prompt.png)
-      ※`#file`の使い方は[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照してください
+      ※`#file`の使い方は[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照ください
 - **▼出力結果**
 - 以下のようにMermaid形式のテキストが出力されます
   ![出力されたフロー図（Marmaid形式のテキスト）](images/flow-diagram_answer.png)<br/>
