@@ -17,33 +17,33 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 
     ```java
     package com.nablarch.example.app.entity.core.validation.validator;
-    
+
     import nablarch.core.util.DateUtil;
     import nablarch.core.util.StringUtil;
-    
+
     public class DateRangeValidator {
         private final String start;
         private final String end;
-    
+
         private final String dateFormat;
-    
+
         public DateRangeValidator(final String start, final String end) {
             this(start, end, "yyyyMMdd");
         }
-    
+
         public DateRangeValidator(final String start, final String end, final String dateFormat) {
             this.start = start;
             this.end = end;
             this.dateFormat = dateFormat;
         }
-    
+
         public boolean isValid() {
             if (isValidDate(start) && isValidDate(end)) {
                 return DateUtil.getParsedDate(start, dateFormat).compareTo(DateUtil.getParsedDate(end, dateFormat)) <= 0;
             }
             return true;
         }
-    
+
         private boolean isValidDate(final String date) {
             if (StringUtil.isNullOrEmpty(date)) {
                 return false;
@@ -154,7 +154,8 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 - エディタで、該当ファイルを開ます
 - GitHub Copilot Chat Viewを開きます
 - GitHub Copilotに以下を入力します
-  - `開発基準のMarkdownファイルを開発基準に、対象ファイルをレビューし、問題があれば、改修案を提示してください`
+  - `#file:開発標準_Javaコーディング規約.mdの内容を開発基準に、#file:CallTreeEntity.javaをレビューしてください。問題があれば、改善案を提示してください`<br/>
+  ※コンテキスト変数`#file`については[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照してください
 - 改修原因と改修内容が提案されます
 
 ![Javaクラスレビュー：チャットで依頼](images/suggestion_1.png)
@@ -166,99 +167,99 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 セキュリティリスクの可能性があるかをGitHub Copilotに検知してもらいます。
 
 <details>
-<summary>セキュリティリスクを発見したいファイルの詳細</summary>
+    <summary>セキュリティリスクを発見したいファイルの詳細</summary>
 
-Nablarchのサンプルコードに今回のチェック用に修正を加えたものです。
+    Nablarchのサンプルコードに今回のチェック用に修正を加えたものです。
 
-```java
-package com.nablarch.example.app.web.action;
+    ```java
+    package com.nablarch.example.app.web.action;
 
-import nablarch.common.authorization.role.session.SessionStoreUserRoleUtil;
-import nablarch.common.dao.UniversalDao;
-import nablarch.common.web.csrf.CsrfTokenUtil;
-import nablarch.common.web.session.SessionUtil;
-import nablarch.core.beans.BeanUtil;
-import nablarch.core.message.ApplicationException;
-import nablarch.core.message.MessageLevel;
-import nablarch.core.message.MessageUtil;
-import nablarch.core.validation.ee.ValidatorUtil;
-import nablarch.fw.ExecutionContext;
-import nablarch.fw.web.HttpRequest;
-import nablarch.fw.web.HttpResponse;
-import nablarch.fw.web.interceptor.OnError;
+    import nablarch.common.authorization.role.session.SessionStoreUserRoleUtil;
+    import nablarch.common.dao.UniversalDao;
+    import nablarch.common.web.csrf.CsrfTokenUtil;
+    import nablarch.common.web.session.SessionUtil;
+    import nablarch.core.beans.BeanUtil;
+    import nablarch.core.message.ApplicationException;
+    import nablarch.core.message.MessageLevel;
+    import nablarch.core.message.MessageUtil;
+    import nablarch.core.validation.ee.ValidatorUtil;
+    import nablarch.fw.ExecutionContext;
+    import nablarch.fw.web.HttpRequest;
+    import nablarch.fw.web.HttpResponse;
+    import nablarch.fw.web.interceptor.OnError;
 
-import com.nablarch.example.app.entity.SystemAccount;
-import com.nablarch.example.app.entity.Users;
-import com.nablarch.example.app.web.common.authentication.AuthenticationUtil;
-import com.nablarch.example.app.web.common.authentication.context.LoginUserPrincipal;
-import com.nablarch.example.app.web.common.authentication.exception.AuthenticationException;
-import com.nablarch.example.app.web.form.LoginForm;
+    import com.nablarch.example.app.entity.SystemAccount;
+    import com.nablarch.example.app.entity.Users;
+    import com.nablarch.example.app.web.common.authentication.AuthenticationUtil;
+    import com.nablarch.example.app.web.common.authentication.context.LoginUserPrincipal;
+    import com.nablarch.example.app.web.common.authentication.exception.AuthenticationException;
+    import com.nablarch.example.app.web.form.LoginForm;
 
-import java.util.Collections;
+    import java.util.Collections;
 
-public class AuthenticationAction {
+    public class AuthenticationAction {
 
-    public HttpResponse index(HttpRequest request, ExecutionContext context) {
-        return new HttpResponse("/WEB-INF/view/login/index.jsp");
-    }
-
-    @OnError(type = ApplicationException.class, path = "/WEB-INF/view/login/index.jsp",statusCode = 403)
-    public HttpResponse login(HttpRequest request, ExecutionContext context) {
-
-        final LoginForm form = BeanUtil.createAndCopy(LoginForm.class, request.getParamMap());
-
-        try {
-            ValidatorUtil.validate(form);
-        } catch (ApplicationException e) {
-            throw new ApplicationException(MessageUtil.createMessage(
-                    MessageLevel.ERROR, "errors.login" + e.getMessage()));
+        public HttpResponse index(HttpRequest request, ExecutionContext context) {
+            return new HttpResponse("/WEB-INF/view/login/index.jsp");
         }
 
-        try {
-            AuthenticationUtil.authenticate(form.getLoginId(), form.getUserPassword());
-        } catch (AuthenticationException ignore) {
-            throw new ApplicationException(MessageUtil.createMessage(
-                    MessageLevel.ERROR, "errors.login"));
+        @OnError(type = ApplicationException.class, path = "/WEB-INF/view/login/index.jsp",statusCode = 403)
+        public HttpResponse login(HttpRequest request, ExecutionContext context) {
+
+            final LoginForm form = BeanUtil.createAndCopy(LoginForm.class, request.getParamMap());
+
+            try {
+                ValidatorUtil.validate(form);
+            } catch (ApplicationException e) {
+                throw new ApplicationException(MessageUtil.createMessage(
+                        MessageLevel.ERROR, "errors.login" + e.getMessage()));
+            }
+
+            try {
+                AuthenticationUtil.authenticate(form.getLoginId(), form.getUserPassword());
+            } catch (AuthenticationException ignore) {
+                throw new ApplicationException(MessageUtil.createMessage(
+                        MessageLevel.ERROR, "errors.login"));
+            }
+
+            SessionUtil.changeId(context);
+            CsrfTokenUtil.regenerateCsrfToken(context);
+
+            LoginUserPrincipal userContext = createLoginUserContext(form.getLoginId());
+
+            if (userContext.isAdmin()) {
+                SessionStoreUserRoleUtil.save(Collections.singleton(LoginUserPrincipal.ROLE_ADMIN), context);
+            }
+
+            SessionUtil.put(context, "userContext", userContext);
+            SessionUtil.put(context,"user.id",String.valueOf(userContext.getUserId()));
+            return new HttpResponse(303, "redirect:///action/project/index");
         }
 
-        SessionUtil.changeId(context);
-        CsrfTokenUtil.regenerateCsrfToken(context);
+        private LoginUserPrincipal createLoginUserContext(String loginId) {
+            SystemAccount account = UniversalDao
+                    .findBySqlFile(SystemAccount.class,
+                            "FIND_SYSTEM_ACCOUNT_BY_AK", new Object[]{loginId});
+            Users users = UniversalDao.findById(Users.class, account.getUserId());
 
-        LoginUserPrincipal userContext = createLoginUserContext(form.getLoginId());
+            LoginUserPrincipal userContext = new LoginUserPrincipal();
+            userContext.setUserId(account.getUserId());
+            userContext.setKanjiName(users.getKanjiName());
+            userContext.setAdmin(account.isAdminFlag());
+            userContext.setLastLoginDateTime(account.getLastLoginDateTime());
 
-        if (userContext.isAdmin()) {
-            SessionStoreUserRoleUtil.save(Collections.singleton(LoginUserPrincipal.ROLE_ADMIN), context);
+            return userContext;
+
         }
 
-        SessionUtil.put(context, "userContext", userContext);
-        SessionUtil.put(context,"user.id",String.valueOf(userContext.getUserId()));
-        return new HttpResponse(303, "redirect:///action/project/index");
-    }
+        public HttpResponse logout(HttpRequest request, ExecutionContext context) {
+            SessionUtil.invalidate(context);
 
-    private LoginUserPrincipal createLoginUserContext(String loginId) {
-        SystemAccount account = UniversalDao
-                .findBySqlFile(SystemAccount.class,
-                        "FIND_SYSTEM_ACCOUNT_BY_AK", new Object[]{loginId});
-        Users users = UniversalDao.findById(Users.class, account.getUserId());
-
-        LoginUserPrincipal userContext = new LoginUserPrincipal();
-        userContext.setUserId(account.getUserId());
-        userContext.setKanjiName(users.getKanjiName());
-        userContext.setAdmin(account.isAdminFlag());
-        userContext.setLastLoginDateTime(account.getLastLoginDateTime());
-
-        return userContext;
+            return new HttpResponse(303, "redirect:///action/login");
+        }
 
     }
-
-    public HttpResponse logout(HttpRequest request, ExecutionContext context) {
-        SessionUtil.invalidate(context);
-
-        return new HttpResponse(303, "redirect:///action/login");
-    }
-
-}
-```
+    ```
 
 </details>
 

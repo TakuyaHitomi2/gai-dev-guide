@@ -5,9 +5,11 @@ sidebar_position: 2
 # 効果的なGitHub Copilotプロンプトの原則
 
 :::info
+<!-- textlint-disable ja-technical-writing/sentence-length -->
 本ページは以下からの抜粋です。詳細は以下を御覧ください。<br/>
 [AI-Powered Development with GitHub Copilot 20240202 - Speaker Deck](https://speakerdeck.com/yuhattor/ai-powered-development-with-github-copilot-20240202)<br/>
 [GitHub Copilot のプロンプト エンジニアリング- GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/prompt-engineering-for-github-copilot)
+<!-- textlint-enable ja-technical-writing/sentence-length -->
 :::
 <br/>
 
