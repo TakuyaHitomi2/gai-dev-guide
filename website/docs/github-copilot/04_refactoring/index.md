@@ -76,9 +76,9 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
     import nablarch.core.util.StringUtil;
 
     /**
-        * 日付範囲のバリデーター。
-        * 開始日と終了日を指定し、その範囲が有効かどうかを検証します。
-        */
+     * 日付範囲のバリデーター。
+     * 開始日と終了日を指定し、その範囲が有効かどうかを検証します。
+     */
     public class DateRangeValidator {
         private final String start;
         private final String end;
@@ -86,22 +86,22 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
         private final String dateFormat;
 
         /**
-            * デフォルトの日付形式（"yyyyMMdd"）を使用して、バリデーターを作成します。
-            *
-            * @param start 開始日
-            * @param end 終了日
-            */
+        　* デフォルトの日付形式（"yyyyMMdd"）を使用して、バリデーターを作成します。
+        　*
+        　* @param start 開始日
+        　* @param end 終了日
+        　*/
         public DateRangeValidator(final String start, final String end) {
             this(start, end, "yyyyMMdd");
         }
 
         /**
-            * 指定された日付形式を使用して、バリデーターを作成します。
-            *
-            * @param start 開始日
-            * @param end 終了日
-            * @param dateFormat 日付形式
-            */
+         * 指定された日付形式を使用して、バリデーターを作成します。
+         *
+         * @param start 開始日
+         * @param end 終了日
+         * @param dateFormat 日付形式
+         */
         public DateRangeValidator(final String start, final String end, final String dateFormat) {
             this.start = start;
             this.end = end;
@@ -109,10 +109,10 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
         }
 
         /**
-            * 開始日と終了日が有効な範囲であるかどうかを検証します。
-            *
-            * @return 開始日と終了日が有効な範囲であればtrue、そうでなければfalse
-            */
+         * 開始日と終了日が有効な範囲であるかどうかを検証します。
+         *
+         * @return 開始日と終了日が有効な範囲であればtrue、そうでなければfalse
+         */
         public boolean isValid() {
             if (isValidDate(start) && isValidDate(end)) {
                 return DateUtil.getParsedDate(start, dateFormat).compareTo(DateUtil.getParsedDate(end, dateFormat)) <= 0;
@@ -121,11 +121,11 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
         }
 
         /**
-            * 指定された日付が有効かどうかを検証します。
-            *
-            * @param date 検証する日付
-            * @return 日付が有効であればtrue、そうでなければfalse
-            */
+         * 指定された日付が有効かどうかを検証します。
+         *
+         * @param date 検証する日付
+         * @return 日付が有効であればtrue、そうでなければfalse
+         */
         private boolean isValidDate(final String date) {
             if (StringUtil.isNullOrEmpty(date)) {
                 return false;
