@@ -27,7 +27,8 @@ GitHub Copilot、GitHub Copilot Chatの使い分けについて説明します�
 ### 向いていないケース
 
 - コーディングとテクノロジーに関係のない質問への回答
-- 専門家や高いスキル保持者としてGitHub Copilotを使用すること ※最終判断の責任は自分自身にあり、GitHub Copilotはあくまでもサポートツールであることを忘れないでください
+- 専門家や高いスキル保持者としてのGitHub Copilotを使用すること<br/>
+  ※最終判断の責任は自分自身にあり、GitHub Copilotはあくまでもサポートツールという認識が重要です
 
 ## GitHub CopilotとGitHub Copilot Chatの使い分け
 

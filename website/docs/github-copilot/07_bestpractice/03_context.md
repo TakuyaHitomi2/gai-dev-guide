@@ -12,20 +12,22 @@ sidebar_position: 3
 
 ## 変数名などに意味のある名前を付ける
 
-`foo`や`bar`という名前の関数がある場合、GitHub Copilotは名前から意図を推測できないため、最適な補完ができません。  
-同様に、関数名`fetchData()`は`Data`という語が曖昧であるため、GitHub Copilotにとってもあまり意味がありません。
+`foo`や`bar`という名前の関数がある場合、GitHub Copilotは名前から意図を推測できないため、最適な補完ができません。<br/>
+同様に、関数名`fetchData()`は`Data`という語が曖昧なので、GitHub Copilotにとってもあまり意味がありません。
 
 一般的に「良い」と言われるコーディングルールを適用することで、GitHub Copilotから最大の価値を取得できます。
 
-- 関数名`fetchData`（意味のない名前）
-  - エディタで、該当ファイルを開く
-  - メソッド名がfetchDataを指定する
-  - メソッド中に`Alt＋\`を実行し、提案を要求し、GitHub Copilotへ下記コードを自動補完する
+- 関数名`fetchData`（意味のない名前）の場合
+  - エディタで、該当ファイルを開きます
+  - メソッド名がfetchDataを指定します
+  - メソッド中に`Alt＋\`を実行し、提案を要求します
+  - するとGitHub Copilotは以下のようなコードを提案してきます
     ![良くない関数名のコード](images/function-name_bad.png)
-- 関数名fetchDataEndwithtxt（意味のある名前）
-  - エディタで、該当ファイルを開く
-  - メソッド名がfetchDataEndwithtxtを指定する
-  - メソッド中に`Alt＋\`を実行し、提案を要求し、GitHub Copilotへ下記コードを自動補完する
+- 関数名`fetchDataEndwithtxt`（意味のある名前）の場合
+  - エディタで、該当ファイルを開きます
+  - メソッド名がfetchDataEndwithtxtを指定します
+  - メソッド中に`Alt＋\`を実行し、提案を要求します
+  - するとGitHub Copilotは以下のようなコードを提案してきます
     ![良い関数名のコード](images/function-name_good.png)
 
 ## 効果的なコンテキストの指定
@@ -39,13 +41,13 @@ sidebar_position: 3
 
 ### ※1 コンテキストの提供
 
-- IDEでファイルを開いておくことで、GitHub Copilotにコンテキストを提供します。
+- IDEでファイルを開いておくことで、GitHub Copilotにコンテキストを提供します
 - GitHub Copilot Chatにて`#editor`を使用して追加のコンテキストを提供できます
-  - VS Codeで、該当ファイルを開く
+  - VS Codeで、該当ファイルを開きます
     ![コンテキストに含めるファイルをVS Codeで開く](images/add-context.png)
-  - GitHub Copilotに以下を入力する
-    - `#editor /removeTxt　ファイルの拡張子が.csv .txt .mdであれば、リストに該当レコードも削除するを更新してください。`
-  - 更新後コードが提案される
+  - GitHub Copilotに以下を入力します
+    - `#editor /removeTxt　ファイルの拡張子が.csv .txt .mdの場合は、リストに該当レコードも削除するを更新してください。`
+  - 更新後コードが提案されます
 - コンテキストスイッチングを行ったり、次のタスクに移るときには、不要なファイルを閉じることを忘れないでください
 :::
 
@@ -66,8 +68,8 @@ GitHub Copilotから有用な回答を得られない場合は、要求を別の
 
 ### 不要なリクエストの削除
 
-- GitHub Copilot Chat Viewを開く
-- アイコン`x`をクリックする
+- GitHub Copilot Chat Viewを開きます
+- アイコン`x`を押下します
   - 削除前：
     ![不要なリクエスト削除前](images/delete-request_before.png)
   - 削除後：
@@ -75,10 +77,10 @@ GitHub Copilotから有用な回答を得られない場合は、要求を別の
 
 ### コミュニケーションをクリア
 
-- GitHub Copilot Chat Viewを開く
-- GitHub Copilotに以下を入力する
+- GitHub Copilot Chat Viewを開きます
+- GitHub Copilotに以下を入力します
     ![コミュニケーションをクリア](images/clear-communication-setting.png)
-- 現在のコミュニケーションをクリアする
+- 現在のコミュニケーションをクリアします
   - 削除前：
     ![コミュニケーションをクリアする前](images/clear-communication_before.png)
   - 削除後：
@@ -86,11 +88,11 @@ GitHub Copilotから有用な回答を得られない場合は、要求を別の
 
 ## スレッドで会話を整理
 
-GitHub Copilot Chatの`＋`をクリックすることで新しい会話（スレッド）を開始できます。<br/>
+GitHub Copilot Chatの`＋`を押下することで新しい会話（スレッド）を開始できます。<br/>
 これにより、GitHub Copilot Chatと複数の異なるトピックを同時進行できます。
 
-- GitHub Copilot Chat Viewを開く
-- アイコン`＋`をクリックする
+- GitHub Copilot Chat Viewを開きます
+- アイコン`＋`を押下します
   - 実行前：
     ![スレッド追加前](images/add-thread_before.png)
   - 実行後：
@@ -105,4 +107,4 @@ GitHub Copilot Chatの`＋`をクリックすることで新しい会話（ス�
 
 今後の提案を改善するためのフィードバックを提供します。<br/>
 次のようなさまざまな方法でフィードバックを提供できます。コード補完の場合は、GitHub Copilotの提案を受け入れるか拒否します。<br/>
-GitHub Copilot Chatの個々の応答の場合は、応答の横にあるサムアップアイコンまたはサムダウンアイコンをクリックします。
+GitHub Copilot Chatの個々の応答の場合は、応答の横にあるサムアップアイコンまたはサムダウンアイコンを押下します。

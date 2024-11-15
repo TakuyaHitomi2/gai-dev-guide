@@ -20,3 +20,5 @@ rules:
     pattern: /\bPJ\b/
   - expected: Nablarch
     pattern: nablarch
+  - expected: 押下
+    patterns: /(?<!右)クリック/

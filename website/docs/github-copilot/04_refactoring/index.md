@@ -55,13 +55,13 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 
 </details>
 
-1. エディタで、該当のファイルを開く
-2. GitHub Copilot Chat Viewを開く
-3. `/doc 日本語でjavadocを書いてください`と入力し送信
-4. GitHub Copilot Chatにより、元のコードにJavadocを加えた結果が出力される
-5. ファイル（`DateRangeValidator.java`）の内容を全選択する
-6. Insert at Cursorボタンを押す
-7. ファイルの内容が、Javadocを加えた新しいものに置き換わる
+- エディタで、該当のファイルを開きます
+- GitHub Copilot Chat Viewを開きます
+- `/doc 日本語でjavadocを書いてください`と入力し送信します
+- GitHub Copilot Chatにより、元のコードにJavadocを加えた結果が出力されます
+- ファイル（`DateRangeValidator.java`）の内容を全選択します
+- Insert at Cursorボタンを押下します
+- ファイルの内容が、Javadocを加えた新しいものに置き換わります
 
 ![JavaDoc生成手順](images/generate-javadoc.png)
 
@@ -139,28 +139,132 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 
 ## Javaクラスをリファクタリングする
 
-1. エディタで、該当のファイルを開く
-2. GitHub Copilot Chat Viewを開く
-3. `/fix リファクタリングしてください`と入力し送信
-4. GitHub Copilot Chatにより、リファクタリング内容とリファクタリング後のクラスが提案されます
-5. ファイルの内容を全選択する
-6. Insert at Cursorボタンを押す
-7. ファイルの内容がリファクタリングされた新しいものに置き換わる
+- エディタで、該当のファイルを開きます
+- GitHub Copilot Chat Viewを開きます
+- `/fix リファクタリングしてください`と入力し送信します
+- GitHub Copilot Chatにより、リファクタリング内容とリファクタリング後のクラスが提案されます
+- ファイルの内容を全選択します
+- Insert at Cursorボタンを押下します
+- ファイルの内容がリファクタリングされた新しいものに置き換わります
 
 ![リファクタリング手順](images/refactoring.png)
 
 ## Javaクラスをレビューする
 
-1. エディタで、該当ファイルを開く
-2. GitHub Copilot Chat Viewを開く
-3. GitHub Copilotに以下を入力する
-
-        ```txt
-        開発基準のMarkdownファイルを開発基準に、対象ファイルをレビューし、問題があれば、改修案を提示してください
-        ```
-
-4. 改修原因と改修内容が提案される
+- エディタで、該当ファイルを開ます
+- GitHub Copilot Chat Viewを開きます
+- GitHub Copilotに以下を入力します
+  - `開発基準のMarkdownファイルを開発基準に、対象ファイルをレビューし、問題があれば、改修案を提示してください`
+- 改修原因と改修内容が提案されます
 
 ![Javaクラスレビュー：チャットで依頼](images/suggestion_1.png)
 ![Javaクラスレビュー：レビューフィードバック1](images/suggestion_2.png)
 ![Javaクラスレビュー：レビューフィードバック2](images/suggestion_3.png)
+
+## セキュリティリスクを検知してもらう
+
+セキュリティリスクの可能性があるかをGitHub Copilotに検知してもらいます。
+
+<details>
+<summary>セキュリティリスクを発見したいファイルの詳細</summary>
+
+Nablarchのサンプルコードに今回のチェック用に修正を加えたものです。
+
+```java
+package com.nablarch.example.app.web.action;
+
+import nablarch.common.authorization.role.session.SessionStoreUserRoleUtil;
+import nablarch.common.dao.UniversalDao;
+import nablarch.common.web.csrf.CsrfTokenUtil;
+import nablarch.common.web.session.SessionUtil;
+import nablarch.core.beans.BeanUtil;
+import nablarch.core.message.ApplicationException;
+import nablarch.core.message.MessageLevel;
+import nablarch.core.message.MessageUtil;
+import nablarch.core.validation.ee.ValidatorUtil;
+import nablarch.fw.ExecutionContext;
+import nablarch.fw.web.HttpRequest;
+import nablarch.fw.web.HttpResponse;
+import nablarch.fw.web.interceptor.OnError;
+
+import com.nablarch.example.app.entity.SystemAccount;
+import com.nablarch.example.app.entity.Users;
+import com.nablarch.example.app.web.common.authentication.AuthenticationUtil;
+import com.nablarch.example.app.web.common.authentication.context.LoginUserPrincipal;
+import com.nablarch.example.app.web.common.authentication.exception.AuthenticationException;
+import com.nablarch.example.app.web.form.LoginForm;
+
+import java.util.Collections;
+
+public class AuthenticationAction {
+
+    public HttpResponse index(HttpRequest request, ExecutionContext context) {
+        return new HttpResponse("/WEB-INF/view/login/index.jsp");
+    }
+
+    @OnError(type = ApplicationException.class, path = "/WEB-INF/view/login/index.jsp",statusCode = 403)
+    public HttpResponse login(HttpRequest request, ExecutionContext context) {
+
+        final LoginForm form = BeanUtil.createAndCopy(LoginForm.class, request.getParamMap());
+
+        try {
+            ValidatorUtil.validate(form);
+        } catch (ApplicationException e) {
+            throw new ApplicationException(MessageUtil.createMessage(
+                    MessageLevel.ERROR, "errors.login" + e.getMessage()));
+        }
+
+        try {
+            AuthenticationUtil.authenticate(form.getLoginId(), form.getUserPassword());
+        } catch (AuthenticationException ignore) {
+            throw new ApplicationException(MessageUtil.createMessage(
+                    MessageLevel.ERROR, "errors.login"));
+        }
+
+        SessionUtil.changeId(context);
+        CsrfTokenUtil.regenerateCsrfToken(context);
+
+        LoginUserPrincipal userContext = createLoginUserContext(form.getLoginId());
+
+        if (userContext.isAdmin()) {
+            SessionStoreUserRoleUtil.save(Collections.singleton(LoginUserPrincipal.ROLE_ADMIN), context);
+        }
+
+        SessionUtil.put(context, "userContext", userContext);
+        SessionUtil.put(context,"user.id",String.valueOf(userContext.getUserId()));
+        return new HttpResponse(303, "redirect:///action/project/index");
+    }
+
+    private LoginUserPrincipal createLoginUserContext(String loginId) {
+        SystemAccount account = UniversalDao
+                .findBySqlFile(SystemAccount.class,
+                        "FIND_SYSTEM_ACCOUNT_BY_AK", new Object[]{loginId});
+        Users users = UniversalDao.findById(Users.class, account.getUserId());
+
+        LoginUserPrincipal userContext = new LoginUserPrincipal();
+        userContext.setUserId(account.getUserId());
+        userContext.setKanjiName(users.getKanjiName());
+        userContext.setAdmin(account.isAdminFlag());
+        userContext.setLastLoginDateTime(account.getLastLoginDateTime());
+
+        return userContext;
+
+    }
+
+    public HttpResponse logout(HttpRequest request, ExecutionContext context) {
+        SessionUtil.invalidate(context);
+
+        return new HttpResponse(303, "redirect:///action/login");
+    }
+
+}
+```
+
+</details>
+
+- エディタで、該当のファイルを開きます
+- GitHub Copilot Chat Viewを開きます
+- `/explain このコードの潜在的なリスクを教えて`と入力し送信します
+- GitHub Copilot Chatにより、セキュリティリスクになりそうな箇所が提示されます
+
+![セキュリティリスク検知手順（gifアニメ）](images/security-detect_2.png)

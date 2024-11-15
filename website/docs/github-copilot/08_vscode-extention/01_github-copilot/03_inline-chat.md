@@ -17,7 +17,7 @@ Windows `ctrl + i` 、Mac `⌘ + i` でチャットを開始します。
 <!-- textlint-disable prh -->
 - エディタ上で右クリック後「Copilot」の項目が表示されます
 <!-- textlint-enable prh -->
-- 「Start in Editor」をクリックすると、インラインチャットが表示されます
+- 「Start in Editor」を押下すると、インラインチャットが表示されます
   ![inlinechat_1.png](images/inlinechat_1.png)
   ![inlinechat_2.png](images/inlinechat_2.png)
 
