@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # GitHub Copilot導入に期待する効果
 
-TODO 導入文の検討
+ＴＯＤＯ導入文の検討。
 
 ## 開発生産性の向上
 

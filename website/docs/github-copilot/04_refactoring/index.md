@@ -154,13 +154,10 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 - エディタで、該当ファイルを開ます
 - GitHub Copilot Chat Viewを開きます
 - GitHub Copilotに以下を入力します
-
       ```txt
       #file:開発標準_Javaコーディング規約.mdの内容を開発基準に、#file:CallTreeEntity.javaをレビューしてください。問題があれば、改善案を提示してください
       ```
-
-      ※コンテキスト変数`#file`については[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照してください
-
+      ※`#file`の使い方は[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照してください
 - 改修原因と改修内容が提案されます
 
 ![Javaクラスレビュー：チャットで依頼](images/suggestion_1.png)
