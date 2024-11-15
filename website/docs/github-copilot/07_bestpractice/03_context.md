@@ -32,24 +32,20 @@ sidebar_position: 3
 
 ## 効果的なコンテキストの指定
 
-- VS CodeでGitHub Copilotを使用している場合は、関連するファイルを開き、無関係なファイルを閉じます（※1）
-- GitHub Copilot Chatでは、特定の要求が有用なコンテキストでなくなった場合は、その要求を会話から削除します
-- GitHub Copilot Chatでは、特定の会話のどのコンテキストも役に立たない場合は、新しい会話を開始します
-- VS CodeでGitHub Copilot Chatを使用している場合は、キーワードを使用して、GitHub Copilotを特定のタスクまたはコンテキストにフォーカスします
-
-:::info
-
-### ※1 コンテキストの提供
-
-- IDEでファイルを開いておくことで、GitHub Copilotにコンテキストを提供します
-- GitHub Copilot Chatにて`#editor`を使用して追加のコンテキストを提供できます
+- VS Codeで関連するファイルを開き、無関係なファイルを閉じておくことで、GitHub Copilotにコンテキストを提供できます
+- 関連ファイルを開くことに加えて、GitHub Copilot Chatにて`#editor`を使用して追加のコンテキストを提供できます
+  <details>
+  <summary>`#editor`を使った追加コンテキスト提供の手順</summary>
   - VS Codeで、該当ファイルを開きます
     ![コンテキストに含めるファイルをVS Codeで開く](images/add-context.png)
   - GitHub Copilotに以下を入力します
     - `#editor /removeTxt　ファイルの拡張子が.csv .txt .mdの場合は、リストに該当レコードも削除するを更新してください。`
   - 更新後コードが提案されます
+  </details>
 - コンテキストスイッチングを行ったり、次のタスクに移るときには、不要なファイルを閉じることを忘れないでください
-:::
+- GitHub Copilot Chatでは、特定の要求が有用なコンテキストでなくなった場合は、その要求を会話から削除します
+- GitHub Copilot Chatでは、特定の会話のどのコンテキストも役に立たない場合は、新しい会話を開始します
+- VS CodeでGitHub Copilot Chatを使用している場合は、キーワードを使用して、GitHub Copilotを特定のタスクまたはコンテキストにフォーカスします
 
 ## プロンプトの言い換え・分割
 
