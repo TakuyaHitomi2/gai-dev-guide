@@ -18,7 +18,7 @@ VS Codeの設定の前に、GitHubアカウントの設定が必要です。以�
 
 ### GitHubアカウントの作成
 
-- GitHubアカウントをお持ちでない方は、[GitHubのトップページ](https://github.com/)を開き、右上にある「Sign up」からアカウントを作成してください。
+- GitHubアカウントをお持ちでない方は、[GitHubのトップページ](https://github.com/)を開き、右上にある「Sign up」からアカウントを作成してください
 - アカウントを作成したら、開発プロジェクトのGitHub Copilot管理者に、あなたのアカウントをお伝えください。管理者がGitHub Copilotのorganizationにあなたのアカウント紐づけます
 
 :::note
@@ -28,7 +28,7 @@ VS Codeの設定の前に、GitHubアカウントの設定が必要です。以�
 
 ### 管理者がGitHub Copilotのorganizationにあなたのアカウントに紐づける
 
-あなたのアカウント情報を、管理者にお伝えした、管理者はあなたのアカウントをGitHub Copilotのorganizationにあなたのアカウント紐づけます
+あなたのアカウント情報を、管理者にお伝えした、管理者はあなたのアカウントをGitHub Copilotのorganizationにあなたのアカウント紐づけます。
 
 ### GitHubアカウントがGitHub Copilotのorganizationに紐づいていることを確認
 
@@ -64,7 +64,7 @@ VS Codeの設定の前に、GitHubアカウントの設定が必要です。以�
 
 ### 拡張機能GitHub Copilotのインストール
 
-必要な拡張機能はGitHub CopilotとGitHub Copilot Chatの２種類があります。<br/>
+必要な拡張機能はGitHub CopilotとGitHub Copilot Chatの2種類があります。<br/>
 まずはGitHub Copilotを以下手順に従ってインストールしましょう。
 
 - **▼インストール**
@@ -98,8 +98,7 @@ VS Codeの設定の前に、GitHubアカウントの設定が必要です。以�
 - **▼インストール**
 - ブラウザにて[VS Code拡張機能のマーケットプレイス](https://marketplace.visualstudio.com/)で[拡張機能GitHub Copilot Chatのページ](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)を開きInstallボタンを押下してください
 - **▼日本語化**
-- GitHub Copilot ChatはデフォルトではVS Codeの[Display Language](https://code.visualstudio.com/docs/getstarted/locales)で設定された言語を用いて初期応答を行いますが<br/>
-  VS Codeの設定項目`github.copilot.chat.localeOverride`を設定することで上書き可能です。以下手順で実施してください
+- GitHub Copilot ChatはVS Codeの[Display Language](https://code.visualstudio.com/docs/getstarted/locales)の設定言語で初期応答を行いますが、VS Codeの設定項目で上書き可能です。以下手順で実施してください
   - VS Codeの設定画面を開きます
   - 設定画面の`Search settings`欄へ`github.copilot.chat.localeOverride`と入力します
   - `Locale Override`の項目に`ja`を設定します
@@ -110,7 +109,7 @@ VS Codeの設定の前に、GitHubアカウントの設定が必要です。以�
 - GitHub Copilot Chatが利用できることを確認します
   - ①のメニューを押下しGitHub Copilot Chatパネルを開きます
   - ②の入力欄に`@workspace ワークスペース内のファイルについて教えてください`と入力・送信します
-    - ※`@workspace`の使い方は[操作方法・ショートカット > エージェントコマンド](../08_vscode-extention/01_github-copilot/02_shortcuts.md#エージェントコマンド)参照ください
+    - ※`@workspace`の使い方は[操作方法・ショートカット ＞ エージェントコマンド](../08_vscode-extention/01_github-copilot/02_shortcuts.md#エージェントコマンド)参照ください
   - ③のエリアに日本語で回答が表示されれば確認完了です
     ![VS Code拡張機能GitHub Copilot Chatのインストール手順](images/vscode-github-copilot-chat-install_1.png)
 
