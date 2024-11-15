@@ -18,21 +18,27 @@ GitHub Copilotにサポートしてもらいながら、テストコードを効
 - テストを途中まで書きます
 - テストの内容が提案されます
 
-### 例１（提案時 → 提案受け入れ後）
+<details>
+<summary>具体例</summary>
 
-![テストコード生成：例１：提案時](images/generate-test_1_before.png)<br/>
-↓<br/>
-![テストコード生成：例１：提案受け入れ後](images/generate-test_1_after.png)
+### 例１
 
-### 例２（提案時 → 提案受け入れ後）
+- **提案時**
+  ![テストコード生成：例１：提案時](images/generate-test_1_before.png)<br/>
+- **提案受け入れ後**
+  ![テストコード生成：例１：提案受け入れ後](images/generate-test_1_after.png)
 
-![テストコード生成：例２：提案時](images/generate-test_2_before.png)<br/>
-↓<br/>
-![テストコード生成：例２：提案受け入れ後](images/generate-test_2_after.png)
+### 例２
+
+- **提案時**
+  ![テストコード生成：例２：提案時](images/generate-test_2_before.png)<br/>
+- **提案受け入れ後**
+  ![テストコード生成：例２：提案受け入れ後](images/generate-test_2_after.png)
 
 ### 例３
 
-![テストコード生成：例３（gifアニメ）](images/generate-test_3.gif)
+- ![テストコード生成：例３（gifアニメ）](images/generate-test_3.gif)
+</details>
 
 ## GitHub Copilot Chatからテストコードを生成する
 
