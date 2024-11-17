@@ -21,7 +21,7 @@ GitHubによる調査においても以下のような導入効果が紹介さ�
 
 **[GitHub Copilotが開発者の生産性と満足度に与える影響を数値化](https://github.blog/jp/2022-09-15-research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)**
 
-- GitHub Copilotを使用したグループのほうが、**タスクの完了率が高かった（未使用の場合70%だが使用場合は78%）**
+- GitHub Copilotを使用したグループのほうが、**タスクの完了率が高かった（未使用の場合70%だが使用した場合は78%）**
 - 顕著な違いは、GitHub Copilotを使用した開発者は、GitHub Copilotを使用しなかった開発者よりも**55%速くタスクを完了した**ことです
 
 **[GitHub Copilotがコード品質に与える影響を数値化](https://github.blog/jp/2023-10-20-research-quantifying-github-copilots-impact-on-code-quality/)**
