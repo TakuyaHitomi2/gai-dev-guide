@@ -12,8 +12,8 @@ sidebar_position: 4
 
 ## 小さなコードチャンクで作業する
 
-複雑な計算する関数を書くとしましょう。<br/>
-GitHub Copilotに全体の複雑な解決策を求める代わりに、いくつかの関数に分けて、それぞれの関数を生成するように求めることで、より正確なコードを生成してくれます。
+例えば複雑な計算を行う関数を書くとしましょう。<br/>
+このとき、GitHub Copilotに対して全体の複雑な解決策を求める代わりに、いくつかの関数に分割した上で個々の関数を生成するように求めることで、より正確なコードを生成してくれます。
 
 参考：[小さなコードチャンクで作業する](https://ai-native-development.gitbook.io/docs/v/ja/design-patterns/working-on-small-chunk)
 
@@ -32,4 +32,4 @@ GitHub Copilotはコード上の型情報を認識して提案を行います。
 また、GitHub Copilotは変数名や関数名もコンテキストとして扱うため、具体的で説明的な命名を行うことでより良い提案を行ってくれます。
 
 参考：[タイプヒンティング](https://ai-native-development.gitbook.io/docs/v/ja/general/type-hinting)  
-参考：[AI が理解可能な命名規則](https://ai-native-development.gitbook.io/docs/v/ja/design-patterns/ai-readable-naming-convention)
+参考：[AIが理解可能な命名規則](https://ai-native-development.gitbook.io/docs/v/ja/design-patterns/ai-readable-naming-convention)
