@@ -1,10 +1,31 @@
 filters:
+  comments:
+    true
   allowlist:
     allow:
       - GitHub Copilot
 rules:
-  preset-ja-technical-writing: true
+  preset-ja-technical-writing:
+    sentence-length:
+      max: 100
+      skipPatterns:
+        - /\(.*\)/
+    ja-no-mixed-period:
+      periodMark: "。"
+      allowPeriodMarks:
+        - ":::"
+    max-kanji-continuous-len:
+      max: 6
+    no-exclamation-question-mark: false
+    ja-no-redundant-expression: false
+    no-mix-dearu-desumasu:
+      preferInHeader: ""
+      preferInBody: "ですます"
+      preferInList: "ですます"
+      strict: true
+  period-in-list-item: true
   preset-jtf-style: true
-  prh: 
+  textlint-rule-preset-ja-spacing: true
+  prh:
     rulePaths:
     - ./prh.yaml

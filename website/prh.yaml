@@ -14,3 +14,11 @@ rules:
     patterns: Todo
   - expected: クエリ
     patterns: クエリー
+  - expected: GitHub Copilot
+    patterns: /(?<!GitHub )Copilot/
+  - expected: プロジェクト
+    pattern: /\bPJ\b/
+  - expected: Nablarch
+    pattern: nablarch
+  - expected: 押下
+    patterns: /(?<!右)クリック/
