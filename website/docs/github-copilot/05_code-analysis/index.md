@@ -15,7 +15,8 @@ sidebar_position: 5
 
 VS CodeのGitHub Copilot ChatにてJavaファイルのクラス図を作成する例を示します。
 
-- **▼入力手順**
+▼入力手順
+
 - VS Codeにてクラス図作成対象のファイルを開いておきます
 - GitHub Copilot Chat Viewを開き以下を入力します
       ```txt
@@ -23,7 +24,9 @@ VS CodeのGitHub Copilot ChatにてJavaファイルのクラス図を作成す�
       ```
       ![クラス図作成用プロンプト](images/class-diagram_prompt.png)
       ※`#file`の使い方は[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照ください
-- **▼出力結果**
+
+▼出力結果
+
 - 以下のようにMermaid形式のテキストが出力されます
   ![出力されたクラス図（Mermaid形式のテキスト）](images/class-diagram_answer.png)
 - Mermaidで図にすると以下のようになります
@@ -33,7 +36,8 @@ VS CodeのGitHub Copilot ChatにてJavaファイルのクラス図を作成す�
 
 クラス図と同様に、処理フローを出力することもできます。
 
-- **▼入力手順**
+▼入力手順
+
 - VS Codeにてクラス図作成対象のファイルを開いておきます
 <details>
   <summary>フロー図作成対象のメソッド</summary>
@@ -80,7 +84,9 @@ VS CodeのGitHub Copilot ChatにてJavaファイルのクラス図を作成す�
       ```
       ![フロー図作成用プロンプト](images/flow-diagram_prompt.png)
       ※`#file`の使い方は[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照ください
-- **▼出力結果**
+
+▼出力結果
+
 - 以下のようにMermaid形式のテキストが出力されます
   ![出力されたフロー図（Marmaid形式のテキスト）](images/flow-diagram_answer.png)<br/>
 - Mermaidで図にすると以下のようになります
