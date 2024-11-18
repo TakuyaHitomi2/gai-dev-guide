@@ -5,7 +5,7 @@ sidebar_position: 4
 # その他
 
 :::info
-本ページは以下からの抜粋です。詳細は以下を御覧ください。<br/>
+本ページは以下からの抜粋です。詳細は以下を参照ください。<br/>
 [GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/ja) ＞ Design Patterns
 :::
 <br/>

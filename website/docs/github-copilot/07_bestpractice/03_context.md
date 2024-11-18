@@ -5,7 +5,7 @@ sidebar_position: 3
 # 適切なコンテキストを与える
 
 :::info
-本ページは以下からの抜粋です。詳細は以下を御覧ください。<br/>
+本ページは以下からの抜粋です。詳細は以下を参照ください。<br/>
 [GitHub Copilot の使用についてのベストプラクティス - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F)<br/>
 [GitHub Copilot のプロンプト エンジニアリング - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/prompt-engineering-for-github-copilot)
 :::
