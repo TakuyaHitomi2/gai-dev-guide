@@ -9,32 +9,26 @@ title: ガイドのカスタマイズ・配布
 さらに、オフライン環境で開発する方向けでも参照できるように、参照時にWEBサーバを必要としないHTMLファイルとして配布可能です。<br/>
 以下の手順に従ってカスタマイズ・配布してください。
 
-:::warning
+## 1. カスタマイズ用環境を準備する
 
-オフライン環境に配布する場合、ガイドに記載された外部リンクにはアクセスできません。<br/>
-必要に応じて、外部リンク先の情報をガイドに追記してください。
+カスタマイズはローカルPC上で行います。
+以下手順に従って、カスタマイズ用環境を準備してください。
 
-:::
+- ガイドをカスタマイズするには、お使いの環境にて以下のツールが必要です。各ツールをインストールしてください
+  - [Node.js](https://nodejs.org/en/)（v18以上）
+    - 実行環境として必要です
+  - [Visual Studio Code](https://code.visualstudio.com/)
+    - カスタマイズ時のエディタとして推奨します
+  - [git](https://git-scm.com/)
+    - ガイドのリポジトリをクローンするために必要です
 
-## 前提
-
-ガイドをカスタマイズするには、お使いの環境にて以下のツールが必要です。
-
-- [Node.js](https://nodejs.org/en/)（v18以上）
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [git](https://git-scm.com/)
-
-## 手順
-
-### ガイドをローカルで起動する
-
-- 本リポジトリをクローンします
+- 本リポジトリをgitでクローンします。ターミナルで以下を実行してください
 
   ```bash
   git clone https://github.com/Fintan-contents/gai-dev-guide.git
   ```
 
-- ガイドのライブラリをインストールします
+- 続いてガイドのライブラリをインストールします。ターミナルで以下を実行してください
 
   ```bash
   cd gai-dev-guide
@@ -42,38 +36,60 @@ title: ガイドのカスタマイズ・配布
   npm ci
   ```
 
-- ガイドの起動します
+- ガイドの起動します。ターミナルで`gai-dev-guide/website`をカレントディレクトリとして以下を実行してください
 
   ```bash
-  # gai-dev-guide/website直下で実行
   npm start
   ```
 
-- ブラウザにて、[http://localhost:3000](http://localhost:3000)にアクセスします
+- ブラウザにて、[http://localhost:3000](http://localhost:3000)にアクセスし、ガイドが表示されれば準備完了です
 
-### ガイドをカスタマイズする
+## 2. ガイドをカスタマイズする
 
 - クローンしたリポジトリをVisual Studio Codeで開きます
 - `website/docs`ディレクトリ配下のmdファイルまたはmdxファイルを編集します
-- 編集内容を確認するために、ガイドを再起動します<br/> ※編集しながらブラウザ（[http://localhost:3000](http://localhost:3000)）にて編集内容をリアルタイムで確認可能です
+- 編集内容を確認するために、ガイドを再起動します<br/>
+ターミナルで`gai-dev-guide/website`をカレントディレクトリとして以下を実行します<br/>
+※編集しながらブラウザ（[http://localhost:3000](http://localhost:3000)）にて編集内容をリアルタイムで確認可能です
+      ```bash
+      npm start
+      ```
 
-  ```bash
-  # gai-dev-guide/website直下で実行
-  npm start
-  ```
+:::info
 
-### ガイドを静的HTMLに出力する
+ガイドは[Docusaurus](https://docusaurus.io/)というドキュメント生成用ライブラリを使用して作成されています。<br/>
+カスタイマイズする際は、マークダウン記法と、マークダウン記法を拡張したMDX記法、およびDocusaurusの基本的な知識が必要です。<br/>
+詳細は[Markdown Features - Docusaurus](https://docusaurus.io/docs/markdown-features)を参照ください。
 
-- ビルドを実行します。この時のnpm scriptは`build`ではなく`build:usableWithoutServer`を実行します
+:::
 
-  ```bash
-  # gai-dev-guide/website直下で実行
-  npm run build:usableWithoutServer
-  ```
+:::warning
 
+オフライン環境に配布する場合、ガイドに記載された外部リンクにはアクセスできません。<br/>
+必要に応じて、外部リンク先の情報をガイドに追記してください。
+
+:::
+
+## 3. カスタマイズしたガイドを配布する
+
+開発プロジェクトによって様々な配布方法が考えられますが、ここではオフライン環境で開発する方向けに、ガイドを静的HTMLファイルとして配布する方法を紹介します。
+
+### ビルドする
+
+- ターミナルで`gai-dev-guide/website`をカレントディレクトリとして以下を実行してください。<br/>
+この時のnpm scriptは`build`ではなく`build:usableWithoutServer`を実行します
+      ```bash
+      npm run build:usableWithoutServer
+      ```
 - `website/build`ディレクトリ配下に静的HTMLが出力されるので直下の`index.html`のファイルパスをコピーして、ブラウザにてアクセスして表示されれば出力成功です
 
-### 出力したガイドを配布する
+### ビルドしたガイドを配布する
 
 - `website/build`ディレクトリをプロジェクトごとの最適な方法で配布してください
   - 例えば「`website/build`ディレクトリをZIP圧縮して各人に送付する」や「`website/build`ディレクトリ資産をファイルサーバに格納する」などが考えられます
+
+:::info
+
+上記手順で配布した場合、配布したフォルダ直下の`index.html`をブラウザで開くことで、ガイドを参照できます。
+
+:::
