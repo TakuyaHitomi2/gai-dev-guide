@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# GitHub CopilotとGitHub Copilot Chatの利用シーン
+# ツールの利用シーン
 
 GitHub Copilot、GitHub Copilot Chatなどのツールに使い慣れてくると、
 ツールを使うか、どちらのツールを使うかに迷うことがあります。<br/>

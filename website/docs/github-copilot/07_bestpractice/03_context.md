@@ -2,16 +2,29 @@
 sidebar_position: 3
 ---
 
-# 適切なコンテキストを与える
+# 効果的なプロンプト・コンテキストのTips
 
-:::info
-本ページは以下からの抜粋です。詳細は以下を参照ください。<br/>
-[GitHub Copilot の使用についてのベストプラクティス - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F)<br/>
-[GitHub Copilot のプロンプト エンジニアリング - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/prompt-engineering-for-github-copilot)
+前ページでプロンプトとコンテキストの重要性を説明しました。<br/>
+本ページではプロンプト・コンテキストの質を向上させるための具体的な方法を紹介します。
+
+## 一貫性のあるコーディングスタイル
+
+GitHub Copilotは既存のソースコードを元に予測し提案を行います。<br/>
+インデント、命名規則、宣言方法、コメントの書き方等のコーディングスタイルを一貫性のあるものにすることで、GitHub Copilotも一貫性のある提案を行ってくれるようになります。
+
+<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
+<!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
+:::info[詳細は以下参照ください]
+<!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
+<!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
+- [一貫性のあるコーディングスタイル - GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/v/ja/design-patterns/consistent-coding-style)
+- [タイプヒンティング - GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/v/ja/general/type-hinting)  
+- [AIが理解可能な命名規則 - GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/v/ja/design-patterns/ai-readable-naming-convention)
 :::
 
-## 変数名などに意味のある名前を付ける
+### 変数名などに意味のある名前を付ける
 
+一貫性のあるコーディングスタイルの具体例として変数名・関数名の名前の付け方を示します。<br/>
 `foo`や`bar`という名前の関数がある場合、GitHub Copilotは名前から意図を推測できないため、最適な補完ができません。<br/>
 同様に、関数名`fetchData()`は`Data`という語が曖昧なので、GitHub Copilotにとってもあまり意味がありません。
 
@@ -30,6 +43,13 @@ sidebar_position: 3
   - するとGitHub Copilotは以下のようなコードを提案してきます
     ![良い関数名のコード](images/function-name_good.png)
 
+### タイプヒンティング
+
+変数名・関数名以外にも、GitHub Copilotはコード上の型情報を認識して提案を行います。<br/>
+静的型付け言語の型宣言はもちろん、動的型付け言語においても、タイプヒンティングを用いて型を宣言することで、提案の精度を上げることができます。<br/>
+型宣言がない言語ではDocコメント等で代用できます。<br/>
+また、GitHub Copilotは変数名や関数名もコンテキストとして扱うため、具体的で説明的な命名を行うことでより良い提案を行ってくれます。
+
 ## 効果的なコンテキストの指定
 
 - VS Codeで関連するファイルを開き、無関係なファイルを閉じておくことで、GitHub Copilotにコンテキストを提供できます
@@ -47,6 +67,14 @@ sidebar_position: 3
 - GitHub Copilot Chatでは、特定の会話のどのコンテキストも役に立たない場合は、新しい会話を開始します
 - VS CodeでGitHub Copilot Chatを使用している場合は、キーワードを使用して、GitHub Copilotを特定のタスクまたはコンテキストにフォーカスします
 
+<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
+<!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
+:::info[詳細は以下参照ください]
+<!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
+<!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
+- [GitHub Copilot の使用についてのベストプラクティス - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F)
+:::
+
 ## プロンプトの言い換え・分割
 
 GitHub Copilotから有用な回答を得られない場合は、要求を別の言葉で言い換えるか、要求を複数の小さな要求に分割してみます。<br/>
@@ -57,10 +85,27 @@ GitHub Copilotから有用な回答を得られない場合は、要求を別の
 - 前の関数を使用して、少なくとも10個の単語を含む10x10個の文字グリッドを生成する関数を記述します
 - 前の関数を更新して、グリッドから文字のグリッドと10個のランダムな単語を出力します
 
-## コミュニケーションの削除
+<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
+<!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
+:::info[詳細は以下参照ください]
+<!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
+<!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
+- [複雑なタスクを単純なタスクに分割する - GitHub docs](https://docs.github.com/ja/copilot/using-github-copilot/prompt-engineering-for-github-copilot#break-complex-tasks-into-simpler-tasks)<br/>
+- [小さなコードチャンクで作業する - GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/ja/design-patterns/working-on-small-chunk)
+:::
+
+## コミュニケーションの削除・切り替え
 
 チャットインターフェースで以前に尋ねた質問を削除して、インデックス化された会話からそれを削除することができます。<br/>
 これは特にそれがもはや関連性を持たない場合、会話の流れが改善され、GitHub Copilotに必要な情報のみを提供することができます。
+
+<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
+<!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
+:::info[詳細は以下参照ください]
+<!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
+<!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
+- [GitHub Copilot の使用についてのベストプラクティス - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F)
+:::
 
 ### 不要なリクエストの削除
 
@@ -82,7 +127,7 @@ GitHub Copilotから有用な回答を得られない場合は、要求を別の
   - 削除後：
     ![コミュニケーションをクリアした後](images/clear-communication_before.png)
 
-## スレッドで会話を整理
+### スレッドで会話を整理
 
 GitHub Copilot Chatの`＋`を押下することで新しい会話（スレッド）を開始できます。<br/>
 これにより、GitHub Copilot Chatと複数の異なるトピックを同時進行できます。
@@ -96,11 +141,26 @@ GitHub Copilot Chatの`＋`を押下することで新しい会話（スレッ�
 
 ## 提案の選択
 
-コード補完時にGitHub Copilotは複数の提案を提示する可能性があります。<br/>
+コード補完時にGitHub Copilotは複数の提案を提示できます。<br/>
 キーボードショートカット（`Ctrl+Enter`）を使用すると、使用可能なすべての提案をすばやく確認できます。
+
+<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
+<!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
+:::info[詳細は以下参照ください]
+<!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
+<!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
+- [GitHub Copilot の使用についてのベストプラクティス - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F)
+:::
 
 ## フィードバック
 
-今後の提案を改善するためのフィードバックを提供します。<br/>
-次のようなさまざまな方法でフィードバックを提供できます。コード補完の場合は、GitHub Copilotの提案を受け入れるか拒否します。<br/>
-GitHub Copilot Chatの個々の応答の場合は、応答の横にあるサムアップアイコンまたはサムダウンアイコンを押下します。
+GitHub Copilotの提案に対してフィードバックを提供することで、提案の質を向上できます。<br/>
+提案に対して適宜フィードバックを提供し、GitHub Copilotの学習を助けましょう。
+
+<!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
+<!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
+:::info[詳細は以下参照ください]
+<!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
+<!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
+- [GitHub Copilot の使用についてのベストプラクティス - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F)
+:::
