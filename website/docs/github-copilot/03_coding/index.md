@@ -9,7 +9,7 @@ sidebar_position: 3
 
 ## コードから補完する
 
-※`GitHub Copilot`の機能
+※`GitHub Copilot`の機能。
 
 GitHub Copilotの最も利用頻度の高い使い方です。<br/>
 記述中のコードに対し、次に記述されると想定されるコードをリアルタイムに提案できます。<br/>
@@ -38,7 +38,7 @@ GitHub Copilotを有効化した状態でいつも通りコードを書くだけ
 
 ## コメントから補完する
 
-※`GitHub Copilot`の機能
+※`GitHub Copilot`の機能。
 
 上記セクションではコードをインプットにして補完候補を提案してもらうやり方を紹介しましたが、コメントをインプットにすることも可能です。
 ここではコメントを記述した後にコードをGitHub Copilotに補完してもらう方法を示します。
@@ -58,8 +58,8 @@ GitHub Copilotを有効化した状態でいつも通りコードを書くだけ
 - 提示された補完候補がマッチしない場合は他の補完候補を確認できます（Windows： `Alt + ]`・`Alt +[`、Mac： `Option + ]`・`Option + [`）
   ![コード補完：他提案の確認](images/code-completion_3.png)
 
-:::info[警備なエラーの修正]
-要求受け入れ後にに警備なエラーがある場合、以下手順でエラーを解消できます
+:::info
+要求受け入れ後にに警備なエラーがある場合、以下手順でエラーを解消できます。
 
 - エラー箇所を右クリックします
 - `クイック修正 ＞ Copilotを使用修正する`を選択します
@@ -72,13 +72,13 @@ GitHub Copilotを有効化した状態でいつも通りコードを書くだけ
 
 ## エディタ上で提案をもらう
 
-※`GitHub Copilot Chat`の機能
+※`GitHub Copilot Chat`の機能。
 
 GitHub Copilot Chatは、GitHub Copilot Chat Viewを開かなくても利用が可能です。
 
 - エディタ上で右クリックします
 - GitHub Copilotにカーソルをあわせます
-- `Start in Editor` （`エディタ内でのインラインチャット`）を押下します
+- `Start in Editor`（`エディタ内でのインラインチャット`）を押下します
 
 詳細はこちらをご確認ください [インラインチャット](../08_vscode-extention/01_github-copilot/03_inline-chat.md)
 
