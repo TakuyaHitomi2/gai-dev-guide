@@ -9,7 +9,7 @@ sidebar_position: 3
 
 ## コードから補完する
 
-`GitHub Copilot`
+※`GitHub Copilot`の機能
 
 GitHub Copilotの最も利用頻度の高い使い方です。<br/>
 記述中のコードに対し、次に記述されると想定されるコードをリアルタイムに提案できます。<br/>
@@ -17,14 +17,17 @@ GitHub Copilotを有効化した状態でいつも通りコードを書くだけ
 
 例として、関数の実装内容をGitHub Copilotに補完させる方法を示します。
 
-- ▼インプット
+### 1. 要求を提案させる
+
 - 関数のインターフェース、クラスの定義を記述します
-- ▼補完候補の提案
-- 下記のような動作を行うとGitHub Copilotが補完候補を提案してくれるので、補完候補を確認し、TABキーで反映させます
-  - 候補を提案してほしい場所にカーソルを合わせて改行します
-  - 提案を要求します（Windowsの場合は`Alt + \`、Macの場合は`Option + \`）
-  - GitHub Copilotが補完候補を薄字で表示してくれます
-  - 提示された補完候補がマッチしない場合は他の補完候補を確認できます（Windows： `Alt + ]`・`Alt +[`、Mac： `Option + ]`・`Option + [`）
+- 候補を提案してほしい場所にカーソルを合わせて改行します
+- 提案を要求します（Windowsの場合は`Alt + \`、Macの場合は`Option + \`）
+- 上記操作によりGitHub Copilotが補完候補を薄字で表示してくれます
+  
+### 2. 提案を受け入れる
+
+- 提案を受け入れる場合、提案を表示させて状態でTABキーを押下すると補完できます
+- 提示された補完候補がマッチしない場合は他の補完候補を確認できます（Windows： `Alt + ]`・`Alt +[`、Mac： `Option + ]`・`Option + [`）
 
 ![コード補完手順（gifアニメ）](images/code-completion.gif)
 
@@ -35,44 +38,41 @@ GitHub Copilotを有効化した状態でいつも通りコードを書くだけ
 
 ## コメントから補完する
 
-`GitHub Copilot`
+※`GitHub Copilot`の機能
 
 上記セクションではコードをインプットにして補完候補を提案してもらうやり方を紹介しましたが、コメントをインプットにすることも可能です。
 ここではコメントを記述した後にコードをGitHub Copilotに補完してもらう方法を示します。
 
-- ▼インプット
+### 1. 提案を要求させる
+
 - 関数、クラスの定義や処理のコメントを記述します
   ![コード補完元のコメント](images/code-completion_1.png)
-- ▼補完候補の提案
-- 下記のような動作を行うとGitHub Copilotが補完候補を提案してくれるので、補完候補を確認しTABキーでコードに反映させます
-  - 候補を提案してほしい場所にカーソルを合わせて改行します
-  - 提案を要求します（Windowsの場合は`Alt + \`、Macの場合は`Option + \`）
-    ![コード補完：提案の要求](images/code-completion_2.png)
-  - 提示された補完候補がマッチしない場合は他の補完候補を確認できます（Windows： `Alt + ]`・`Alt +[`、Mac： `Option + ]`・`Option + [`）
-    ![コード補完：他提案の確認](images/code-completion_3.png)
-  - 候補コードを確認してTABキーでコードに反映させます
-  - 反映後にエラーがある場合、エラー箇所を右クリック → Quick Fixで解消できます<br/>
-    **修正前：**<br/>
-    ![コード補完：提案受け入れ前](images/code-completion_4.png)<br/>
-    **修正後：**<br/>
-    ![コード補完：提案受け入れ後](images/code-completion_5.png)
+- 候補を提案してほしい場所にカーソルを合わせて改行します
+- 提案を要求します（Windowsの場合は`Alt + \`、Macの場合は`Option + \`）
+  ![コード補完：提案の要求](images/code-completion_2.png)
+- 上記操作によりGitHub Copilotが補完候補を薄字で表示してくれます
 
-## エラーや問題点のある箇所の修正提案をもらう
+### 2. 提案を受け入る
 
-GitHub Copilot Chatで`/fix`を使うことで、修正提案をもらうことができます。<br/>
-※`/fix`の使い方は[操作方法・ショートカット ＞ エージェントコマンド](../08_vscode-extention/01_github-copilot/02_shortcuts.md#スラッシュコマンド)参照ください。
+- 提案を受け入れる場合、提案を表示させて状態でTABキーを押下すると補完できます
+- 提示された補完候補がマッチしない場合は他の補完候補を確認できます（Windows： `Alt + ]`・`Alt +[`、Mac： `Option + ]`・`Option + [`）
+  ![コード補完：他提案の確認](images/code-completion_3.png)
 
-- ▼事前準備
-- エディタで、該当のファイルを開きます
-- ▼インプット
-- GitHub Copilot Chat Viewを開きます
-- `/fix このコードの潜在的なリスクを教えて`と入力し送信します
-- ▼修正候補の提案
-- GitHub Copilot Chatにより、リスクになりそうな箇所と修正案が提示されます
+:::info[警備なエラーの修正]
+要求受け入れ後にに警備なエラーがある場合、以下手順でエラーを解消できます
 
-![GitHub Copilot Chatで潜在的なリスクを教えてもらう手順](images/security-detect_1.png)
+- エラー箇所を右クリックします
+- `クイック修正 ＞ Copilotを使用修正する`を選択します
+
+**修正前：**<br/>
+![コード補完：提案受け入れ前](images/code-completion_4.png)<br/>
+**修正後：**<br/>
+![コード補完：提案受け入れ後](images/code-completion_5.png)
+:::
 
 ## エディタ上で提案をもらう
+
+※`GitHub Copilot Chat`の機能
 
 GitHub Copilot Chatは、GitHub Copilot Chat Viewを開かなくても利用が可能です。
 
