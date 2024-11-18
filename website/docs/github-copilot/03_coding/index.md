@@ -78,7 +78,7 @@ GitHub Copilot Chatは、GitHub Copilot Chat Viewを開かなくても利用が�
 
 - エディタ上で右クリックします
 - GitHub Copilotにカーソルをあわせます
-- `Start in Editor` を押下します
+- `Start in Editor` （`エディタ内でのインラインチャット`）を押下します
 
 詳細はこちらをご確認ください [インラインチャット](../08_vscode-extention/01_github-copilot/03_inline-chat.md)
 
