@@ -14,7 +14,7 @@ GitHub Copilotは既存のソースコードを元に予測し提案を行いま
 
 <!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 <!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
-:::info[詳細は以下参照ください]
+:::note[詳細は以下参照ください]
 <!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
 <!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
 - [一貫性のあるコーディングスタイル - GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/v/ja/design-patterns/consistent-coding-style)
@@ -24,26 +24,18 @@ GitHub Copilotは既存のソースコードを元に予測し提案を行いま
 
 ### 変数名などに意味のある名前を付ける
 
-一貫性のあるコーディングスタイルの具体例として変数名・関数名の名前の付け方を示します。<br/>
-`foo`や`bar`という名前の関数がある場合、GitHub Copilotは名前から意図を推測できないため、最適な補完ができません。<br/>
-同様に、関数名`fetchData()`は`Data`という語が曖昧なので、GitHub Copilotにとってもあまり意味がありません。
+[効果的なプロンプト・コンテキストの原則](../02_installation-and-settings/)でも説明していますが、意図・具体性はGitHub Copilotを使う上で重要です。
+変数名・関数名の命名も原則に従う必要があります。<br/>
+関数名を具体度を上げることで、GitHub Copilotが意図を解釈し、より的確な提案が得られます。
 
-一般的に「良い」と言われるコーディングルールを適用することで、GitHub Copilotから最大の価値を取得できます。
+- 抽象度の高い名前の場合のGitHub Copilotの提案（関数名`fetchData`）
+  - ⇛ 抽象的な提案しか得られない
+  ![良くない関数名のコード](images/function-name_bad.png)
+- 具体的な名前の場合の提案の提案（関数名`fetchUserData`）
+  - ⇛ より具体的な提案が得られる
+  ![良い関数名のコード](images/function-name_good.png)
 
-- 関数名`fetchData`（意味のない名前）の場合
-  - エディタで、該当ファイルを開きます
-  - メソッド名がfetchDataを指定します
-  - メソッド中に`Alt＋\`を実行し、提案を要求します
-  - するとGitHub Copilotは以下のようなコードを提案してきます
-    ![良くない関数名のコード](images/function-name_bad.png)
-- 関数名`fetchDataEndwithtxt`（意味のある名前）の場合
-  - エディタで、該当ファイルを開きます
-  - メソッド名がfetchDataEndwithtxtを指定します
-  - メソッド中に`Alt＋\`を実行し、提案を要求します
-  - するとGitHub Copilotは以下のようなコードを提案してきます
-    ![良い関数名のコード](images/function-name_good.png)
-
-### タイプヒンティング
+### 型やコメントを付ける
 
 変数名・関数名以外にも、GitHub Copilotはコード上の型情報を認識して提案を行います。<br/>
 静的型付け言語の型宣言はもちろん、動的型付け言語においても、タイプヒンティングを用いて型を宣言することで、提案の精度を上げることができます。<br/>
@@ -52,24 +44,40 @@ GitHub Copilotは既存のソースコードを元に予測し提案を行いま
 
 ## 効果的なコンテキストの指定
 
-- VS Codeで関連するファイルを開き、無関係なファイルを閉じておくことで、GitHub Copilotにコンテキストを提供できます
-- 関連ファイルを開くことに加えて、GitHub Copilot Chatにて`#editor`を使用して追加のコンテキストを提供できます
-  <details>
-  <summary>`#editor`を使った追加コンテキスト提供の手順</summary>
-  - VS Codeで、該当ファイルを開きます
-    ![コンテキストに含めるファイルをVS Codeで開く](images/add-context.png)
-  - GitHub Copilotに以下を入力します
-    - `#editor /removeTxt　ファイルの拡張子が.csv .txt .mdの場合は、リストに該当レコードも削除するを更新してください。`
-  - 更新後コードが提案されます
-  </details>
-- コンテキストスイッチングを行ったり、次のタスクに移るときには、不要なファイルを閉じることを忘れないでください
-- GitHub Copilot Chatでは、特定の要求が有用なコンテキストでなくなった場合は、その要求を会話から削除します
-- GitHub Copilot Chatでは、特定の会話のどのコンテキストも役に立たない場合は、新しい会話を開始します
-- VS CodeでGitHub Copilot Chatを使用している場合は、キーワードを使用して、GitHub Copilotを特定のタスクまたはコンテキストにフォーカスします
+ソースコード以外にも、VS Codeで開いているファイルやGitHub Copilot Chatでのやりとりで、コンテキストをGitHub Copilotにインプットさせ、提案の精度を向上できます。<br/>
+ここではコンテキストをインプットする方法を示します。
+
+### コンテキストに含ませたいファイルだけ開いておく
+
+VS Codeで関連するファイルを開き、無関係なファイルを閉じておくことで、GitHub Copilotにコンテキストを提供できます。<br/>
+コンテキストスイッチングを行ったり、次のタスクに移るときには、不要なファイルを閉じることを忘れないでください。
+
+### GitHub Copilot Chatに関連ファイルを指定する
+
+関連ファイルを開くことに加えて、GitHub Copilot Chatにて`#editor`を使用して追加のコンテキストを提供できます。
+
+<details>
+<summary>`#editor`を使った追加コンテキスト提供の手順</summary>
+- VS Codeで、該当ファイルを開きます
+  ![コンテキストに含めるファイルをVS Codeで開く](images/add-context.png)
+- GitHub Copilotに以下を入力します
+      ```txt
+      #editor /removeTxt　ファイルの拡張子が.csv .txt .mdの場合は、リストに該当レコードも削除するを更新してください。
+      ```
+- 更新後コードが提案されます
+</details>
+
+※`/explain`の使い方は[操作方法・ショートカット ＞ スラッシュコマンド](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照ください。
+
+### コンテキスト変数・エージェントコマンド・スラッシュコマンドを使う
+
+GitHub Copilot Chatでは、コンテキスト変数・エージェントコマンド・スラッシュコマンドなどのキーワードを使用して、特定のタスクまたはコンテキストにフォーカスできます。
+
+※詳細は[操作方法・ショートカット](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)、[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照ください。
 
 <!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 <!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
-:::info[詳細は以下参照ください]
+:::note[詳細は以下参照ください]
 <!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
 <!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
 - [GitHub Copilot の使用についてのベストプラクティス - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F)
@@ -87,47 +95,47 @@ GitHub Copilotから有用な回答を得られない場合は、要求を別の
 
 <!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 <!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
-:::info[詳細は以下参照ください]
+:::note[詳細は以下参照ください]
 <!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
 <!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
 - [複雑なタスクを単純なタスクに分割する - GitHub docs](https://docs.github.com/ja/copilot/using-github-copilot/prompt-engineering-for-github-copilot#break-complex-tasks-into-simpler-tasks)<br/>
 - [小さなコードチャンクで作業する - GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/ja/design-patterns/working-on-small-chunk)
 :::
 
-## コミュニケーションの削除・切り替え
+## 会話の削除・切り替え
 
 チャットインターフェースで以前に尋ねた質問を削除して、インデックス化された会話からそれを削除することができます。<br/>
 これは特にそれがもはや関連性を持たない場合、会話の流れが改善され、GitHub Copilotに必要な情報のみを提供することができます。
 
 <!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 <!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
-:::info[詳細は以下参照ください]
+:::note[詳細は以下参照ください]
 <!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
 <!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
 - [GitHub Copilot の使用についてのベストプラクティス - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F)
 :::
 
-### 不要なリクエストの削除
+### 会話の一部を削除
 
 - GitHub Copilot Chat Viewを開きます
 - アイコン`x`を押下します
   - 削除前：
-    ![不要なリクエスト削除前](images/delete-request_before.png)
+    ![不要な会話削除前](images/delete-request_before.png)
   - 削除後：
-    ![不要なリクエスト削除後](images/delete-request_after.png)
+    ![不要な会話削除後](images/delete-request_after.png)
 
-### コミュニケーションをクリア
+### 会話全体を削除
 
 - GitHub Copilot Chat Viewを開きます
 - GitHub Copilotに以下を入力します
-    ![コミュニケーションをクリア](images/clear-communication-setting.png)
-- 現在のコミュニケーションをクリアします
+    ![会話をクリア](images/clear-communication-setting.png)
+- 現在の会話コミュニケーションをクリアします
   - 削除前：
-    ![コミュニケーションをクリアする前](images/clear-communication_before.png)
+    ![会話をクリアする前](images/clear-communication_before.png)
   - 削除後：
-    ![コミュニケーションをクリアした後](images/clear-communication_before.png)
+    ![会話をクリアした後](images/clear-communication_before.png)
 
-### スレッドで会話を整理
+### 会話を切り替え
 
 GitHub Copilot Chatの`＋`を押下することで新しい会話（スレッド）を開始できます。<br/>
 これにより、GitHub Copilot Chatと複数の異なるトピックを同時進行できます。
@@ -146,7 +154,7 @@ GitHub Copilot Chatの`＋`を押下することで新しい会話（スレッ�
 
 <!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 <!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
-:::info[詳細は以下参照ください]
+:::note[詳細は以下参照ください]
 <!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
 <!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
 - [GitHub Copilot の使用についてのベストプラクティス - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F)
@@ -159,7 +167,7 @@ GitHub Copilotの提案に対してフィードバックを提供することで
 
 <!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 <!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
-:::info[詳細は以下参照ください]
+:::note[詳細は以下参照ください]
 <!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
 <!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
 - [GitHub Copilot の使用についてのベストプラクティス - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F)
