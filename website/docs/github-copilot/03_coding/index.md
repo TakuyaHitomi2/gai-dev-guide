@@ -80,6 +80,6 @@ GitHub Copilot Chatは、GitHub Copilot Chat Viewを開かなくても利用が�
 - GitHub Copilotにカーソルをあわせます
 - `Start in Editor`（`エディタ内でのインラインチャット`）を押下します
 
-詳細はこちらをご確認ください [インラインチャット](../08_vscode-extention/01_github-copilot/03_inline-chat.md)
+詳細はこちらをご確認ください [GitHub Copilot Chat ＞ インラインチャット](../08_vscode-extention/02_github-copilot-chat/05_inline-chat.md)
 
 ![インラインチャットで提案をもらう手順（gifアニメ）](images/inline-chat.gif)

@@ -171,7 +171,7 @@ GitHub Copilot Chatを使うと、既存のコードをリファクタリング�
       ```txt
       #file:開発標準_Javaコーディング規約.mdの内容を開発基準に、#file:CallTreeEntity.javaをレビューしてください。問題があれば、改善案を提示してください
       ```
-      ※`#file`の使い方は[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照ください
+      ※`#file`の使い方は[GitHub Copilot Chat ＞ コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/04_context-variable.md)を参照ください
 - 改修原因と改修内容が提案されます（スクショの赤枠）
 
 ![Javaクラスレビュー：チャットで依頼](images/suggestion_1.png)
@@ -285,7 +285,7 @@ GitHub Copilot Chatを使うと、既存のコードをリファクタリング�
 1. エディタで、該当のファイルを開きます
 2. GitHub Copilot Chat Viewを開きます
 3. `/explain このコードの潜在的なリスクを教えて`と入力し送信します<br/>
-   ※`/explain`の使い方は[操作方法・ショートカット ＞ スラッシュコマンド](../08_vscode-extention/01_github-copilot/02_shortcuts.md#スラッシュコマンド)参照ください
+   ※`/explain`の使い方は[GitHub Copilot Chat ＞ コマンド](../08_vscode-extention/02_github-copilot-chat/03_command.md#スラッシュコマンド)参照ください
 4. GitHub Copilot Chatにより、セキュリティリスクになりそうな箇所が提示されます（スクショの黄色枠）
 
 ![セキュリティリスク検知手順（gifアニメ）](images/security-detect_2.png)

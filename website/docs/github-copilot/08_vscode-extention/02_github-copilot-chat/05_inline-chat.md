@@ -1,12 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # インラインチャット
-
-:::info
-GitHub Copilotのアップデートで状況が変わる可能性もありますのでご注意ください。
-:::
 
 GitHub Copilot Chat Viewではなく、エディタ上でチャットを実行することができます。
 

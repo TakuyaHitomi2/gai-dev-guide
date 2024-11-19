@@ -18,13 +18,13 @@ GitHub Copilotは既存のソースコードを元に予測し提案を行いま
 <!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
 <!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
 - [一貫性のあるコーディングスタイル - GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/v/ja/design-patterns/consistent-coding-style)
-- [タイプヒンティング - GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/v/ja/general/type-hinting)  
+- [タイプヒンティング - GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/v/ja/general/type-hinting)
 - [AIが理解可能な命名規則 - GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/v/ja/design-patterns/ai-readable-naming-convention)
 :::
 
 ### 変数名などに意味のある名前を付ける
 
-[効果的なプロンプト・コンテキストの原則](../02_installation-and-settings/)でも説明していますが、意図・具体性はGitHub Copilotを使う上で重要です。
+[効果的なプロンプト・コンテキストの原則](./02_prompts-context-principles.md)でも説明していますが、意図・具体性はGitHub Copilotを使う上で重要です。
 変数名・関数名の命名も原則に従う必要があります。<br/>
 関数名を具体度を上げることで、GitHub Copilotが意図を解釈し、より的確な提案が得られます。
 
@@ -67,13 +67,13 @@ VS Codeで関連するファイルを開き、無関係なファイルを閉じ�
 - 更新後コードが提案されます
 </details>
 
-※`/explain`の使い方は[操作方法・ショートカット ＞ スラッシュコマンド](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照ください。
+※`/explain`の使い方は[GitHub Copilot Chat ＞ コマンド](../08_vscode-extention/02_github-copilot-chat/03_command.md#スラッシュコマンド)を参照ください。
 
 ### コンテキスト変数・エージェントコマンド・スラッシュコマンドを使う
 
 GitHub Copilot Chatでは、コンテキスト変数・エージェントコマンド・スラッシュコマンドなどのキーワードを使用して、特定のタスクまたはコンテキストにフォーカスできます。
 
-※詳細は[操作方法・ショートカット](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)、[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照ください。
+※詳細は[GitHub Copilot Chat ＞ コマンド](../08_vscode-extention/02_github-copilot-chat/03_command.md)、[GitHub Copilot Chat ＞ コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/04_context-variable.md)を参照ください。
 
 <!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 <!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->

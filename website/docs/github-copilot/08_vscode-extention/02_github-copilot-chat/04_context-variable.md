@@ -1,11 +1,12 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
 # コンテキスト変数
 
-GitHub Copilot Chatにはコンテキスト変数という便利な機能があります。<br/>
-ここではその機能について紹介します。
+GitHub Copilot Chatの会話では、`#`で始まるコンテキスト変数というものが使えます。
+コンテキスト変数を用いてGitHub Copilot Chatに特定のコンテキストを与えることができます。<br/>
+以下にコンテキスト変数の一覧を示します。
 
 | コンテキスト変数 | 説明 |
 | :--- | :--- |
@@ -15,8 +16,7 @@ GitHub Copilot Chatにはコンテキスト変数という便利な機能があ�
 | `#terminalLastCommand` | 最後に選択したターミナルの最後のコマンドの情報をプロンプトに含めることができます。 |
 | `#terminalSelection` | ターミナル上での選択エリアの情報をプロンプトに含めることができます。 |
 
-エージェントコマンド、スラッシュコマンドと併用することも可能です。<br/>
-[**操作方法・ショートカット**](../01_github-copilot/02_shortcuts.md)
+エージェントコマンド、スラッシュコマンドと併用することも可能です。
 
 import {SpeakerDeck} from '@site/src/components/Embedded';
 

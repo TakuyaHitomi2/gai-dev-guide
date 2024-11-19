@@ -37,7 +37,7 @@ GitHub Copilotの場合と比べると、事前にテストファイルを作成
 1. エディタで、テストを生成したい処理が書かれているファイルを開きます
 2. GitHub Copilot Chat Viewを開きます
 3. GitHub Copilotに`/tests`と入力します<br/>
-   ※`/test`の使い方は[操作方法・ショートカット ＞ スラッシュコマンド](../08_vscode-extention/01_github-copilot/02_shortcuts.md#スラッシュコマンド)参照ください<br/>
+   ※`/test`の使い方は[GitHub Copilot Chat ＞ コマンド](../08_vscode-extention/02_github-copilot-chat/03_command.md#スラッシュコマンド)参照ください<br/>
     ![チャットからテストコードを生成する手順１から３](images/generate-test-from-chat_1to3.png)
 4. テストコードが提案されます
     ![チャットからテストコードを生成する手順４](images/generate-test-from-chat_4.png)

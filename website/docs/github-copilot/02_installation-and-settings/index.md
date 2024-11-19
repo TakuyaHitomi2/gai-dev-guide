@@ -109,7 +109,7 @@ VS Codeの設定の前に、GitHubアカウントの設定が必要です。以�
 - GitHub Copilot Chatが利用できることを確認します
   - ①のメニューを押下しGitHub Copilot Chatパネルを開きます
   - ②の入力欄に`@workspace ワークスペース内のファイルについて教えてください`と入力・送信します
-    - ※`@workspace`の使い方は[操作方法・ショートカット ＞ エージェントコマンド](../08_vscode-extention/01_github-copilot/02_shortcuts.md#エージェントコマンド)参照ください
+    - ※`@workspace`の使い方は[GitHub Copilot Chat ＞ コマンド](../08_vscode-extention/02_github-copilot-chat/03_command.md#エージェントコマンド)参照ください
   - ③のエリアに日本語で回答が表示されれば確認完了です
     ![VS Code拡張機能GitHub Copilot Chatのインストール手順](images/vscode-github-copilot-chat-install_1.png)
 

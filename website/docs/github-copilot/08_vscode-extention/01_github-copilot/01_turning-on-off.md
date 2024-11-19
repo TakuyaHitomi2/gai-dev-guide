@@ -2,14 +2,11 @@
 sidebar_position: 1
 ---
 
-# GitHub Copilotを有効化・無効化する
+# 有効化・無効化する
 
-## GitHub Copilotの無効化する
+## VS CodeのUIで切り替える
 
 GitHub CopilotのCompletions機能を無効化することでインライン補完を無効にできます。
-
-<details>
-<summary>Visual Studio Codeでの有効化/無効化の方法詳細</summary>
 
 - ウィンドウの下部パネルにある状態アイコンで有効化・無効化できます
   ![VSCode上のGitHub Copilot有効/無効化ボタン](images/github-copilot-in-vscode_toggle.png)
@@ -18,15 +15,15 @@ GitHub CopilotのCompletions機能を無効化することでインライン補�
 - 有効にしたい場合は、 `Enable Completions` を押下します
   ![VSCode上のGitHub Copilotを有効にする操作](images/github-copilot-in-vscode_off.png)
 
-</details>
-
-しかし、GitHub Copilot Chatは影響を受けず、引き続き利用できます。<br/>
+:::warning
+上記操作でインライン補完を無効にしても、GitHub Copilot Chatは影響を受けず、引き続き利用できます。<br/>
 データの送信を完全に停止する場合は、以下のような対応が考えられます。
 
-- GitHub CopilotまたはGitHub Copilot Chatプラグインを無効化する：[セクションへスクロール↓](#github-copilotまたはgithub-copilot-chatプラグインを無効化する)
+- VS Code Extension自体を無効化する：[セクションへスクロール↓](#vs-code-extension自体を無効化する)
 - GitHub Copilotからログアウトする：[セクションへスクロール↓](#github-copilotからログアウトする)
+:::
 
-### ショートカットキーで切り替える
+## VS Codeのショートカットキーで切り替える
 
 Visual Studio Codeでは、ショートカットキーがデフォルトで設定されていないため、設定をする必要があります。
 
@@ -45,15 +42,7 @@ Visual Studio Codeでは、ショートカットキーがデフォルトで設�
   - 「×」を押下すると、特定の言語でのGitHub Copilotの有効化・無効化の設定を削除することが可能です。
     ![GitHub Copilotショートカットの設定３](images/github-copilot-shortcut-setting_3.png)
 
-## GitHub Copilot Chatを無効化する
-
-2024年2月時点では、GitHub Copilot Chatを一時的に無効化する機能は提供されていません。<br/>
-無効化したい場合は、以下のような対応が考えられます。
-
-- GitHub CopilotまたはGitHub Copilot Chatプラグインを無効化する：[セクションへスクロール↓](#github-copilotまたはgithub-copilot-chatプラグインを無効化する)
-- GitHub Copilotからログアウトする：[セクションへスクロール↓](#github-copilotからログアウトする)
-
-## GitHub CopilotまたはGitHub Copilot Chatプラグインを無効化する
+## VS Code Extension自体を無効化する
 
 インストールされている拡張機能からGitHub Copilotを検索し、「無効にする」を押下して無効にすることができます。設定を反映するためにIDEを再起動する必要があります。
 

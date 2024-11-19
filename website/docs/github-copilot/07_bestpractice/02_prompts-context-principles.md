@@ -33,8 +33,8 @@ GitHub Copilotが予測のために使う文脈を以下のように制御して
 - 文脈として与えたいファイルのみをタブで開いてください<br/>
   ※GitHub Copilotは現在タブで開かれているファイルを予測のために扱います
 - GitHub Copilot Chatを使う場合は、`@workspace`コマンドや、`#file`等のコンテキスト変数コマンドを使うことで、文脈の指定を行えます
-  - ※`@workspace`の使い方は[操作方法・ショートカット ＞ エージェントコマンド](../08_vscode-extention/01_github-copilot/02_shortcuts.md#エージェントコマンド)参照ください<br/>
-  - ※`#file`の使い方は[操作方法・ショートカット ＞ スラッシュコマンド](../08_vscode-extention/01_github-copilot/02_shortcuts.md#スラッシュコマンド)参照ください
+  - ※`@workspace`の使い方は[GitHub Copilot Chat ＞ コマンド](../08_vscode-extention/02_github-copilot-chat/03_command.md#エージェントコマンド)参照ください<br/>
+  - ※`#file`の使い方は[GitHub Copilot Chat ＞ コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/04_context-variable.md)参照ください
 
 ## 2. 意図
 
