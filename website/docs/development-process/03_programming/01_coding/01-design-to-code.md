@@ -66,3 +66,7 @@ sidebar_position: 1
 - 大量のドキュメントからコード生成のインプットとなるべき設計箇所を特定すること
 - コーディング規約等を含めた生成AIに提供するコンテキストの量が生成AIのコンテキスト上限を超過してしまうこと
 - 適切なサンプルコード（[Few-shot](https://www.promptingguide.ai/jp/techniques/fewshot)）を抽出し提供すること
+
+:::info
+例えばOpenAIが提供するモデルのコンテキスト長については[Models - OpenAI API](https://platform.openai.com/docs/models)などをご参照ください。
+:::
