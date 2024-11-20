@@ -4,33 +4,20 @@ sidebar_position: 5
 
 # インラインチャット
 
-GitHub Copilot Chat Viewではなく、エディタ上でチャットを実行することができます。
+コーディング中に、そのファイルや範囲選択した箇所について素早く会話したり、コードを修正する場合はインラインチャットが便利です。<br/>
+ファイル中でポップアップ形式のGitHub Copilot Chat Viewを開くことができます。
 
-## 使い方
+## 使い方（ショートカットキーを使う場合）
 
-Windows `ctrl + i` 、Mac `⌘ + i` でチャットを開始します。
+- VS Code上でファイルを編集中にショートカットキー（Windows `ctrl + i` 、Mac `⌘ + i`）を押下します
+- インラインチャットのUIが表示されます
+      ![インラインチャットのUI](images/inlinechat.png)
+
+## 使い方（ショートカットキーを使わない場合）
 
 <!-- textlint-disable prh -->
-- エディタ上で右クリック後「Copilot」の項目が表示されます
+- VS Code上で右クリック ⇛ `Copilot` ⇛ `Start in Editor` を選択します
+      ![インラインチャットを開く](images/open-inlinechat.png)
+- インラインチャットのUIが表示されます
+      ![インラインチャットのUI](images/inlinechat.png)
 <!-- textlint-enable prh -->
-- 「Start in Editor」を押下すると、インラインチャットが表示されます
-  ![inlinechat_1.png](images/inlinechat_1.png)
-  ![inlinechat_2.png](images/inlinechat_2.png)
-
-## インライン補完とチャットの使い分け
-
-インライン補完機能とチャット機能の違いとして以下のようなものが挙げられています。<br/>
-
-import {SpeakerDeck} from '@site/src/components/Embedded';
-
-<!-- https://speakerdeck.com/yuhattor/ai-powered-development-with-github-copilot-20240202 -->
-<SpeakerDeck slideId="c183f4601ad7409da0d473f98f93a892"  page={17} />
-<br/>
-類似体験の違いからも分かるように、以下のように利用シーンが異なります。
-
-- **インライン補完機能**
-  - GitHub Copilotがナビゲーター役となり、ペアプログラミングをする
-- **チャット機能**
-  - GitHub Copilotに相談・質問をする
-  - GitHub Copilotにコードレビューをしてもらう
-  - 細かい指示を行い、コードやドキュメントを生成してもらう
