@@ -19,28 +19,30 @@ GitHub Copilot Chatの会話では、`#`で始まるコンテキスト変数と�
 
 以下にコンテキスト変数ごとの具体例を示します。
 
-## `#file`：選択したファイルをコンテキストに含める
+## `#file`：指定したファイルをコンテキストに含める
 
 `#file:index.tsx` のように指定することで特定のファイルの情報をコンテキストに含めることができます。
 
-以下のようにファイルの中身について聞きたい時などに便利です。
+以下のように特定ファイルに関してGitHub Copilot Chatの力を借りたい時などに便利です。
 
 ![#file利用例](images/sample_file.png)
 
-## `#editor`：エディタで開いているファイルをコンテキストに含める
+## `#editor`：エディタで選択しているファイルをコンテキストに含める
 
-`#editor`を指定することで、エディタで表示しているファイル情報をコンテキストに含めることができます。
+`#editor`を指定することで、エディタで選択しているファイル情報をコンテキストに含めることができます。
 
-以下例では開いているファイル（`ClientSearchForm.java`）をコンテキストに含めているます。
-そのためindustryCodeの一般的な事柄だけでなく、開いているファイルのクラスファイルの定義についても言及しています。
+`#file`でファイルを指定しなくても、エディタでファイルを選択している場合は`#editor`で代用できます。
+
+以下例では選択中のファイル（`ClientSearchForm.java`）をコンテキストに含めて`industryCode`について質門しています。
+応答では`industryCode`の一般的な事柄だけでなく、`ClientSearchForm.java`のクラスの定義についても言及しています。
 
 ![#editor利用例](images/sample_editor.png)
 
-## `#selection`：エディタで選択している箇所をコンテキストに含める
+## `#selection`：エディタの選択している箇所をコンテキストに含める
 
-`#selection`を指定することで、エディタ上で選択している箇所をコンテキストに含めることができます。
+`#file`や`#selection`から更にコンテキストを絞りたい場合は、エディタでファイルの特定箇所を選択し`#selection`を指定することで、コンテキストを選択箇所に限定できます。
 
-以下例では選択中の処理について言及しています。
+以下例では特定ファイルのメソッドを選択して質門しています。
 
 ![#selection利用例](images/sample_selection.png)
 
@@ -52,11 +54,15 @@ GitHub Copilot Chatの会話では、`#`で始まるコンテキスト変数と�
 
 ![#terminalLastCommand利用例](images/sample_terminalLastCommand.png)
 
-## `#terminalSelection`：ターミナル上での選択箇所をコンテキストに含める
+## `#terminalSelection`：ターミナルで選択している箇所をコンテキストに含める
 
-`#terminalLastCommand`と似たようなコンテキスト変数です。コマンド入出力の一部だけコンテキストに含めることができます。
+`#terminalLastCommand`から更にコンテキストを絞りたい場合は`#terminalSelection`を使います。
+
+ターミナル上で特定箇所を選択し、`#terminalSelection`を指定することで、コンテキストを選択箇所に限定できます。
 
 ## 参考
+
+以下資料でもコンテキスト変数の説明が記載されているので参考にしてください。
 
 import {SpeakerDeck} from '@site/src/components/Embedded';
 
