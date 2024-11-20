@@ -49,7 +49,7 @@ VS Codeの設定の前に、GitHubアカウントの設定が必要です。以�
 - organizationに参加してGitHub Copilotを利用している場合、以下の`赤枠`が表示されていればOKです
   ![GitHub Copilotの設定画面](images/github-account-setting_3.png)
 
-## Visual Studio Codeの設定方法
+## VS Codeの設定方法
 
 アカウント設定が終わったらVS Codeを[VS Codeのダンロードサイト](https://code.visualstudio.com/Download)からインストールしましょう。<br/>
 プロキシ環境化で開発する場合は、以下に従いプロキシ設定を実施してください。
@@ -86,7 +86,7 @@ VS Codeの設定の前に、GitHubアカウントの設定が必要です。以�
 
 :::warning
 💡 うまく確認できない場合は以下を試してください。
-- Visual Studio Codeの再起動してください
+- VS Codeの再起動してください
 - GitHubにログインできているか確認してください
 - [githubアカウントがgithub-copilotのorganizationに紐づいていることを確認](#githubアカウントがgithub-copilotのorganizationに紐づいていることを確認)セクションを再度実施してください
 :::
