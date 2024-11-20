@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # コマンド
 
-GitHub Copilot Chatには、`特定の専門家に意見を求める`・`よくある依頼を行う`ためのコマンドが用意されています。<br/>
+GitHub Copilot Chatにのコマンドを使えば、コーディング中に頻繁に扱うトピックについて質の高い回答を得られ、良くある依頼を簡潔に行えます。<br/>
 コマンドにはエージェントコマンドとスラッシュコマンドが用意されており、それぞれを単独、もしくは組み合わせて使えます。
 
 <!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
