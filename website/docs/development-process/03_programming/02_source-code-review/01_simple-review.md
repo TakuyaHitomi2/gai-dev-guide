@@ -6,7 +6,7 @@ sidebar_position: 1
 
 従来の開発では、コードレビューは人間が行うものでした。これにより、開発の主軸を担うべきエンジニアがコードレビューに忙殺され、場合によってはボトルネック化してしまうことさえありました。
 
-GitHub Copilotを利用することで、このコードレビューを効率化することができます。
+GitHub Copilotを利用することで、このコードレビューを効率化することができます。基本的な使い方としては[GitHub Copilotガイド](/github-copilot/index.md)の[コードを改善する](/github-copilot/04_refactoring/index.md)も参照ください。
 
 :::info
 Javaにおける[Checkstyle](https://checkstyle.sourceforge.io/)、Pythonにおける[Black](https://black.readthedocs.io/en/stable/)のように、静的解析ツールやフォーマッタとしてレビューに近しい機能を提供するツールもあります。GitHub Copilotがこれらのツールと異なるのは、機械的に表現できないような観点でのレビューが可能な点です。
