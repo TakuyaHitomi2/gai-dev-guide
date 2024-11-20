@@ -4,7 +4,15 @@ sidebar_position: 2
 
 # 操作方法・ショートカット
 
-GitHub Copilot Chatの基本操作を示します。
+GitHub Copilot Chatの基本操作を示します。<br/>
+
+:::info
+GitHub Copilotと比べると操作は少ないですが、GitHub Copilot Chatにはコマンドとコンテキスト変数という機能があります。
+これらを会話の中で使うことで、GitHub Copilotよりも複雑な会話が可能です。<br/>
+コマンドとコンテキスト変数についてはそれぞれのページを参照ください。
+- [コマンド](./03_command.md)
+- [コンテキスト変数](./04_context-variable.md)
+:::
 
 | 操作 | 説明 | ショートカット |
 | :--- | :--- | :--- |
