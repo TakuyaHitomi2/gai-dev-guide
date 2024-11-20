@@ -65,7 +65,7 @@ sidebar_position: 1
 主たるハードルとしては、以下があります。
 - 大量のドキュメントからコード生成のインプットとなるべき設計箇所を特定すること
 - コーディング規約等を含めた生成AIに提供するコンテキストの量が生成AIのコンテキスト上限を超過してしまうこと
-- 適切なサンプルコード（[Few-shot](https://www.promptingguide.ai/jp/techniques/fewshot)）を抽出し提供すること
+- 適切なサンプルコードを抽出し提供すること（これは[Few-shotプロンプティング](https://www.promptingguide.ai/jp/techniques/fewshot)と呼ばれる方法。プロンプト内に回答サンプルを示すことで、より意図に合致する出力の生成が期待できる）
 
 :::info
 例えばOpenAIが提供するモデルのコンテキスト長については[Models - OpenAI API](https://platform.openai.com/docs/models)などをご参照ください。
