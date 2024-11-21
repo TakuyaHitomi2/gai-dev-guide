@@ -11,13 +11,18 @@ sidebar_position: 1
 - **ニッチなドメイン**のコード・文章を書く場合　※ニッチなドメイン（とくに会社独自のドメインの場合）GitHub Copilotの提案の品質が低くて、かえって邪魔になる可能性がある
 - **プロジェクトを兼務しており**、GitHub Copilotを使る/使えないプロジェクトが混在している場合
 
+:::warning
+GitHub CopilotとGitHub Copilot Chatの両方を使用している場合に、片方のみ有効・無効を切り替えるケースは稀です。<br/>
+片方を切り替えた場合は、もう片方も切り替えてください。
+:::
+
 ## UIで切り替える
 
 GitHub CopilotのCompletions機能を無効化することでインライン補完を無効にできます。
 
 - ウィンドウの下部パネルにある状態アイコンで有効・無効を切り替えられます
   ![VSCode上のGitHub Copilot有効/無効化ボタン](images/toggle-ghc-on-off-ui.png)
-- `DisableCompletions`  を押下すると無効化されます
+- `Disable Completions`  を押下すると無効化されます
   ![VSCode上のGitHub Copilotを無効にする操作](images/turn-off-ghc-by-ui.png)
 - 有効にしたい場合は、 `Enable Completions` を押下します
   ![VSCode上のGitHub Copilotを有効にする操作](images/turn-on-ghc-by-ui.png)
@@ -44,9 +49,9 @@ VS Codeでは、ショートカットキーがデフォルトで設定されて�
 
 ## UIで言語別に切り替える
 
-特定の言語でのGitHub Copilotの有効・無効の設定をしていると、言語の設定が優先されるので、**ショートカットだけでは有効・無効の切り替えられません。**
+特定の言語に対してGitHub Copilotの有効・無効の設定をしていると、言語の設定が優先されるため、**ショートカットだけでは有効・無効が切り替えられません。**
 
-設定方法は[環境での GitHub Copilot の構成 ＞ インライン候補の有効化なまた無効化 - GitHub Docs](https://docs.github.com/ja/copilot/managing-copilot/configure-personal-settings/configuring-github-copilot-in-your-environment?tool=vscode#enabling-or-disabling-inline-suggestions)を参照ください。
+設定方法は[環境での GitHub Copilot の構成 ＞ インライン候補の有効化または無効化 - GitHub Docs](https://docs.github.com/ja/copilot/managing-copilot/configure-personal-settings/configuring-github-copilot-in-your-environment?tool=vscode#enabling-or-disabling-inline-suggestions)を参照ください。
 
 以下にJavaについて個別設定している場合の無効化の方法を示します。
 1. ファイル ＞ ユーザ設定 ＞ 設定の順で設定画面を開きます
