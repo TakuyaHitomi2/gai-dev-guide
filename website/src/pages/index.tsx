@@ -24,7 +24,7 @@ const genericOverview = [
   {
     title: 'プロンプト',
     to: 'prompts',
-    imageUrl: 'img/undraw_Creative_team_re_5pwr.svg',
+    imageUrl: 'img/undraw_Bookshelves_re_lxoy.svg',
     summary: <>AI活用のためのプロンプト集</>,
   }
 ];
