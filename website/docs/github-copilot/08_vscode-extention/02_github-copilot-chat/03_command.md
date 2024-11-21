@@ -9,7 +9,7 @@ GitHub Copilot Chatにのコマンドを使えば、コーディング中に頻�
 
 <!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 <!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
-:::note[本ページは以下からの抜粋です。詳細は以下参照ください]
+:::note[本ページは以下からの抜粋です]
 <!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
 <!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
 - エージェントコマンドについて
@@ -60,10 +60,10 @@ GitHub Copilot Chatにのコマンドを使えば、コーディング中に頻�
 
 以下ではいくつか具体的を示し、コマンドの便利な使い方を紹介します。
 
-### `@workspace`を使ってアプリケーションの技術スタックを質門する
+### `@workspace`を使ってアプリケーションの技術スタックを質問する
 
 `@workspace`は関連するコードの探索や、ワークスペース内のコードに関する質問を行う際に有効です。<br/>
-ワークスペース内のコードをコンテキストとして回答してくれるます。<br/>
+ワークスペース内のコードをコンテキストとして回答してくれます。<br/>
 例えば以下のようにアプリケーションの技術スタックなどの全体構成を尋ねることができます。
 
 ![@workspace利用例](images/agent-command_workspace.png)
@@ -72,7 +72,7 @@ GitHub Copilot Chatにのコマンドを使えば、コーディング中に頻�
 
 `@vscode`は「VS Codeのこの設定を変えたい」「こういうショートカットある？」のような質問を行う際に有効です。<br/>
 
-以下例のように回答には文面だけでなくやりたいことを実現するためのUIなども表示してくれます。
+以下例のように、単に回答だけでなく、実際の変更を行うための動線も表示してくれます。
 
 ![@vscode利用例](images/agent-command_vscode.png)
 

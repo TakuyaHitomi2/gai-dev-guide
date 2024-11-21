@@ -37,7 +37,7 @@ VS Codeで開いているコードやターミナルコマンドについて会�
 
 `#file`でファイルを指定しなくても、エディタでファイルを選択している場合は`#editor`で代用できます。
 
-以下例では選択中のファイル（`ClientSearchForm.java`）をコンテキストに含めて`industryCode`について質門しています。
+以下例では選択中のファイル（`ClientSearchForm.java`）をコンテキストに含めて`industryCode`について質問しています。
 応答では`industryCode`の一般的な事柄だけでなく、`ClientSearchForm.java`のクラスの定義についても言及しています。
 
 ![#editor利用例](images/sample_editor.png)
@@ -46,7 +46,7 @@ VS Codeで開いているコードやターミナルコマンドについて会�
 
 `#file`や`#selection`から更にコンテキストを絞りたい場合は、エディタでファイルの特定箇所を選択し`#selection`を指定することで、コンテキストを選択箇所に限定できます。
 
-以下例では特定ファイルのメソッドを選択して質門しています。
+以下例では特定ファイルのメソッドを選択して質問しています。
 
 ![#selection利用例](images/sample_selection.png)
 
