@@ -5,7 +5,7 @@ sidebar_position: 4
 # コードを改善する
 
 GitHub Copilotにサポートしてもらいながら、リファクタリングやドキュメント生成が可能です。<br/>
-以下リンクにて豊富はTipsが公開されているので、こちらも参考にしてください。<br/>
+以下リンクにて豊富なTipsが公開されているので、こちらも参考にしてください。<br/>
 [GitHub Copilot を使用したコードのリファクタリング - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/example-use-cases/refactoring-code-with-github-copilot)
 
 ## JavaクラスのJavadocを生成する
@@ -148,6 +148,10 @@ GitHub Copilot Chatを使うと、既存のコードをリファクタリング�
 リファクタリングのコードの提案とあわせて、既存コードを何故リファクタリングするのか・どういう方針でリファクタリングするのかも合わせて文面で示されます。<br/>
 以下ではJavaのコードをリファクタリングする例を示します。
 
+:::info
+ここではリファクタリングの観点を示していませんが、どのような観点でリファクタリングすべきかをプロンプトで与えることで、より意図に沿ったリファクタリングが可能になります。
+:::
+
 1. エディタで、該当のファイルを開きます
 2. GitHub Copilot Chat Viewを開きます
 3. `/fix リファクタリングしてください`と入力し送信します
@@ -169,7 +173,8 @@ GitHub Copilot Chatを使うと、既存のコードをリファクタリング�
 - GitHub Copilot Chat Viewを開きます
 - GitHub Copilotに以下を入力します
       ```txt
-      #file:開発標準_Javaコーディング規約.mdの内容を開発基準に、#file:CallTreeEntity.javaをレビューしてください。問題があれば、改善案を提示してください
+      #file:開発標準_Javaコーディング規約.mdの内容を開発基準に、#file:CallTreeEntity.javaをレビューしてください。
+      問題があれば、改善案を提示してください。
       ```
       ※`#file`の使い方は[GitHub Copilot Chat ＞ コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/04_context-variable.md)を参照ください
 - 改修原因と改修内容が提案されます（スクショの赤枠）
