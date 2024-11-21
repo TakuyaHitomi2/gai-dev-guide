@@ -4,11 +4,10 @@ sidebar_position: 2
 
 # 操作方法・ショートカット
 
-GitHub Copilotの基本操作を学びます。
+コーディング中にスムーズにGitHub Copilotを使えるようになるため、以下ショートカットを覚えておくと便利です。<br/>
+GitHub Copilotを利用する際に利用頻度が高い操作のショートカットを以下に示します。
 
-## GitHub Copilotの操作方法
-
-| アクション | 説明 | ショートカット |
+| 操作 | 説明 | ショートカット |
 | :--- | :--- | :--- |
 | インライン候補を受け入れる | 提案された内容をソ−スコードに反映する。 | Windows: `Tab` <br/> Mac: `Tab` |
 | インライン候補を無視する | 提案された内容を却下し非表示にする。 | Windows: `Esc` <br/> Mac: `Esc` |
@@ -16,38 +15,6 @@ GitHub Copilotの基本操作を学びます。
 | 前のインライン候補を表示する | 複数の候補を提案された場合、前の候補を表示する。 | Windows: `Alt + [` <br/> Mac: `Option + [` |
 | インライン候補をトリガーする | 現在カーソルがある位置で提案させる。 | Windows: `Alt + \` <br/> Mac: `Option + \` |
 | GitHub Copilot を開く（VS Codeにて） | 提案候補一覧を表示する。 | Windows: `Ctrl + Enter` <br/> Mac: `Ctrl + Return` |
-| GitHub Copilot のオン/オフを切り替える（VS Codeにて） |  | ※[**GitHub Copilotを有効化・無効化する**](./01_turning-on-off.md)を参照 |
+| GitHub Copilot のオン/オフを切り替える（VS Codeにて） |  | ※[**有効・無効の切り替え**](./01_turning-on-off.md)を参照 |
 
 参考：[環境での GitHub Copilot の構成 - GitHub Docs](https://docs.github.com/ja/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment?tool=vscode)
-
-## GitHub Copilot Chatの操作方法
-
-GitHub Copilot Chatにはエージェントコマンドとスラッシュコマンドが用意されており、<br/>
-それぞれを単独、もしくは組み合わせて、質問の意図と範囲を伝えることができます。
-
-### エージェントコマンド
-
-GitHub Copilotのロールを設定するためのコマンドです。回答の範囲を限定することができます。<br/>
-コマンドの後に質問を入力し使用します。
-
-| コマンド | 説明 |
-| :--- | :--- |
-| @workspace | ワークスペース内のコードをコンテキストとして回答してくれます。<br/>関連するコードの探索や、ワークスペース内のコードに関する質問を行う際に有効です。 |
-| @vscode | VS Codeの機能やコマンドについて把握しています。<br/>「VS Codeのこの設定を変えたい」「こういうショートカットある？」のような質問を行う際に有効です。 |
-
-### スラッシュコマンド
-
-GitHub Copilotに行ってほしいタスクを指示するコマンドです。<br/>
-コマンドの後ろに指示を追加して使用することも可能です。
-
-| コマンド | 説明 | 併用可能コマンド |
-| :--- | :--- | :--- |
-| /explain | 選択したコードの解説を行ってくれます。 | @workspace |
-| /fix | 選択したコードの修正を提案してくれます。 | @workspace |
-| /new | 指定したフレームワーク等でプロジェクトの雛形を作成してくれます。<br/>`@workspace /new spring boot` のように使います。 | @workspace |
-| /newNotebook | 要件を伝えるとJupyter Notebookを作ってくれます。 | @workspace |
-| /terminal | 行いたい作業のコマンドを説明してくれます。<br/>`/terminal dockerのコンテナに入りたい` | @workspace |
-| /tests | 選択したコードのテストを生成してくれます。 | @workspace |
-| /api | VS Codeの拡張機能開発に関する質問に答えてくれます。 | @vscode |
-| /help | GitHub Copilotのヘルプを表示してくれます。 |  |
-| /clear | 現在の会話を終了します。 |  |

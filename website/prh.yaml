@@ -22,3 +22,5 @@ rules:
     pattern: nablarch
   - expected: 押下
     patterns: /(?<!右)クリック/
+  - expected: GitHub
+    patterns: /(?<!@)github/i
