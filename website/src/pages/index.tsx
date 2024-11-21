@@ -21,6 +21,12 @@ const genericOverview = [
     imageUrl: 'img/undraw_Outer_space_re_u9vd.svg',
     summary: <>AI活用を前提とした開発プロセスのガイド</>,
   },
+  {
+    title: 'プロンプト',
+    to: 'prompts',
+    imageUrl: 'img/undraw_Bookshelves_re_lxoy.svg',
+    summary: <>AI活用のためのプロンプト集</>,
+  }
 ];
 
 
