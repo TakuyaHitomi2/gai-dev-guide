@@ -83,5 +83,5 @@ GitHub Copilotには、公開されたコードと一致するコードの提案
 
 :::info
 （*1）著作権侵害の場合はマイクロソフトが法的防御を行い、不利な判決や和解に伴う費用を負担します。詳細は[マイクロソフト、お客様向けの Copilot Copyright Commitment を発表 - News Center Japan](https://news.microsoft.com/ja-jp/2023/09/12/230912-copilot-copyright-commitment-ai-legal-concerns/)を参照ください。<br/>
-（*2）GitHub Enterprise`の費用は各社契約ごとに変動がありますので、あくまで参考情報としてご参照ください。
+（*2）GitHub Enterpriseの費用は各社契約ごとに変動がありますので、あくまで参考情報としてご参照ください。
 :::
