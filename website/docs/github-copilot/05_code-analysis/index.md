@@ -5,7 +5,7 @@ sidebar_position: 5
 # コードを解析する
 
 ソースコードをGitHub Copilot Chatに読み込ませることでコードを解析し、クラス図やフロー図など様々な形で可視化が可能です。<br/>
-以下のような場面などで利用できる手段です。
+以下のような場面で利用できる手段です。
 
 - 設計書がないコードの処理概要を把握する
 - 他の人が書いたコードをすばやく理解する
@@ -86,7 +86,8 @@ VS CodeのGitHub Copilot ChatにてJavaファイルのクラス図を作成す�
 - GitHub Copilot Chat Viewを開きます
 - GitHub Copilotに以下を入力します
       ```txt
-      #file:ProjectAction.javaのconfirmOfCreateメソッドを読み込んで、Mermaid形式のフロー図を作成してください。なお処理の説明は日本語でお願いします。
+      #file:ProjectAction.javaのconfirmOfCreateメソッドを読み込んで、Mermaid形式のフロー図を作成してください。
+      なお処理の説明は日本語でお願いします。
       ```
       ![フロー図作成用プロンプト](images/flow-diagram_prompt.png)
       ※`#file`の使い方は[GitHub Copilot Chat ＞ コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/04_context-variable.md)を参照ください
