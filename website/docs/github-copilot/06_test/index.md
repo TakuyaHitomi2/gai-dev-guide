@@ -15,7 +15,7 @@ GitHub Copilot・GitHub Copilot Chatにサポートしてもらいながら、�
 
 ※`GitHub Copilot`の機能。
 
-テスト提唱のコードを開きながら、テストコードを書く場合GitHub Copilotがサポートしてくれます。<br/>
+テスト対象のコードを開きながら、テストコードを書く場合GitHub Copilotがサポートしてくれます。<br/>
 以下にTypeScriptファイルのテストを記述する例を示します。
 
 - 実装ファイルを開きます
