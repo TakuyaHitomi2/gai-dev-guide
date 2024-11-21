@@ -28,10 +28,10 @@ GitHub Copilotは既存のソースコードを元に予測し提案を行いま
 変数名・関数名の命名も原則に従う必要があります。<br/>
 関数名を具体度を上げることで、GitHub Copilotが意図を解釈し、より的確な提案が得られます。
 
-- 抽象度の高い名前の場合のGitHub Copilotの提案（関数名`fetchData`）
+- 抽象度が高い名前（関数名`fetchData`）の場合
   - ⇛ 抽象的な提案しか得られない
   ![良くない関数名のコード](images/function-name_bad.png)
-- 具体的な名前の場合の提案の提案（関数名`fetchUserData`）
+- 具体的な名前（関数名`fetchUserData`）の場合
   - ⇛ より具体的な提案が得られる
   ![良い関数名のコード](images/function-name_good.png)
 
@@ -47,65 +47,43 @@ GitHub Copilotは既存のソースコードを元に予測し提案を行いま
 ソースコード以外にも、VS Codeで開いているファイルやGitHub Copilot Chatでのやりとりで、コンテキストをGitHub Copilotにインプットさせ、提案の精度を向上できます。<br/>
 ここではコンテキストをインプットする方法を示します。
 
-### コンテキストに含ませたいファイルだけ開いておく
-
-VS Codeで関連するファイルを開き、無関係なファイルを閉じておくことで、GitHub Copilotにコンテキストを提供できます。<br/>
-コンテキストスイッチングを行ったり、次のタスクに移るときには、不要なファイルを閉じることを忘れないでください。
-
-### GitHub Copilot Chatに関連ファイルを指定する
-
-関連ファイルを開くことに加えて、GitHub Copilot Chatにて`#editor`を使用して追加のコンテキストを提供できます。
-
-<details>
-<summary>`#editor`を使った追加コンテキスト提供の手順</summary>
-- VS Codeで、該当ファイルを開きます
-  ![コンテキストに含めるファイルをVS Codeで開く](images/add-context.png)
-- GitHub Copilotに以下を入力します
-      ```txt
-      #editor /removeTxt　ファイルの拡張子が.csv .txt .mdの場合は、リストに該当レコードも削除するを更新してください。
-      ```
-- 更新後コードが提案されます
-</details>
-
-※`/explain`の使い方は[GitHub Copilot Chat ＞ コマンド](../08_vscode-extention/02_github-copilot-chat/03_command.md#スラッシュコマンド)を参照ください。
-
-### コンテキスト変数・エージェントコマンド・スラッシュコマンドを使う
-
-GitHub Copilot Chatでは、コンテキスト変数・エージェントコマンド・スラッシュコマンドなどのキーワードを使用して、特定のタスクまたはコンテキストにフォーカスできます。
-
-※詳細は[GitHub Copilot Chat ＞ コマンド](../08_vscode-extention/02_github-copilot-chat/03_command.md)、[GitHub Copilot Chat ＞ コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/04_context-variable.md)を参照ください。
-
 <!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 <!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
-:::note[詳細は以下参照ください]
+:::note[詳細は以下を参照ください]
 <!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
 <!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
 - [GitHub Copilot の使用についてのベストプラクティス - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/best-practices-for-using-github-copilot#copilot-%E3%82%92%E5%BD%B9%E7%AB%8B%E3%81%A4%E5%87%BA%E5%8A%9B%E3%81%AB%E5%B0%8E%E3%81%8F)
 :::
 
-## プロンプトの言い換え・分割
+### コンテキストに含ませたいファイルだけ開いておく
 
-GitHub Copilotから有用な回答を得られない場合は、要求を別の言葉で言い換えるか、要求を複数の小さな要求に分割してみます。<br/>
-たとえば、GitHub Copilotに単語検索パズルを生成するように依頼する代わりに、プロセスを小さなタスクに分割し、GitHub Copilotに1つずつ実行するように依頼します。
+GitHub Copilotでは、VS Codeで関連するファイルを開き、無関係なファイルを閉じておくことで、コンテキストを提供できます。<br/>
+コンテキストスイッチングを行ったり、次のタスクに移るときには、不要なファイルを閉じることを忘れないでください。
 
-- 10x10の文字グリッドを生成する関数を記述します
-- 有効な単語の一覧を指定して、文字グリッド内のすべての単語を検索する関数を記述します
-- 前の関数を使用して、少なくとも10個の単語を含む10x10個の文字グリッドを生成する関数を記述します
-- 前の関数を更新して、グリッドから文字のグリッドと10個のランダムな単語を出力します
+GitHub Copilot Chatの場合は、関連ファイルを開くことに加えてコンテキスト変数`#editor`を使う必要があります。<br/>
+`#editor`の使い方は[GitHub Copilot Chat ＞ コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/04_context-variable.md#editorエディタで選択しているファイルをコンテキストに含める)を参照ください。
 
+### コンテキスト変数・エージェントコマンド・スラッシュコマンドを使う
+
+GitHub Copilot Chatでは、コンテキスト変数・エージェントコマンド・スラッシュコマンドなどのキーワードを使用して、特定のタスクまたはコンテキストにフォーカスできます。
+詳細は以下を参照ください。
+- [GitHub Copilot Chat ＞ コマンド](../08_vscode-extention/02_github-copilot-chat/03_command.md)
+- [GitHub Copilot Chat ＞ コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/04_context-variable.md)
+
+## プロンプトの分割
+
+大きく複雑な要求は、小さく簡潔な要求に分割してください。<br/>
 <!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 <!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
-:::note[詳細は以下参照ください]
-<!-- textlint-enable jtf-style/4.3.2.大かっこ［］ -->
-<!-- textlint-enable ja-technical-writing/ja-no-mixed-period -->
+:::note[具体例は以下を参照ください]
 - [複雑なタスクを単純なタスクに分割する - GitHub docs](https://docs.github.com/ja/copilot/using-github-copilot/prompt-engineering-for-github-copilot#break-complex-tasks-into-simpler-tasks)<br/>
 - [小さなコードチャンクで作業する - GitHub Copilot - Patterns & Exercises](https://ai-native-development.gitbook.io/docs/ja/design-patterns/working-on-small-chunk)
 :::
 
 ## 会話の削除・切り替え
 
-チャットインターフェースで以前に尋ねた質問を削除して、インデックス化された会話からそれを削除することができます。<br/>
-これは特にそれがもはや関連性を持たない場合、会話の流れが改善され、GitHub Copilotに必要な情報のみを提供することができます。
+GitHub Copilot Chatにおける一連のスレッドにおいて、自身のコメントを削除できます。
+当該コメントが関連性を持たない場合、この削除によって会話の流れが改善され、より精度の高い回答が得やすくなります。
 
 <!-- textlint-disable ja-technical-writing/ja-no-mixed-period -->
 <!-- textlint-disable jtf-style/4.3.2.大かっこ［］ -->
