@@ -19,7 +19,7 @@ VS Codeの設定の前に、GitHubアカウントの設定が必要です。以�
 ### GitHubアカウントの作成
 
 - GitHubアカウントをお持ちでない方は、[GitHubのトップページ](https://github.com/)を開き、右上にある「Sign up」からアカウントを作成してください
-- アカウントを作成したら、開発プロジェクトのGitHub Copilot管理者に、あなたのアカウントをお伝えください。管理者がGitHub Copilotのorganizationにあなたのアカウント紐づけます
+- アカウントを作成したら、開発プロジェクトのGitHub Copilot管理者にあなたのアカウントをお伝えください。管理者がGitHub CopilotのOrganizationにあなたのアカウントを紐づけます
 
 :::note
 - 会社のメールアドレスを使用してください
@@ -51,8 +51,8 @@ VS Codeの設定の前に、GitHubアカウントの設定が必要です。以�
 
 ## VS Codeの設定方法
 
-アカウント設定が終わったらVS Codeを[VS Codeのダンロードサイト](https://code.visualstudio.com/Download)からインストールしましょう。<br/>
-プロキシ環境化で開発する場合は、以下に従いプロキシ設定を実施してください。
+アカウント設定が終わったらVS Codeを[VS Codeのダウンロードサイト](https://code.visualstudio.com/Download)からインストールしましょう。<br/>
+プロキシ環境下で開発する場合は、以下に従いプロキシ設定を実施してください。
 
 - VS Codeを起動してください
 - 設定画面を開いてください。ショートカット`Ctrl + ,`もしくは `File`⇒ `Preferences` ⇒ `Settings`で開けます
@@ -86,9 +86,9 @@ VS Codeの設定の前に、GitHubアカウントの設定が必要です。以�
 
 :::warning
 💡 うまく確認できない場合は以下を試してください。
-- VS Codeの再起動してください
+- VS Codeを再起動してください
 - GitHubにログインできているか確認してください
-- [「githubアカウントがgithub-copilotのorganizationに紐づいていることを確認」](#githubアカウントがgithub-copilotのorganizationに紐づいていることを確認)の章を再度実施してください
+- [GitHubアカウントがGitHub CopilotのOrganizationに紐づいていることを確認](#githubアカウントがgithub-copilotのorganizationに紐づいていることを確認)の章を再度実施してください
 :::
 
 ### 拡張機能GitHub Copilot Chatのインストール
@@ -109,7 +109,7 @@ VS Codeの設定の前に、GitHubアカウントの設定が必要です。以�
 - GitHub Copilot Chatが利用できることを確認します
   - ①のメニューを押下しGitHub Copilot Chatパネルを開きます
   - ②の入力欄に`@workspace ワークスペース内のファイルについて教えてください`と入力・送信します
-    - ※`@workspace`の使い方は[GitHub Copilot Chat ＞ コマンド](../08_vscode-extention/02_github-copilot-chat/03_command.md#エージェントコマンド)参照ください
+    - ※`@workspace`の使い方は[GitHub Copilot Chat ＞ コマンド](../08_vscode-extention/02_github-copilot-chat/03_command.md#エージェントコマンド)を参照ください
   - ③のエリアに日本語で回答が表示されれば確認完了です
     ![VS Code拡張機能GitHub Copilot Chatのインストール手順](images/vscode-github-copilot-chat-install_1.png)
 
