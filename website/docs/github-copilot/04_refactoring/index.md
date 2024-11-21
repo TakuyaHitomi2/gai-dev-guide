@@ -5,15 +5,18 @@ sidebar_position: 4
 # コードを改善する
 
 GitHub Copilotにサポートしてもらいながら、リファクタリングやドキュメント生成が可能です。<br/>
-以下リンクにて豊富はTipsが公開されているので、こちらも参考にしてください。<br/>
+以下リンクにて豊富なTipsが公開されているので、こちらも参考にしてください。<br/>
 [GitHub Copilot を使用したコードのリファクタリング - GitHub Docs](https://docs.github.com/ja/copilot/using-github-copilot/example-use-cases/refactoring-code-with-github-copilot)
 
 ## JavaクラスのJavadocを生成する
 
-GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いてもらいます。
+※`GitHub Copilot Chat`の機能。
+
+GitHub Copilot Chatを使うと、コードに対して処理概要をコメントで追記できます。<br/>
+以下ではJavaのコードにJavadocを補完してもらう例を示します。
 
 <details>
-  <summary>Javadocを書いてもらいたいコード</summary>
+  <summary>Javadocを補完してもらいたいコード</summary>
 
     ```java
     package com.nablarch.example.app.entity.core.validation.validator;
@@ -55,17 +58,17 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 
 </details>
 
-- エディタで、該当のファイルを開きます
-- GitHub Copilot Chat Viewを開きます
-- `/doc 日本語でjavadocを書いてください`と入力し送信します
-- GitHub Copilot Chatにより、元のコードにJavadocを加えた結果が出力されます
-- ファイル（`DateRangeValidator.java`）の内容を全選択します
-- Insert at Cursorボタンを押下します
-- ファイルの内容が、Javadocを加えた新しいものに置き換わります
+1. エディタで、該当のファイルを開きます
+2. GitHub Copilot Chat Viewを開きます
+3. `/doc 日本語でjavadocを書いてください`と入力し送信します
+4. GitHub Copilot Chatにより、元のコードにJavadocを加えた結果が出力されます（スクショの黄色枠）
+5. ファイル（`DateRangeValidator.java`）の内容を全選択します
+6. Insert at Cursorボタンを押下します
+7. コードにJavadocが追記されます
 
 ![JavaDoc生成手順](images/generate-javadoc.png)
 
-最終的に以下のようなJavadocが出力されました。
+最終的に以下のようなJavadocが出力されます。
 <details>
 <summary>出力されたJavaDoc</summary>
 
@@ -139,29 +142,42 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 
 ## Javaクラスをリファクタリングする
 
-- エディタで、該当のファイルを開きます
-- GitHub Copilot Chat Viewを開きます
-- `/fix リファクタリングしてください`と入力し送信します
-- GitHub Copilot Chatにより、リファクタリング内容とリファクタリング後のクラスが提案されます
-- ファイルの内容を全選択します
-- Insert at Cursorボタンを押下します
-- ファイルの内容がリファクタリングされた新しいものに置き換わります
+※`GitHub Copilot Chat`の機能。
+
+GitHub Copilot Chatを使うと、既存のコードをリファクタリングすることができます。<br/>
+リファクタリングのコードの提案とあわせて、既存コードを何故リファクタリングするのか・どういう方針でリファクタリングするのかも合わせて文面で示されます。<br/>
+以下ではJavaのコードをリファクタリングする例を示します。
+
+:::info
+ここではリファクタリングの観点を示していませんが、どのような観点でリファクタリングすべきかをプロンプトで与えることで、より意図に沿ったリファクタリングが可能になります。
+:::
+
+1. エディタで、該当のファイルを開きます
+2. GitHub Copilot Chat Viewを開きます
+3. `/fix リファクタリングしてください`と入力し送信します
+4. GitHub Copilot Chatにより、リファクタリング内容とリファクタリング後のクラスが提案されます
+5. ファイルの内容を全選択します
+6. Insert at Cursorボタンを押下します
+7. ファイルの内容がリファクタリングされた新しいものに置き換わります
 
 ![リファクタリング手順](images/refactoring.png)
 
 ## Javaクラスをレビューする
 
+※`GitHub Copilot Chat`の機能。
+
+リファクタリングと似ていますが、コードの品質を向上させるために、コードレビューを依頼することができます。<br/>
+以下ではJavaのコードをレビューする例を示します。
+
 - エディタで、該当ファイルを開ます
 - GitHub Copilot Chat Viewを開きます
 - GitHub Copilotに以下を入力します
-
       ```txt
-      #file:開発標準_Javaコーディング規約.mdの内容を開発基準に、#file:CallTreeEntity.javaをレビューしてください。問題があれば、改善案を提示してください
+      #file:開発標準_Javaコーディング規約.mdの内容を開発基準に、#file:CallTreeEntity.javaをレビューしてください。
+      問題があれば、改善案を提示してください。
       ```
-
-      ※コンテキスト変数`#file`については[コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照してください
-
-- 改修原因と改修内容が提案されます
+      ※`#file`の使い方は[GitHub Copilot Chat ＞ コンテキスト変数](../08_vscode-extention/02_github-copilot-chat/04_context-variable.md)を参照ください
+- 改修原因と改修内容が提案されます（スクショの赤枠）
 
 ![Javaクラスレビュー：チャットで依頼](images/suggestion_1.png)
 ![Javaクラスレビュー：レビューフィードバック1](images/suggestion_2.png)
@@ -169,10 +185,13 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 
 ## セキュリティリスクを検知してもらう
 
-セキュリティリスクの可能性があるかをGitHub Copilotに検知してもらいます。
+※`GitHub Copilot Chat`の機能。
+
+レビューと似ていますが、セキュリティリスクの検知なども可能です。<br/>
+以下ではJavaのコードのセキュリティリスクを検知する例を示します。
 
 <details>
-    <summary>セキュリティリスクを発見したいファイルの詳細</summary>
+    <summary>セキュリティリスクを検知したいファイルの詳細</summary>
 
     Nablarchのサンプルコードに今回のチェック用に修正を加えたものです。
 
@@ -268,9 +287,10 @@ GitHub Copilot Chatを使い、以下のコードに対するJavadocを書いて
 
 </details>
 
-- エディタで、該当のファイルを開きます
-- GitHub Copilot Chat Viewを開きます
-- `/explain このコードの潜在的なリスクを教えて`と入力し送信します
-- GitHub Copilot Chatにより、セキュリティリスクになりそうな箇所が提示されます
+1. エディタで、該当のファイルを開きます
+2. GitHub Copilot Chat Viewを開きます
+3. `/explain このコードの潜在的なリスクを教えて`と入力し送信します<br/>
+   ※`/explain`の使い方は[GitHub Copilot Chat ＞ コマンド](../08_vscode-extention/02_github-copilot-chat/03_command.md#スラッシュコマンド)参照ください
+4. GitHub Copilot Chatにより、セキュリティリスクになりそうな箇所が提示されます（スクショの黄色枠）
 
 ![セキュリティリスク検知手順（gifアニメ）](images/security-detect_2.png)

@@ -4,18 +4,15 @@ sidebar_position: 2
 
 # FAQ
 
-:::info
+GitHub Copilot導入検討時に知っておいたほうが良い情報をまとめています。
+
+:::warning
 この記事は、2023年11月末時点の情報を元に作成しています。GitHub Copilotのアップデートで状況が変わる可能性もありますので、ご注意ください。
 :::
 
-## GitHub Copilotが提案を行う仕組み
-
-GitHub Copilotは提案を生成する際、エディタのソースコードにアクセスし、プロンプトを作成します。プロンプトはセキュアな形でモデルに送信され、提案が生成されたあとプロンプトは破棄されます。<br/>
-アクセスするソースコードは編集中のファイルだけでなく隣接ファイルや関連ファイル、リポジトリのURLなどを含むことがあります。
-
 ## 全般
 
-### Q。使用したいのですが、利用申請はどうすればよいですか？
+### Q. 使用したいのですが、利用申請はどうすればよいですか？
 
 利用申請の手続きは各社ごとの対応方針に従ってください。
 
@@ -38,7 +35,7 @@ TISでは、自社社員、パートナー様のいずれもご利用いただ�
 
 機密性の高い情報（個人情報、パスワード、APIキーなど）は入力しないでください。
 
-### Q. 送信されるデータは暗号化されていますか？
+### Q. 送信されるデータはセキュアにやりとりされますか？
 
 GitHub Copilot for Businessは、サジェストを生成する目的以外ではエディタのソースコードにアクセスしません。サジェストを生成するために使用されたプロンプトは、セキュアに送信され、提案が生成されると保持されず破棄されます。
 
@@ -62,11 +59,17 @@ GitHub Copilotによって生成されたコードの権利は、そのコード
 ### Q. GitHub Copilotの提案にOSSライセンスのコードが含まれる場合はありますか？
 
 GitHub Copilotには、公開されたコードと一致するコードの提案をブロックする機能があり、それを有効化することで著作権・ライセンス違反のリスクを軽減できます。
-具体的な有効化方法は[パブリック コードに一致する候補の有効化または無効化 - GitHub Docs](https://docs.github.com/ja/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-copilot-policies-as-an-individual-subscriber#enabling-or-disabling-suggestions-matching-public-code)を参照してください。
+具体的な有効化方法は[パブリック コードに一致する候補の有効化または無効化 - GitHub Docs](https://docs.github.com/ja/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-copilot-policies-as-an-individual-subscriber#enabling-or-disabling-suggestions-matching-public-code)を参照ください。
 
 ### Q. プロジェクト内のソースコードはGitHub Copilotの学習に使用されますか？
 
 学習には使用されません。GitHub Copilot for Businessは、サジェストを生成する目的以外ではエディタのソースコードにアクセスしません。サジェストを生成するために使用されたプロンプトは、セキュアな形でモデルに送信されます。提案が生成されると、プロンプトは保持されません。
+
+### Q. GitHub Copilotのセキュリティ・プライバシーの詳細はどのようになっていますか？
+
+以下を参照ください。
+
+[GitHub Copilot Trust Center](https://resources.github.com/ja/copilot-trust-center/)
 
 ## 費用について
 
@@ -79,12 +82,6 @@ GitHub Copilotには、公開されたコードと一致するコードの提案
 - GitHub Copilot for Business: 1人あたり年間228ドル
 
 :::info
-（*1）著作権侵害の場合はマイクロソフトが法的防御を行い、不利な判決や和解に伴う費用を負担します。詳細は[マイクロソフト、お客様向けの Copilot Copyright Commitment を発表 - News Center Japan](https://news.microsoft.com/ja-jp/2023/09/12/230912-copilot-copyright-commitment-ai-legal-concerns/)を参照してください。<br/>
-（*2）GitHub Enterprise`の費用は各社契約ごとに変動がありますので、あくまで参考情報としてご参照ください。
+（*1）著作権侵害の場合はマイクロソフトが法的防御を行い、不利な判決や和解に伴う費用を負担します。詳細は[マイクロソフト、お客様向けの Copilot Copyright Commitment を発表 - News Center Japan](https://news.microsoft.com/ja-jp/2023/09/12/230912-copilot-copyright-commitment-ai-legal-concerns/)を参照ください。<br/>
+（*2）GitHub Enterpriseの費用は各社契約ごとに変動がありますので、あくまで参考情報としてご参照ください。
 :::
-
-## その他
-
-その他、セキュリティ・プライバシーの詳細についてはGitHub Copilot公式ページを参照ください。
-
-[GitHub Copilot Trust Center](https://resources.github.com/copilot-trust-center/)
