@@ -37,7 +37,7 @@ GitHub Copilotのトークンリミットは公開されていませんが、現
 一方でコード量が多い場合はレビュー対象のソース範囲を選択し、`#selection`を用いてレビューを依頼してください。
 
 :::info
-`#file`や`#selection`については、[コンテキスト変数](/github-copilot/08_vscode-extention/02_github-copilot-chat/01_context-variable.md)を参照してください。
+`#file`や`#selection`については、[コンテキスト変数](/github-copilot/08_vscode-extention/02_github-copilot-chat/04_context-variable.md)を参照してください。
 :::
 
 そうすると、GitHub Copilotからコードのレビュー結果が回答されます。回答を参照して、コードを修正してください。
