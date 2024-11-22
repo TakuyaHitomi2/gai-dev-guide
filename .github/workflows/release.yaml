@@ -21,8 +21,8 @@ jobs:
       run: |
         echo "Archiving prompt sample..."
         cd website/docs/prompts
-        zip ../../../prompt-sample.zip -r *.md  -x "*index.md" -x "*index.mdx"
-        tar --exclude "*index.md" --exclude "*index.mdx" -zcvf ../../../prompt-sample.tar.gz .
+        zip ../../../prompt-sample.zip -r $(find -name "*.md" ! -name "index.md")
+        tar -zcvf ../../../prompt-sample.tar.gz $(find -name "*.md" ! -name "index.md")
 
     - name: Release
       uses: softprops/action-gh-release@v2
