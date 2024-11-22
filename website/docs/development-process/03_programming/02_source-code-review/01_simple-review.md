@@ -18,6 +18,10 @@ Javaにおける[Checkstyle](https://checkstyle.sourceforge.io/)、Pythonにお�
 
 プロジェクトにおけるコーディング規約を、Markdown形式で準備してください。
 
+:::info
+GitHub Copilot用に[いくつかのコーディング規約を準備](../../../prompts/)しているので、必要に応じてご利用ください。
+:::
+
 ### レビュー
 
 前提として、GitHub Copilotに渡せるコード量（コンテキスト長）には制限があります。このため、コードレビュー対象となるソースコードの長さには注意しなければなりません。
