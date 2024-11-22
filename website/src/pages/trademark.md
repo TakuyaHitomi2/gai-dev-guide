@@ -17,5 +17,6 @@ title: 商標について
 - 「Git」は、Software Freedom Conservancy, Inc.の米国およびその他の国における商標または登録商標です
 - 「GitHub」、「GitHub Copilot」、「GitHub Copilot Chat」、GitHubのロゴは、GitHub Inc.の商標または登録商標です
 <!-- textlint-enable jtf-style/1.2.1.句点(。)と読点(、) -->
+- 「ChatGPT」は、OpenAI OPCO, LLCの米国における登録商標です
 
 ※ その他、本サイトに記載されている会社名、商品・サービス名は、各社の商標または登録商標です。
