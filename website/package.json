@@ -5,8 +5,9 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build",
-    "build:usableWithoutServer": "cross-env BUILD_USABLE_WITHOUT_SERVER=true docusaurus build",
+    "build": "cross-env BUILD_TYPE=prd docusaurus build",
+    "build:local": "cross-env BUILD_TYPE=local docusaurus build",
+    "build:usableWithoutServer": "cross-env BUILD_TYPE=usableWithoutServer docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -18,6 +19,7 @@
     "lint:md": "markdownlint-cli2 \"**/*.md\" \"**/*.mdx\" \"#node_modules\" \"#build\""
   },
   "dependencies": {
+    "@cmfcmf/docusaurus-search-local": "^1.2.0",
     "@docusaurus/core": "3.5.2",
     "@docusaurus/preset-classic": "3.5.2",
     "@mdx-js/react": "^3.0.0",
@@ -42,6 +44,11 @@
     "textlint-rule-preset-jtf-style": "^2.3.14",
     "textlint-rule-prh": "^6.0.0",
     "typescript": "~5.5.2"
+  },
+  "overrides": {
+    "@cmfcmf/docusaurus-search-local": {
+      "@docusaurus/core": "3.5.2"
+    }
   },
   "browserslist": {
     "production": [

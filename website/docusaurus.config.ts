@@ -4,11 +4,14 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const organization = 'fintan-contents';
 const project = 'gai-dev-guide';
-const urlWithBase = `https://${organization}.github.io/${project}/`;
-const ogpImageUrl = `${urlWithBase}img/OGP.png`;
 
-const baseUrl = process.env.BUILD_USABLE_WITHOUT_SERVER === 'true' ? '' : `/${project}/`;
-const experimental_router = process.env.BUILD_USABLE_WITHOUT_SERVER === 'true' ? 'hash' : 'browser';
+const url = process.env.BUILD_TYPE === 'prd' ? 'https://${organization}.github.io' : 'http://localhost:3000';
+const baseUrl = process.env.BUILD_TYPE === 'prd' ? `/${project}/` : '';
+const urlWithBase = url + baseUrl
+const ogpImageUrl = `${urlWithBase}img/OGP.png`;
+const repositoryUrl = `https://github.com/${organization}/${project}`
+
+const experimental_router = process.env.BUILD_TYPE === 'usableWithoutServer' ? 'hash' : 'browser';
 
 const copyright = `
 <div class="no-content">
@@ -21,10 +24,26 @@ const copyright = `
   </div>
 </div>`;
 
+
+const plugins = [];
+if (process.env.BUILD_TYPE === 'prd' || process.env.BUILD_TYPE === 'local') {
+  plugins.push([
+    require.resolve('@cmfcmf/docusaurus-search-local'),
+    {
+      indexDocs: true,
+      indexDocSidebarParentCategories: 1,
+      indexPages: true,
+      indexBlog: false,
+      language: ['en', 'ja'],
+      lunr: {tokenizerSeparator: /[\s-]+/gu},
+    },
+  ]);
+}
+
 const config: Config = {
   title: 'Fintan » Development Guide with Generative AI',
   tagline: '',
-  url: `https://${organization}.github.io`,
+  url,
   baseUrl,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -38,7 +57,7 @@ const config: Config = {
     defaultLocale: 'ja',
     locales: ['ja'],
   },
-
+  plugins,
   presets: [
     [
       'classic',
@@ -117,7 +136,7 @@ ChatGPTやGitHub Copilotなどの導入方法、基本的な操作、効果的�
           label: 'プロンプト',
         },
         {
-          href: `https://github.com/${organization}/${project}`,
+          href: repositoryUrl,
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
