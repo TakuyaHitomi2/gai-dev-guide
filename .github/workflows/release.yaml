@@ -1,0 +1,35 @@
+name: Release
+on:
+  push:
+    tags:
+      - 'v*'
+  release:
+    types:
+      - created
+      - edited
+
+permissions:
+  contents: write
+
+jobs:
+  handle-release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: archive
+      run: |
+        echo "Archiving prompt sample..."
+        cd website/docs/prompts
+        zip ../../../prompt-sample.zip -r $(find -name "*.md" ! -name "index.md")
+        tar -zcvf ../../../prompt-sample.tar.gz $(find -name "*.md" ! -name "index.md")
+
+    - name: Release
+      uses: softprops/action-gh-release@v2
+      with:
+        prerelease: true
+        files: |
+          prompt-sample.zip
+          prompt-sample.tar.gz
+        fail_on_unmatched_files: true
