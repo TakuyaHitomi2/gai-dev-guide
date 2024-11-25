@@ -5,6 +5,7 @@ on:
       - 'v*'
   release:
     types:
+      - created
       - edited
 
 permissions:
