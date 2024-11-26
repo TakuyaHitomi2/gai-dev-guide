@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const organization = 'fintan-contents';
 const project = 'gai-dev-guide';
 
-const url = process.env.BUILD_TYPE === 'prd' ? 'https://${organization}.github.io' : 'http://localhost:3000';
+const url = process.env.BUILD_TYPE === 'prd' ? `https://${organization}.github.io` : 'http://localhost:3000';
 const baseUrl = process.env.BUILD_TYPE === 'prd' ? `/${project}/` : '';
 const urlWithBase = url + baseUrl
 const ogpImageUrl = `${urlWithBase}img/OGP.png`;
