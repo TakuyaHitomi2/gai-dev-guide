@@ -31,11 +31,9 @@ if (process.env.BUILD_TYPE === 'prd' || process.env.BUILD_TYPE === 'local') {
     require.resolve('@cmfcmf/docusaurus-search-local'),
     {
       indexDocs: true,
-      indexDocSidebarParentCategories: 1,
       indexPages: true,
       indexBlog: false,
-      language: ['en', 'ja'],
-      lunr: {tokenizerSeparator: /[\s-]+/gu},
+      language: ['ja'],
     },
   ]);
 }
