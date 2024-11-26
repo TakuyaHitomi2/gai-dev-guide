@@ -73,27 +73,27 @@ const config: Config = {
     metadata: [
       // OGP: 既存の生成AI活用ガイド(https://gen-ai-docs.jp/)のOGPを流用
       { name: 'og:url', content: urlWithBase},
-      { name: 'og:site_name', content: 'Fintan » 生成AI活用ガイド' },
+      { name: 'og:site_name', content: 'Fintan » 生成AI エンジニアリング活用ガイド' },
       { name: 'og:locale', content: 'ja_JP' },
       { name: 'og:image', content: ogpImageUrl },
-      { name: 'og:image:alt', content: 'Fintan » 生成AI活用ガイド' },
+      { name: 'og:image:alt', content: 'Fintan » 生成AI エンジニアリング活用ガイド' },
       { name: 'og:type', content: 'website' },
 
       // Twitter Card: 既存の生成AI活用ガイド(https://gen-ai-docs.jp/)のOGPを流用
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Fintan » 生成AI活用ガイド' },
+      { name: 'twitter:title', content: 'Fintan » 生成AI エンジニアリング活用ガイド' },
       { name: 'twitter:description', content: `AI技術を使って日常の業務をスムーズに進めたいですか？
-生成AI活用ガイドはTIS株式会社が作成している生成AIを活用するためのガイドラインです。
+生成AI エンジニアリング活用ガイドはTIS株式会社が作成している生成AIを活用するためのガイドラインです。
 ChatGPTやGitHub Copilotなどの導入方法、基本的な操作、効果的な使い方などを提供します。
 どなたでも無償で利用いただけます。` },
       { name: 'twitter:image', content: ogpImageUrl },
-      { name: 'twitter:image:alt', content: 'Fintan » 生成AI活用ガイド' },
+      { name: 'twitter:image:alt', content: 'Fintan » 生成AI エンジニアリング活用ガイド' },
     ],
     image: 'img/OGP.png',
     navbar: {
-      title: '生成AI活用ガイド',
+      title: '生成AI エンジニアリング活用ガイド',
       logo: {
-        alt: 'Fintan » 生成AI活用ガイド',
+        alt: 'Fintan » 生成AI エンジニアリング活用ガイド',
         src: 'img/fintan-logo.jpg',
         href: urlWithBase,
       },

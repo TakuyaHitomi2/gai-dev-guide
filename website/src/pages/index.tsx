@@ -43,7 +43,7 @@ function Home() {
         <div className={clsx("container", styles.descriptionContainer)}>
           <p>
             <br/>
-            生成AI活用ガイドは、開発プロセスにおいてすぐに生成AIを活用できるように設計された、TIS株式会社が提供しているガイドラインです。<br/>
+            生成AI エンジニアリング活用ガイドは、開発プロセスにおいてすぐに生成AIを活用できるように設計された、TIS株式会社が提供しているガイドラインです。<br/>
             ChatGPTやGitHub Copilotなどの導入方法、開発プロセスにおける生成AIの具体的な活用方法などを提供します。<br/>  
             どなたでも無償で利用いただけます。
           </p>
